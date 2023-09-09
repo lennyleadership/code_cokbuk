@@ -18,7 +18,7 @@ toc: true
 The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
 
 <figure>
-  <img width = "540" src = "docs/images/Screenshot 2023-09-09 153003.png"/>
+  <img width = "540" src = "/docs/images/Screenshot 2023-09-09 153003.png"/>
   <figcaption class = "bottom"></figcaption>
 </figure>
 
@@ -59,7 +59,7 @@ div {
 The above codes will produce the following html.
 
 <figure>
-  <img width = "540" src = "docs/images/Screenshot 2023-09-09 153449.png"/>
+  <img width = "540" src = "/docs/images/Screenshot 2023-09-09 153449.png"/>
   <figcaption class = "bottom"></figcaption>
 </figure>
 

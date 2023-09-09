@@ -91,7 +91,7 @@ tr:nth-child(even){
 use the CSS `padding` property to add padding on table <b>cells</b>.
 
 <figure>
-  <img width = "540" src = "docs/images/Screenshot 2023-09-09 150734.png"/>
+  <img width = "540" src = "/docs/images/Screenshot 2023-09-09 150734.png"/>
   <figcaption class = "bottom"></figcaption>
 </figure>
 
