@@ -1,0 +1,46 @@
+---
+weight: 31
+title: Scroll To Top
+authors: Lenny
+categories: null
+tags: 
+description: 
+draft: false
+date: "2023-09-09"
+lastmod: "2023-09-09"
+series:
+toc: true
+---
+
+
+<!--more-->
+
+//* scroll to top //////////////////////////////////////////////////////////////////////////////////  
+//* this is the pure css solution, no javascript is involved  
+.scroll-container {  
+      position: absolute;  
+      top: 0;  
+      right:0;  
+      height: 100%;  
+    }  
+
+    // to hide the button when page first loaded  
+.scroll-container:before {  
+      content: '';  
+      display: block;  
+      height: 100vh;  
+      pointer-events: none;  
+    }  
+
+    // fixed to right bottom of page  
+.scroll-container a {  
+      position: sticky;  
+      top: 88vh;  
+      cursor: pointer;  
+      font-size: 20px;  
+    }  
+
+html {  
+  scroll-behavior: smooth;  
+}  
+// end *********************************************************************************************
