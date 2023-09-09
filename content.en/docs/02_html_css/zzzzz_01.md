@@ -1,7 +1,7 @@
 ---
-Weight: 999
-title: R Codes
-authors: Lenny Lin
+weight: 
+title: 
+authors: Lenny
 categories: null
 tags: 
 description: 
@@ -10,13 +10,9 @@ date: "2023-09-09"
 lastmod: "2023-09-09"
 series:
 toc: true
-bookCollapseSection: true
 ---
 
 
 <!--more-->
-
 ---
-
-
 
