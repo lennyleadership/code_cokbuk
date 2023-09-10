@@ -16,3 +16,6 @@ toc: true
 <!--more-->
 ---
 
+dest.filepath <- r"( )"
+
+write.csv(df_01, file = paste0(dest.filepath, "/", ".csv"))
