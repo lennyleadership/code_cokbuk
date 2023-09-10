@@ -83,7 +83,7 @@
 
     code {
       padding: 0;
-      background: lightblue;/*none*/
+      background: none;/*gives background color to paragraph in code block, not the entire block*/
     }
   }
 
@@ -97,10 +97,13 @@
 
     border-inline-start: $padding-4 solid var(--gray-200);
     border-radius: $border-radius;
-
+    
+    background-color: lightblue;
+    
     :first-child {
       margin-top: 0;
     }
+    
     :last-child {
       margin-bottom: 0;
     }
