@@ -23,26 +23,22 @@ toc: true
 <caption style="text-align:left", align = "top"><b></b></caption>
 <colgroup><col style="width: 40%" /><col style="width: 60%" />
 </colgroup>
-<th>
   <tr>
     <th><p>Title Left</p></th>
     <th><p>Title Right</p></th>
   </tr>
-</th>
-<tbody>
   <tr>
     <td><p>sentence left
-    </p></td>
+      </p></td>
     <td><p>sentence right.
-    </p></td>
+      </p></td>
   </tr>
   <tr>
     <td><p>sentence left
-    </p></td>
+      </p></td>
     <td><p> sentence right.
-    </p></td>
+      </p></td>
   </tr>
-</tbody>
 </table>
 
 ```

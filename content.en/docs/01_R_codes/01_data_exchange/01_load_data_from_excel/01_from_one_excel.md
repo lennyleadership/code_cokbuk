@@ -16,6 +16,17 @@ toc: true
 <!--more-->
 ---
 
+# skip rows at the beginning
+
+```
+library(readxl)
+
+dt <- read_excel("file directory/sub_folder/file_name.xlsx",
+                sheet ="Sheet2 (2)", skip = 5, col_names = F)
+```
+
+
+# Certain range
 Step #1: Get the data from a specific range.  
 
 ```
