@@ -28,6 +28,7 @@ library(DiagrammeRsvg)
 <br><br>
 
 ```
+# build circle diagram ----
 graph <- create_graph()%>%
   add_cycle(
             n = 5,
@@ -44,5 +45,14 @@ graph <- create_graph()%>%
                                 headclip = T
                               )
   )
+
+# view the graph in the viewer----
+graph %>% render_graph()
+
+# export as a SVG ----
+dest.filepath <- r"( )"
+
+graph %>%
+  export_graph(file_name = paste0(dest.filepath, "/","image_name.png"))
 
 ```
