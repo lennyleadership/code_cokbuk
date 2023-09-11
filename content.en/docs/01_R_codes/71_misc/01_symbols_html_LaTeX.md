@@ -20,11 +20,10 @@ toc: true
 <caption style="text-align:left", align = "top"><b></b></caption>
 <colgroup><col style="width: 40%" /><col style="width: 60%" />
 </colgroup>
-<tr>
-  <th><p></p></th>
-  <th><p></p></th>
-</tr>
-<tbody>
+  <tr>
+    <th><p></p></th>
+    <th><p></p></th>
+  </tr>
   <tr>
     <td><p>sentence left
     </p></td>
@@ -37,5 +36,4 @@ toc: true
     <td><p> sentence right.
     </p></td>
   </tr>
-</tbody>
 </table>
