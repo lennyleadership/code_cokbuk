@@ -1,6 +1,6 @@
 ---
 weight: 1
-title: Diagram
+title: Path Diagram
 authors: Lenny
 categories: null
 tags: 
@@ -24,6 +24,8 @@ library(dplyr)
 library(DiagrammeR)
 library(DiagrammeRsvg)
 ```
+
+<br><br>
 
 ```
 # build path diagram ----
