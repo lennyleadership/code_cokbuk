@@ -1,5 +1,5 @@
 ---
-weight: 02
+weight: 11
 title: Circle Diagram
 authors: Lenny
 categories: null

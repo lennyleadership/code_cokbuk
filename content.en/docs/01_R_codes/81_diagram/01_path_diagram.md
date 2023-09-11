@@ -1,6 +1,6 @@
 ---
 weight: 1
-title: Path Diagram
+title: "Path Diagram with create_graph()"
 authors: Lenny
 categories: null
 tags: 
