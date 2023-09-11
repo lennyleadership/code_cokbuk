@@ -6,16 +6,10 @@ categories: ["R"]
 tags: ["Diagram demo"]
 ---
 
-```{r, include=F}
-#load libraries ----
 
-library(dplyr)
 
-library(DiagrammeR)
-library(DiagrammeRsvg)
-```
 
-```{r diagram, echo=TRUE, include=T}
+```r
 # build path diagram ----
 graph <- create_graph()%>%
   add_path(
