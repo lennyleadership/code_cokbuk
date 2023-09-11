@@ -16,7 +16,7 @@ toc: true
 <!--more-->
 ---
 
-<table>
+<table style="width: 50%">
 <caption style="text-align:left", align = "top"><b></b></caption>
 <colgroup><col style="width: 40%" /><col style="width: 60%" />
 </colgroup>
