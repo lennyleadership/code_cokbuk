@@ -49,13 +49,10 @@ toc: true
 ```
 table{
   width: 100%;
-  
-  height: 100px /* row height*/
-  
+
   border-collapse: collapse; /* single border of table*/
   border-spacing:0;
   border: 1px solid #ddd;
-  
 }
 
 ```
