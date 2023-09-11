@@ -16,9 +16,9 @@ toc: true
 <!--more-->
 ---
 
-<table style="width: 50%">
+<table style="width: 90%">
 <caption><b></b></caption>
-<colgroup><col style="width: 40%" /><col style="width: 60%" />
+<colgroup><col style="width: 50%" /><col style="width: 50%" />
 </colgroup>
   <tr>
     <th><p></p></th>
