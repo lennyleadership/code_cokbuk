@@ -38,8 +38,17 @@ image <- grViz(
                       process2[label = 'item_3 \n item_4'
                       counter[label = 'item_5']
                       counter_1[label ='item_6']
-              
-              
+                      
+                      data1 -> process1 -> process2 -> counter
+                      process2 -> counter_1
               }"
 )
+
+# export as a SVG ----
+dest.filepath <- r"( )"
+
+image %>%
+  export_svg%>%
+    charToRaw %>%
+      rsvg_png(paste0(dest.filepath, "/","image_name.png"))
 ```
