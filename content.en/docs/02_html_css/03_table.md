@@ -24,19 +24,21 @@ toc: true
 <colgroup><col style="width: 40%" /><col style="width: 60%" />
 </colgroup>
   <tr>
-    <th><p>Title Left</p></th>
-    <th><p>Title Right</p></th>
+    <th><p>
+      </p></th>
+    <th><p>
+      </p></th>
   </tr>
   <tr>
-    <td><p>sentence left
+    <td><p>
       </p></td>
-    <td><p>sentence right.
+    <td><p>
       </p></td>
   </tr>
   <tr>
-    <td><p>sentence left
+    <td><p>
       </p></td>
-    <td><p> sentence right.
+    <td><p>
       </p></td>
   </tr>
 </table>
