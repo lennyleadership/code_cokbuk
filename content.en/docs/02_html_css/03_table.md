@@ -96,3 +96,4 @@ inline css style.
 ```
 <th colspan = "2">Warranty</th>
 ```
+
