@@ -1,6 +1,6 @@
 ---
-weight: 1
-title: From One Excel File
+weight: 01
+title: Basic statistical analysis
 authors: Lenny
 categories: null
 tags: 
@@ -16,3 +16,8 @@ toc: true
 <!--more-->
 ---
 
+```
+df %>%
+  group_by(column) %>%
+  summarize(mean =round(mean(value),0), sd = round(sd(value),0))
+```
