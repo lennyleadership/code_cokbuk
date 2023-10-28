@@ -1,6 +1,6 @@
 ---
-weight: 
-title: 
+weight: 02
+title: Cleanup Environment
 authors: Lenny
 categories: null
 tags: 
@@ -16,3 +16,8 @@ toc: true
 <!--more-->
 ---
 
+to remove data frame beginning with.
+
+```
+rm(list = ls()[grepl("df",ls())])
+```

@@ -1,13 +1,13 @@
 ---
-Weight: 1
-title: Load Data
+Weight: 07
+title: Transpose Data Frames
 authors: Lenny Lin
 categories: null
 tags: 
 description: 
 draft: false
 date: "2023-09-09"
-lastmod: "2023-09-09"
+lastmod: "2023-10-27"
 series:
 toc: true
 bookCollapseSection: true
@@ -15,8 +15,8 @@ bookCollapseSection: true
 
 
 <!--more-->
-
 ---
+
 
 
 
