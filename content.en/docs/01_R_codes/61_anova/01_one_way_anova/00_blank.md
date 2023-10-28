@@ -1,6 +1,6 @@
 ---
-weight: 99
-title:
+weight: 
+title: 
 authors: Lenny
 categories: null
 tags: 
