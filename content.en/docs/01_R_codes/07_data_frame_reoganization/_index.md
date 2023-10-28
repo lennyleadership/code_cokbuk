@@ -1,6 +1,6 @@
 ---
 Weight: 07
-title: Transpose Data Frames
+title: Reorganize Data Frames
 authors: Lenny Lin
 categories: null
 tags: 

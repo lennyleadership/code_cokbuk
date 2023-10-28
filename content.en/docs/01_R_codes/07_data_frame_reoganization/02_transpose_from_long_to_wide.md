@@ -16,8 +16,3 @@ toc: true
 <!--more-->
 ---
 
-Use `pivot_longer()`
-
-```
-pivot_longer(data.frame, cols = 3:6, names_to = "category name", values_to = "conc")
-```
