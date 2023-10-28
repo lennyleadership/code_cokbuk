@@ -18,10 +18,4 @@ bookCollapseSection: true
 
 ---
 
-`custom-style="Style1"` is the command in pandoc to render a rmarkdown to a word.
 
-```
-:::{custom-style="Style1"}
-To apply formatting styles from a word file 
-:::
-```
