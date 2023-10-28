@@ -1,13 +1,13 @@
 ---
 weight: 01
-title: ggplot
+title: ggplot 101
 authors: Lenny
 categories: null
 tags: 
 description: 
 draft: false
 date: "2023-09-10"
-lastmod: "2023-09-10"
+lastmod: "2023-10-27"
 series:
 toc: true
 ---
@@ -98,13 +98,6 @@ Legend property:
 theme(legend.position = "none")
 ```
 
-Heatmap with ggplot():
-
-```
-ggplot(df, aes(x-axis, y-axis, fill = value))+
-  geom_tile()+
-  scale_fill_gradient(low="lightyellow", high="red")
-```
 
 
 place multiple charts side-by-side:
