@@ -17,7 +17,7 @@ toc: true
 ---
 
 # To create a categorical column
-
+```
 df %>%mutate(season = case_when(
   df$date <"2021-07-01" ~ "2021-Spring",
   df$date > "2021-07-01" &  df$date < "2021-12-01"~ "2021-Fall",
@@ -28,3 +28,4 @@ df %>%mutate(season = case_when(
   .default = "other"
 )
 )
+```
