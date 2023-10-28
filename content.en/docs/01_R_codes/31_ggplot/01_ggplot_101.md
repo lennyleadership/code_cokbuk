@@ -83,20 +83,6 @@ theme(legend.position = "none")
 ```
 
 
-# Annotation
-
-Add a horizontal line:
-```
-geom_hline(yintercept = 60, linetype="dashed", color = "brown")+
-  geom_hline(yintercept = 160, linetype="dashed", color = "brown")+
-```
-
-Add text to a chart:
-```
-  geom_text(x=1, y=60, label="Lower limit 60%", color = "brown", size = 2, vjust = -0.5, hjust=0.2)+
-  geom_text(x=1, y=160, label="Upper limit 160%", color = "brown", size = 2, vjust = 1, hjust=0.2)
-```
-
 
 
 # Facet
@@ -110,7 +96,12 @@ Facet grid-independant axis scale
 facet_wrap(~element, scales = "free_y")
 ```
 
-
+# zoom x-axis
+```
+ggplot(...)+
+  geom_point()+
+  xlim(0,100)
+```
 
 
 
