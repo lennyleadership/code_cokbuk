@@ -1,6 +1,6 @@
 ---
 weight: 99
-title: To Transpose From Long to Wide
+title: To Transpose from long to wide
 authors: Lenny
 categories: null
 tags: 
