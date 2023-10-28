@@ -16,7 +16,7 @@ toc: true
 <!--more-->
 ---
 
-#Set the background as black & white:
+Set the background as black & white:  
 ```
 theme_set(theme_bw())
 ```
@@ -51,6 +51,11 @@ geom_point(aes(color = factor(`season`))
 Facet setup:  
 ```
 facet_grid(nuclide ~ temp)
+```
+
+Facet grid-independant axis scale
+```
+facet_wrap(~element, scales = "free_y")
 ```
 
 Add x axis lables  
@@ -93,7 +98,7 @@ Legend property:
 theme(legend.position = "none")
 ```
 
-# Heatmap with ggplot():
+Heatmap with ggplot():
 
 ```
 ggplot(df, aes(x-axis, y-axis, fill = value))+
@@ -102,7 +107,7 @@ ggplot(df, aes(x-axis, y-axis, fill = value))+
 ```
 
 
-# place multiple charts side-by-side:
+place multiple charts side-by-side:
 ```
 library(gridExtra)
 plot1 <- ggplot()
@@ -112,8 +117,14 @@ grid.arrange(plot1, plot2, ncol = 2)
 ```
 
 
-# add points to a boxplot with label:
+add points to a boxplot with label:
 ```
 geom_text(position=position_jitter(width=.15, height = .1))+
 geom_point(aes(color=variable), position = position_jitterdodge(dodge.width = 0.1),size=3, alpha=1)
+```
+
+
+export ggplot to a high definition image:
+```
+ggsave(filename = "/*.png", limitsize = F, device = 'png', dpi = 700)
 ```
