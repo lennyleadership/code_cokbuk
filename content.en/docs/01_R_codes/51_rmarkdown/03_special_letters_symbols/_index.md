@@ -1,7 +1,7 @@
 ---
-weight: 
-title: 
-authors: Lenny
+Weight: 03
+title: Symbols and Greek Letters
+authors: Lenny Lin
 categories: null
 tags: 
 description: 
@@ -10,9 +10,13 @@ date: "2023-10-27"
 lastmod: "2023-10-27"
 series:
 toc: true
+bookCollapseSection: true
 ---
 
 
 <!--more-->
+
 ---
+
+
 

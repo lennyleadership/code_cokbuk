@@ -1,6 +1,6 @@
 ---
-weight: 
-title: 
+weight: 02
+title: Greek Letters
 authors: Lenny
 categories: null
 tags: 

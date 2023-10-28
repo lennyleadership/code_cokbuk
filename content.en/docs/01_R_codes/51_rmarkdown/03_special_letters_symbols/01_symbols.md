@@ -1,6 +1,6 @@
 ---
-weight: 
-title: 
+weight: 01
+title: Symbols
 authors: Lenny
 categories: null
 tags: 
@@ -16,3 +16,4 @@ toc: true
 <!--more-->
 ---
 
+degC: `\u2070`C [in rmarkdown code chunk]

@@ -15,5 +15,9 @@ toc: true
 
 <!--more-->
 ---
+
 Always put your default setting in the code chunk at the front.
+
+```
 knitr::opts_chunk$set(echo = F, message = F, warning = F, include=FALSE, ft.align="left")
+```
