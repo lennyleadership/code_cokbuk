@@ -17,6 +17,7 @@ toc: true
 ---
 
 `summarize()`
+
 ```
 df %>%
   group_by(column) %>%
@@ -28,8 +29,24 @@ to focus on one column
 
 ```
 df %>%
-  summarise(mean = mean(column_A), median = median(column_A),quantile_1 = quantile(column_A,0.25),quantile_3 = quantile(column_A,0.75),quantile_4 = quantile(column_A,0.95))
+  group_by(element) %>%
+  summarise(mean = mean(column_A), median = median(column_A),
+  quantile_1 = quantile(column_A,0.25),
+  quantile_3 = quantile(column_A,0.75),
+  quantile_4 = quantile(column_A,0.95))
 ```
+
+```
+dgw_distribution_1 <- tapply(dgw_common_elements_c$conc,
+dgw_common_elements_c$element, function(x) format(summary(x), scientific = F))
+
+dgw_distribution_2 <- as.data.frame(do.call(cbind,dgw_distribution_1))
+```
+
+Difference between Boolean operators && and & and between || and | in R
+https://stackoverflow.com/questions/6558921/difference-between-boolean-operators-and-and-between-and-in-r
+
+
 
 
 boxplot statistical data

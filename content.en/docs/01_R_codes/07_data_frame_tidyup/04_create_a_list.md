@@ -38,3 +38,16 @@ blank_df_raw <- do.call(rbind, a_list)
 a_list <- list()
 
 list_temp <- data.frame()
+
+
+####
+###
+##
+# turn list to dataset
+
+```
+
+df <- as.data.frame(do.call(cbind, list))
+
+df <- as.data.frame(do.call(rbind, list))
+```

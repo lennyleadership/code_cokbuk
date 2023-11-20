@@ -1,7 +1,7 @@
 ---
-weight: 02
-title: Greek Letters
-authors: Lenny
+Weight: 04
+title: OfficeR
+authors: Lenny Lin
 categories: null
 tags: 
 description: 
@@ -10,9 +10,12 @@ date: "2023-10-27"
 lastmod: "2023-10-27"
 series:
 toc: true
+bookCollapseSection: true
 ---
 
 
 <!--more-->
+
 ---
+
 
