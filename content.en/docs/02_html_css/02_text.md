@@ -28,6 +28,9 @@ font-weight: $head-font-weight; /*scss style*/
 
 ```
 
+Reference: https://www.w3schools.com/cssref/pr_font_weight.php
+
+
 # Text
 
 ```
