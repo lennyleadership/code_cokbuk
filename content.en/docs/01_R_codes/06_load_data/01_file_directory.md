@@ -1,5 +1,5 @@
 ---
-weight: 03
+weight: 01
 title: Work with File Directory
 authors: Lenny
 categories: null
@@ -18,5 +18,4 @@ toc: true
 
 ```
 filepath <- r"(paste the directory here)"
-filename <- paste0(filepath, "/", "my filename", ".csv")
 ```
