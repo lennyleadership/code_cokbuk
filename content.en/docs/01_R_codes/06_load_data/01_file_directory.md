@@ -23,8 +23,6 @@ filepath <- r"(paste the directory here)"
 
 
 # Option 2 
-
-
 ```
 filepath<-gsub("\\\\",  "/",  readClipboard()) 
 

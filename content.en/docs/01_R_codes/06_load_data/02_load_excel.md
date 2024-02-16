@@ -19,9 +19,56 @@ toc: true
 # Load One file
 
 ```
+Get the file name:
+
 filename <- paste0(filepath, "/", "my filename", ".csv")
 
 filename <- paste0(filepath, "/", "my filename", ".xls")
+```
+
+## Read one file in general
+
+```
+df <- read.csv(filename)
+
+df <- read.csv(file.choose())
+
+```
+
+
+## Situtation #1: No colname or don’t want column names:
+```
+ read.csv(…, header = F)
+```
+
+## Situtation #2: Skip rows at the beginning
+
+```
+library(readxl)
+
+dt <- read_excel("file directory/sub_folder/file_name.xlsx",
+                sheet ="Sheet2 (2)", skip = 5, col_names = F)
+```
+
+
+## Situtation #3: Certain range
+
+Step #1: Get the data from a specific range.  
+
+```
+library(readxl)
+
+dt <- read_excel("file directory/sub_folder/file_name.xlsx",
+                sheet ="Sheet2 (2)", range = "A2:N63", col_names = F)
+
+```
+
+Step #2: Get the header from the table.
+
+```
+col_title <- read_excel("file directory/sub_folder/file_name.xlsx",
+                sheet ="Sheet2 (2)", range = "A1:N1", col_names = F)
+                
 ```
 
 # Load multiple files
