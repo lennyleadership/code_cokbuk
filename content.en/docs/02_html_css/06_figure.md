@@ -15,7 +15,7 @@ toc: true
 
 <!--more-->
 
-***
+```
 figure {
   text-align: left;
   /*font-style: italic;*/
@@ -49,4 +49,4 @@ img {
   padding-left: 20px;
 }
 
-***
+```

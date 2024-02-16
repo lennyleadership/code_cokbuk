@@ -50,6 +50,4 @@ margin-bottom: 1rem;
 
 line-height: 2;
 
-
-
 ```

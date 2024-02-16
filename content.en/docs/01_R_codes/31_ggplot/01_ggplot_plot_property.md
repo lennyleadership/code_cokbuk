@@ -77,7 +77,9 @@ geom_jitter(color="black", size=0.4, alpha=0.5)
 
 ```
 geom_text(position=position_jitter(width=.15, height = .1))+
-geom_point(aes(color=variable), position = position_jitterdodge(dodge.width = 0.1),size=3, alpha=1)
+geom_point(aes(color=variable), 
+position = position_jitterdodge(dodge.width = 0.1),
+size=3, alpha=1)
 ```
 
 
@@ -90,7 +92,8 @@ geom_hline(yintercept = 60, linetype="dashed", color = "brown")+
 
 # Add a line segment
 ```
-geom_segment(aes(x = ##, y = 0, xend = ##, yend = 10), color = "darkgreen", linewidth = 1.5)
+geom_segment(aes(x = ##, y = 0, xend = ##, yend = 10), 
+color = "darkgreen", linewidth = 1.5)
 ```
 
 
@@ -101,11 +104,11 @@ geom_segment(aes(x = 9, y = -4, xend = 9, yend = -5),
 ```
 
 
-#  ‘jitter’ overlapped geom_pointrange ----
+#  ‘jitter’ overlapped geom_pointrange
 ```
-  geom_point(aes(y = AssignedValue), shape = 21, size = 3, color = "red",
+geom_point(aes(y = AssignedValue), shape = 21, size = 3, color = "red",
              position = position_dodge2(width = 1))+
-  geom_pointrange(aes(y = ReportedValue,ymin = Low_Limit, ymax = High_Limit), 
+geom_pointrange(aes(y = ReportedValue,ymin = Low_Limit, ymax = High_Limit), 
                   size = 1, color = "blue",
                   position = position_dodge2(width = 1))
 ```
@@ -135,7 +138,7 @@ geom_hline(data = df2, aes(yintercept = eff_alpha_upper_limit), linetype = 2)+
   theme_bw()+
   labs(title = "Efficiency for Alpha in 2019 - 2024", 
        x = "", y = "Efficiency %",
-       caption = "Solid line represents average \nDash lines represent upper limit and lower limit",
+       caption = "Solid line represents average \nDash lines ...",
        color = "Different Colors:")+ # change the legend title.
   theme(plot.title = element_text(hjust = 0.5, vjust = 0.5, size = 9),
         axis.title = element_text(size = 7), # change the axis title
