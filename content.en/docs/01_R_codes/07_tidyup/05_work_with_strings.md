@@ -1,6 +1,6 @@
 ---
 weight: 05
-title: Remove Characters
+title: Work With Strings
 authors: Lenny
 categories: null
 tags: 
@@ -16,7 +16,15 @@ toc: true
 <!--more-->
 ---
 
-Remove character with $ at the front: 
+# Extract string before a sign
+```
+sub("\\+/-.*","","0.10 +/- 0.04")
+
+```
+outcome: 0.10 (space)
+
+
+# Remove character with $ at the front
 
 ```
 new_name <- gsub("\\$ICPMS-GWMP_", "", [character array])

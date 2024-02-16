@@ -34,6 +34,15 @@ geom_point(aes(shape = factor(season)), size = 3)
 geom_point(aes(color = factor(`season`))
 ```
 
+# Point color condition
+```
+df_count_date %>%
+  ggplot(aes(x=count_date, y = freq))+
+  geom_point(col =ifelse(df_count_date$freq <10, 'blue', 'red'))
+
+```
+
+
 # Facet
  
 ```
@@ -78,23 +87,19 @@ geom_hline(yintercept = 60, linetype="dashed", color = "brown")+
   geom_hline(yintercept = 160, linetype="dashed", color = "brown")+
 ```
 
-# Add text to a chart horizontally
-```
-  geom_text(x=1, y=60, label="Lower limit 60%", color = "brown", size = 2, vjust = -0.5, hjust=0.2)+
-  geom_text(x=1, y=160, label="Upper limit 160%", color = "brown", size = 2, vjust = 1, hjust=0.2)
-```
-
-
-# Add text to a chart vertically
-```
-  geom_text(x=1, y=60, label="Lower limit 60%", color = "brown", size = 2, angle = 90)
-```
-
 
 # Add a line segment
 ```
 geom_segment(aes(x = ##, y = 0, xend = ##, yend = 10), color = "darkgreen", linewidth = 1.5)
 ```
+
+
+# Add an arrow segment
+```
+geom_segment(aes(x = 9, y = -4, xend = 9, yend = -5), 
+               arrow = arrow(length = unit(0.3, "cm")))
+```
+
 
 #  ‘jitter’ overlapped geom_pointrange ----
 ```
@@ -105,6 +110,43 @@ geom_segment(aes(x = ##, y = 0, xend = ##, yend = 10), color = "darkgreen", line
                   position = position_dodge2(width = 1))
 ```
 
+
+# Define dot colors
+
+```
+color.codes <- as.character((c("blue", "red")))
+detector_cat <- c("detector IP ended with N","detector IP ended with NN")
+
+then use:
+scale_color_manual(values = setNames(color.codes, detector_cat))+
+
+# having hline of average and upper limit and lower limit
+# having annotation text
+# having legend
+
+ggplot(df1, aes(x = count_date, y = eff_value, color = detector_cat))+
+  geom_point(size = .5)+
+  scale_color_manual(values = setNames(color.codes, detector_cat))+
+  geom_hline(data = df2, aes(yintercept = eff_alpha_mean), linetype = 1)+
+geom_hline(data = df2, aes(yintercept = eff_alpha_upper_limit), linetype = 2)+
+  geom_hline(data = df2, aes(yintercept = eff_alpha_lower_limit), linetype = 2)+
+  ylim(25,45)+
+  facet_wrap(~detector_id)+
+  theme_bw()+
+  labs(title = "Efficiency for Alpha in 2019 - 2024", 
+       x = "", y = "Efficiency %",
+       caption = "Solid line represents average \nDash lines represent upper limit and lower limit",
+       color = "Different Colors:")+ # change the legend title.
+  theme(plot.title = element_text(hjust = 0.5, vjust = 0.5, size = 9),
+        axis.title = element_text(size = 7), # change the axis title
+        axis.text = element_text(size = 5),
+        plot.caption = element_text(hjust = 0, size = 7),
+        strip.text = element_text(size = 5),
+        legend.title = element_text(size = 7),
+        legend.text = element_text(size = 7),
+        legend.position = "bottom",
+        legend.justification = "left") # move the legend to the left.
+```
 
 
 

@@ -24,3 +24,8 @@ To apply formatting styles from a word file
 :::
 ```
 
+# include image using officer
+
+```{r fig1, fig.cap='Figure 1: title', out.width="100%", include=T} 
+knitr::include_graphics("./images/Al_in_FB.png")
+```

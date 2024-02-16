@@ -1,13 +1,13 @@
 ---
-weight: 01
-title: Symbols
+weight: 999
+title: 
 authors: Lenny
 categories: null
 tags: 
 description: 
 draft: false
-date: "2023-10-27"
-lastmod: "2023-10-27"
+date: "2024-"
+lastmod: "2024-"
 series:
 toc: true
 ---
@@ -16,4 +16,3 @@ toc: true
 <!--more-->
 ---
 
-degC: `\u2070`C [in rmarkdown code chunk]

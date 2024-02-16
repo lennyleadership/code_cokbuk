@@ -57,6 +57,17 @@ labs(caption = “text”)
 theme(legend.position = "none")
 ```
 
+#  customize facet title
+```
+facet_label <- as.character(df_label$label)
+
+names(facet_label) <- as.character(df_label$detector_id)
+
+then
+facet_wrap(~detector_id, labeller = labeller(detector_id = facet_label))
+```
+
+
 
 
 # export ggplot to a high definition image:
