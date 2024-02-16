@@ -24,7 +24,7 @@ knitr::opts_chunk$set(echo = F, message = F, warning = F, include=FALSE, ft.alig
 
 # Insert an image in bookdown
 ```
-```{r fig21, fig.cap='Counting characteristics of gas-filled detectors', echo=FALSE, message=FALSE, warning=FALSE}
+{r fig21, fig.cap='Counting characteristics of gas-filled detectors', echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("./images/counting_characteristics_gas_detector.png")
-```
+
 ```
