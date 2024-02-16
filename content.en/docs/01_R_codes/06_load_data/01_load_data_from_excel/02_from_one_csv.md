@@ -34,20 +34,3 @@ filename <- paste0(filepath, "/", "my filename", ".csv")
 df_01 <- read.csv(filename)
 ```
 
-# option 2 ----
-
-```
-filepath<-gsub("\\\\",  "/",  readClipboard()) 
-filename <- paste0(filepath, "/", "my filename", ".csv")
-df_01 <- read.csv(filename)
-
-# explain ----
-Step #01: go to the window explorer, copy the file directory
-filepath<-gsub("\\\\",  "/",  readClipboard()) 
-
-Step #02: go the window explorer, copy the file name
-filename <- paste0(filepath, "/", "BoxplotStat_C_DIS", ".csv")
-
-Step #03: deploy read.csv()
-df_01 <- read.csv(filename)
-```
