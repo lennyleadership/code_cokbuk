@@ -1,5 +1,5 @@
 ---
-weight: 01
+weight: 21
 title: Basic statistical analysis
 authors: Lenny
 categories: null

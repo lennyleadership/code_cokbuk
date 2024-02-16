@@ -1,5 +1,5 @@
 ---
-weight: 02
+weight: 01
 title: Exploration 101
 authors: Lenny
 categories: null
