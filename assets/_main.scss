@@ -21,23 +21,7 @@ body {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: $header-font-weight; /*$body-font-weight;*/
-  text-transform: uppercase;
-}
 
-h1{
-  font-size: 1.3rem;
-}
-
-h2 {
-  font-size: 1.1rem;
-  text-indent: 2%;
-}
 
 a {
   text-decoration: none;
