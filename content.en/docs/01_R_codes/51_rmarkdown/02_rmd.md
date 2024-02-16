@@ -17,7 +17,7 @@ toc: true
 ---
 
 # insert an image in *.rmd
-
+```
 <div class = "container">
   <div class = "image">
   <figure>
@@ -30,14 +30,14 @@ toc: true
   <div class = "text"><p>Note: need to register an account before watching the training.</p>
   </div>
 </div>
-
+```
 
 # embed a youtube video
 
 embed one youtube video in rmarkdown:
 
 Option #1:
-
+```
 <div class = "container">
   <div class = "image">
 <figure>
@@ -48,9 +48,9 @@ Video #1: Laboratory Rules by AsapScience
 </div>
   <div class = "text">Laboratory Safety</div>
 </div>
-
+```
 Option #2: use data-external= "1", instead of frameborder="0".  It works for one youtube video and a series of videos.
-
+```
 <div class = "container">
   <div class = "image">
 <figure>
@@ -60,7 +60,7 @@ Video #4: General Lab Safety
   </div>
   <div class = "text"><p>laboratory Safety</p></div>
 </div>
-
+```
 
 # html whitespace
 The New Line character – also known as the "carriage return". The HTML code for newline character is: &#13;
