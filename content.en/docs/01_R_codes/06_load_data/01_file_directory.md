@@ -22,29 +22,16 @@ filepath <- r"(paste the directory here)"
 ```
 
 
-# Option 2 <label for="note" class="margin-toggle sidenote-number"></label><span class="sidenote"># explain ----
+# Option 2 
+
+
+```
+filepath<-gsub("\\\\",  "/",  readClipboard()) 
+
+```
+Note<label for="note" class="margin-toggle sidenote-number"></label><span class="sidenote"># explain ----
 <br>Step #01: go to the window explorer, copy the file directory
 <br>filepath<-gsub("\\\\",  "/",  readClipboard()) 
 <br>
 <br>Step #02: go the window explorer, copy the file name
-<br>filename <- paste0(filepath, "/", "BoxplotStat_C_DIS", ".csv")
-<br>
-<br>Step #03: deploy read.csv()
-<br>df_01 <- read.csv(filename)</span>
-
-
-```
-filepath<-gsub("\\\\",  "/",  readClipboard()) 
-filename <- paste0(filepath, "/", "my filename", ".csv")
-df_01 <- read.csv(filename) 
-
-# explain ----
-Step #01: go to the window explorer, copy the file directory
-filepath<-gsub("\\\\",  "/",  readClipboard()) 
-
-Step #02: go the window explorer, copy the file name
-filename <- paste0(filepath, "/", "BoxplotStat_C_DIS", ".csv")
-
-Step #03: deploy read.csv()
-df_01 <- read.csv(filename)
-```
+<br>filename <- paste0(filepath, "/", "BoxplotStat_C_DIS", ".csv")</span>
