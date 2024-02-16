@@ -1,0 +1,29 @@
+// side-by-side ////////////////////////////////////////////////////////////////////////////////////
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left:5px;
+  margin-right:-5px;
+  
+}
+  
+.column_left {
+  float: left;
+  padding: 20px; /* space between two tables*/
+}
+
+.column_right {
+  float: right;
+  padding: 20px; /* space between two tables*/
+
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* the end *****************************************************************************************

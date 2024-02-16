@@ -1,0 +1,13 @@
+// quoting with background *////////////////////////////////////////////////////////////////////////
+.quote {
+  margin: 0;
+  background: #eee;
+  padding: 0.5em;
+  border-radius: 1em;
+  font-style: italic;
+}
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}
+//* the end *****************************************************************************************

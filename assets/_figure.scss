@@ -1,0 +1,39 @@
+// figure decoration *//////////////////////////////////////////////////////////////////////////////
+figure {
+  text-align: left;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  margin: 0.5em;
+  padding: 0.5em;
+  display: table;
+}
+
+figcaption.top {
+  display: table-caption;
+  caption-side: top;
+}
+
+figcaption.bottom {
+  display: table-caption;
+  caption-side: bottom;
+}
+
+figcaption.img{
+  text-align: left;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  margin: 0.5em;
+  padding: 0.5em;
+  display: table;
+}
+
+// the end *****************************************************************************************
+
+
+// set the figure caption with the same wide of figure */////////////////////////////////////////////
+.caption_display {
+   display: inline-block;
+}
+/* the end *****************************************************************************************

@@ -1,0 +1,53 @@
+// Tooltip *////////////////////////////////////////////////////////////////////////////////////////
+
+.hovertip {
+  position: relative;
+  border-bottom: 1px dotted black;
+  
+}
+
+.hovertip:before {
+  content: attr(tooltip_text);
+  visibility: hidden;
+  
+  overflow-y: inherit; /*new*/
+  
+  /*word-wrap: break-word;*/
+
+  width: max-content;
+  max-width: 250px;
+  background-color: #f1e4ff;
+  color: black;
+  text-align: left;
+  border-radius: 5px;
+  /* top, right, bottom, left*/
+  padding: 10px 20px 10px 20px;
+  margin-left: 50px;
+  /* fade-in*/
+  opacity: 0;  
+  transition: opacity 1s ease-in-out;
+
+  /* top tooltip*/
+  position: absolute; /*let tooltip wrap instead of overflow*/
+  z-index: 1;
+  left: 50%; /*auto;*/
+  bottom: 110%; /*auto;*/
+  margin-left: -60px;
+}
+
+.hovertip.hovertiptext::before {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.hovertip:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+/* the end *****************************************************************************************

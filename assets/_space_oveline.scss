@@ -1,0 +1,20 @@
+// spaced overline ////////////////////////////////////////////////////////////////////////////////
+/*.overline {
+  padding-top: 25px;
+  border-top-style: solid;
+  border-top-width: 5px;
+  width: fit-content;
+  border-top-color: orange;
+  }
+  
+
+h1:before {
+  content:' ';
+  display:block;
+  padding-top: 25px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: lightgrey;
+}
+
+/* the end *****************************************************************************************

@@ -1,0 +1,97 @@
+//below is the tufte style *////////////////////////////////////////////////////////////////////////
+
+body{
+    counter-reset: sidenote-counter;
+}
+
+.sidenote,
+.marginnote { /*define the side note*/
+    float: right;
+    clear: right;
+    margin-right: -55%; /* adjust where the sidenote starts*/
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.9rem; 
+    font-style: italic;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+}
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+
+
+.sidenote-number:after,
+.sidenote:before {
+    content: counter(sidenote-counter) " ";
+    font-family: et-book-roman-old-style;
+    position: relative;
+    vertical-align: baseline;
+}
+
+
+.sidenote-number:after {/*define the numbering index in the body*/
+    content: counter(sidenote-counter);
+    font-size: 1rem;
+    color: darkred;
+    top: -0.5rem;
+    left: 0.3rem;
+}
+
+
+.sidenote:before {  /* define the numbering index in the sidenote*/
+    content: counter(sidenote-counter) " ";
+    font-size: 1rem;
+    font-style: italic; 
+    color: darkred;    
+    top: -0.5rem;
+}
+
+
+label.sidenote-number {
+    display: inline-block; /*inline*/
+    max-height: 2rem;
+    font-style: italic;    
+}
+
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    body {
+        width: 84%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+  
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+    
+    .sidenote,
+    .marginnote {
+        display: inline;
+    }
+    
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+    
+    label {
+        cursor: pointer;
+    }
+ }
+ 
+//* end ********************************************************************************************
