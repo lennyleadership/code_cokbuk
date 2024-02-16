@@ -1,5 +1,5 @@
 ---
-weight: 01
+weight: 08
 title: case_when()
 authors: Lenny
 categories: null

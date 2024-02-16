@@ -1,6 +1,6 @@
 ---
-weight: 99
-title: To Transpose from long to wide
+weight: 3
+title: Export to One Excel File
 authors: Lenny
 categories: null
 tags: 
@@ -16,3 +16,8 @@ toc: true
 <!--more-->
 ---
 
+```
+dest.filepath <- r"( )"
+
+write.csv(df_01, file = paste0(dest.filepath, "/", ".csv"))
+```

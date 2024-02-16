@@ -16,9 +16,7 @@ toc: true
 <!--more-->
 ---
 
-####
-###
-##
+
 # filter na from multiple columns
 Using dplyr, you can also use the filter_at function
 
@@ -36,19 +34,15 @@ df_non_na <- df %>% filter_at(vars(type,company),any_vars(!is.na(.)))
 ```
 
 
-####
-###
-##
+
 # count number of na in a dataset
 
 ```
 colSums(is.na(df))
 ```
 
-####
-###
-##
-#
+
+# sapply
 ```
 allmisscols <- sapply(dt, function(x) all(is.na(x) | x == '' ))
 ```
