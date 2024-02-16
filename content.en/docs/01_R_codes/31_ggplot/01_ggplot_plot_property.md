@@ -96,6 +96,17 @@ geom_hline(yintercept = 60, linetype="dashed", color = "brown")+
 geom_segment(aes(x = ##, y = 0, xend = ##, yend = 10), color = "darkgreen", linewidth = 1.5)
 ```
 
+#  ‘jitter’ overlapped geom_pointrange ----
+```
+  geom_point(aes(y = AssignedValue), shape = 21, size = 3, color = "red",
+             position = position_dodge2(width = 1))+
+  geom_pointrange(aes(y = ReportedValue,ymin = Low_Limit, ymax = High_Limit), 
+                  size = 1, color = "blue",
+                  position = position_dodge2(width = 1))
+```
+
+
+
 
 # place multiple charts side-by-side
 ```

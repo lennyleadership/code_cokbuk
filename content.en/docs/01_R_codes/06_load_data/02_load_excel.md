@@ -72,4 +72,15 @@ col_title <- read_excel("file directory/sub_folder/file_name.xlsx",
 ```
 
 # Load multiple files
+```
+library(readr)
 
+filepath <- r"(file directory)"
+
+list_files <- list.files(filepath, full.names = T,  
+                         recursive = FALSE) # T means the file directory is included.
+
+list_files_1 <- list_files[-32]
+
+df_original <- read_csv(list_files_1,id = "origin_file")
+```

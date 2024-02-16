@@ -16,7 +16,16 @@ toc: true
 <!--more-->
 ---
 
-case: top 10 location codes in terms of sample volumes
+# Top 10 location codes in terms of sample volumes
+
 ```
 tail(sort(table(data.frame$location)),10)
+```
+
+
+#  Summarize one column
+```
+View(df_original[,"PerformanceEvaluation", drop = F])
+
+table(df_original$PerformanceEvaluation)
 ```

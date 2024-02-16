@@ -21,3 +21,10 @@ Always put your default setting in the code chunk at the front.
 ```
 knitr::opts_chunk$set(echo = F, message = F, warning = F, include=FALSE, ft.align="left")
 ```
+
+# Insert an image in bookdown
+```
+```{r fig21, fig.cap='Counting characteristics of gas-filled detectors', echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./images/counting_characteristics_gas_detector.png")
+```
+```
