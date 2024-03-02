@@ -27,9 +27,9 @@ filepath <- r"(paste the directory here)"
 filepath<-gsub("\\\\",  "/",  readClipboard()) 
 
 ```
-Note<label for="note" class="margin-toggle sidenote-number"></label><span class="sidenote"># explain ----
+Note:  
 <br>Step #01: go to the window explorer, copy the file directory
 <br>filepath<-gsub("\\\\",  "/",  readClipboard()) 
 <br>
 <br>Step #02: go the window explorer, copy the file name
-<br>filename <- paste0(filepath, "/", "BoxplotStat_C_DIS", ".csv")</span>
+<br>filename <- paste0(filepath, "/", "filename", ".csv")
