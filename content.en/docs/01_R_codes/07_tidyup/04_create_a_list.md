@@ -15,7 +15,7 @@ toc: true
 
 <!--more-->
 
----
+```
 
 a_list = list()
 
@@ -39,7 +39,7 @@ blank_df_raw <- do.call(rbind, a_list)
 a_list <- list()
 
 list_temp <- data.frame()
-···
+```
 
 ####
 ###
