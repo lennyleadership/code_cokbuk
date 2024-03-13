@@ -7,13 +7,14 @@ tags:
 description: 
 draft: false
 date: "2023-11-15"
-lastmod: "2023-11-15"
+lastmod: "2024-03-13"
 series:
 toc: true
 ---
 
 
 <!--more-->
+
 ---
 
 a_list = list()
@@ -38,7 +39,7 @@ blank_df_raw <- do.call(rbind, a_list)
 a_list <- list()
 
 list_temp <- data.frame()
-
+···
 
 ####
 ###
