@@ -1,6 +1,6 @@
 ---
-weight: 02
-title: Add Text to ggplot2
+weight: 11
+title: Add text layer
 authors: Lenny
 categories: null
 tags: 

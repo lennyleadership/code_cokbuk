@@ -46,6 +46,7 @@ blank_df_raw <- do.call(rbind, a_list)
 a_list <- list()
 
 list_temp <- data.frame()
+
 ```
 
 ####
@@ -65,11 +66,11 @@ for (i in 1:length(list)){
   half_life_alpha <- list [[i]]$Alpha[5]
   file_name <- list [[i]]$file_names[1]
   
-  source_alpha[[i]] <- data.frame(count_time_alpha,ref_date_alpha,ref_activity_alpha,ref_unc_alpha,half_life_alpha,file_name)
-
-# I parse cell info from excel files in a list, then make a list by merging all contents together
+  source_alpha[[i]] <- data.frame(count_time_alpha,ref_date_alpha,
+  ref_activity_alpha,ref_unc_alpha,half_life_alpha,file_name)
 
 ```
+I parse cell info from excel files in a list, then make a list by merging all contents together
 
 
 ####
@@ -86,9 +87,9 @@ for (i in 1: length(list)){
   z[[i]]$file_names <- list_file_names[i]
 }
 
-# I create a list of data.frame with this command 
-
 ```
+
+I create a list of data.frame with this command 
 
 
 ####

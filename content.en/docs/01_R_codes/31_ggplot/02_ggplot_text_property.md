@@ -1,5 +1,5 @@
 ---
-weight: 11
+weight: 02
 title: ggplot2 Text Property
 authors: Lenny
 categories: null

@@ -1,5 +1,5 @@
 ---
-weight: 21
+weight: 71
 title: Heatmap with ggplot
 authors: Lenny
 categories: null
