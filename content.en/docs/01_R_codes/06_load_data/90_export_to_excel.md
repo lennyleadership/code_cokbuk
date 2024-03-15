@@ -1,6 +1,6 @@
 ---
 weight: 90
-title: Export to One Excel File
+title: "Export excel file(s)"
 authors: Lenny
 categories: null
 tags: 
