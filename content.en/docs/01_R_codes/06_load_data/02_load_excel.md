@@ -16,27 +16,34 @@ toc: true
 <!--more-->
 ---
 
-# Load One csv or xls, xlsx file
+# Load one csv, xls, xlsx file
 
 ```
 filename <- paste0(filepath, "/", "my filename", ".csv")
 
 filename <- paste0(filepath, "/", "my filename", ".xls")
-```
-
-# Read One file
 
 ```
+
+# Read one csv file
+
+```
+
 df <- read.csv(filename)
 
-
 ```
 
 
-# Load multiple csv files
+# Load multiple excel files
 
 ```
 
+list_files <- list.files(filepath, pattern='*.xlsm$|*.xlsx$|*.xls$', full.names = T,  recursive = T)
 
 ```
 
+`full.name = T`: file name will include file directory.
+
+`recursive = T`: will drill down to subfolders
+
+`$`: put it at the end to ensure xls is the file extension.  Some file may have xls in the file name.

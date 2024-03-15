@@ -70,7 +70,4 @@ facet_wrap(~detector_id, labeller = labeller(detector_id = facet_label))
 
 
 
-# export ggplot to a high definition image:
-```
-ggsave(filename = "images/*.png", limitsize = F, device = 'png', dpi = 700)
-```
+
