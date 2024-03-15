@@ -1,5 +1,5 @@
 ---
-weight: 01
+weight: 11
 title: ggplot2 Plot Property
 authors: Lenny
 categories: null
@@ -22,14 +22,14 @@ theme_set(theme_bw())
 ```
 
 
-# Put point shape in aes()
+# Point shape in aes()
 
 ```
 geom_point(aes(shape = factor(season)), size = 3) 
 ```
 
 
-# Put color in aes()
+# Add color in aes()
 ```
 geom_point(aes(color = factor(`season`))
 ```
@@ -49,21 +49,6 @@ df_count_date %>%
 facet_grid(nuclide ~ temp)
 ```
 
-# Facet grid-independant axis scale
-
-```
-facet_wrap(~element, scales = "free_y")
-```
-
-# zoom x-axis
-
-```
-ggplot(...)+
-  geom_point()+
-  xlim(0,100)
-```
-
-scale_fill_viridis(discrete = TRUE, alpha=0.5)
 
 
 # Add jitter points

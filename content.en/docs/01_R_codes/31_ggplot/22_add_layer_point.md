@@ -1,5 +1,5 @@
 ---
-weight: 12
+weight: 22
 title: Add point layer
 authors: Lenny
 categories: null
