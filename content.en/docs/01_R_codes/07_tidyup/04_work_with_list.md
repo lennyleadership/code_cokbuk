@@ -1,6 +1,6 @@
 ---
 weight: 04
-title: Create a List
+title: Work with list
 authors: Lenny
 categories: null
 tags: 

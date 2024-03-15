@@ -38,12 +38,14 @@ as.Date(parse_date_time(count_date, orders = c('mdy HM', 'ymd HMS')))
 
 # Symbols of dates
 
-Symbol	Meaning	  Example
-%d	| day as a number (0-31)	  | 01-31
-%a	| abbreviated weekday	  | Mon
-%A	| unabbreviated weekday	  | Monday
-%m	| month (00-12)	  | 00-12
-%b	| abbreviated month	| Jan
-%B	| unabbreviated month	| January
-%y	| 2-digit year	| 07
-%Y	| 4-digit year	| 2007
+
+| Symbol|	Meaning| Example  |
+| --- | --- | --- |
+|%d	| day as a number (0-31) | 01-31|  
+|%a	| abbreviated weekday	| Mon|  
+|%A	| unabbreviated weekday	| Monday|  
+|%m	| month (00-12)	| 00-12 |
+|%b	| abbreviated month	| Jan|  
+|%B	| unabbreviated month	| January | 
+|%y	| 2-digit year	| 07  |
+|%Y	| 4-digit year	| 2007|  

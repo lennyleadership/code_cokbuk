@@ -25,7 +25,6 @@ toc: true
 
 grep("*GC.xls|\\$|2018 reports|Temp Stations 2020", list, invert=T, value = T)
 
-
 ```
 
 grep works with data frame and list.  
