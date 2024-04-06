@@ -5,7 +5,7 @@ authors: Lenny
 categories: null
 tags: 
 description: 
-draft: false
+draft: true
 date: "2024-"
 lastmod: "2024-"
 series:

@@ -1,5 +1,5 @@
 ---
-weight: 51
+weight: 92
 title: Save ggplot
 authors: Lenny
 categories: null
@@ -7,7 +7,7 @@ tags:
 description: 
 draft: false
 date: "2024-03-14"
-lastmod: "2024-03-14"
+lastmod: "2024-04-06"
 series:
 toc: true
 ---
