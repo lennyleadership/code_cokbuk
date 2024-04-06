@@ -16,16 +16,24 @@ toc: true
 <!--more-->
 ---
 
+Special letters can be expressed in two forms, hexadecimal and decimal.
+
+Hexadecimal form begins with `\u`, decimal form begins with `&`.
+
+Use `\u` in data frame and rmarkdown code chunk.
+
+Use `&` in HTML.
 
 
 # Micro sign
 
-in html:  `&#181;`
+Use `&#181;`, `&#956`; or `&mu;` or `μ` in HTML
 
-mu applied in table generated in {r}
-Use html entity `μ`
+Use `\u03BC`g/L in c() and add it to colname().
 
-greek letters in ggplot2 title and legends
+mu applied in table generated in {r}  
+
+in ggplot2 title and legends
 
 ```
 labs(title = "Chloroform in Field Blanks",
@@ -34,9 +42,11 @@ labs(title = "Chloroform in Field Blanks",
 ```
 
 
-# degC
+# Temperture
 
 `\u2070`C [in rmarkdown code chunk]
+
+Use `\u03BC`g/L in c() and add it to colname().
 
 # alpha
 
@@ -54,11 +64,14 @@ Reference: https://ww.w3schools.com/html/html_symbols.asp
 # arrow in chemical equation in LaTex
 `{\rightarrow}`
 
+
 # Registered symbol 
 `&reg;`
 
+
 # Trademark symbol 
 `&trade;`
+
 
 # letter with accent
 

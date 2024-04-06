@@ -16,7 +16,7 @@ toc: true
 <!--more-->
 ---
 
-#  turn character into date and time
+# Turn character into date and time
 
 use parse_date_time()
 
@@ -26,6 +26,11 @@ use parse_date_time()
 df_1$date <- as.Date(parse_date_time(df_1$AnalysisDate, "%m/%d/%y %I:%M:%S %p"))
 
 outcome “2004-12-11”
+```
+
+# Turn number into date
+```
+df$date <- as.Date(as.numeric(df$date), origin = "1900-01-01")
 ```
 
 

@@ -19,7 +19,7 @@ toc: true
 ####
 ###
 ##
-# filter out ----
+# filter out 
 
 ```
 
@@ -37,5 +37,20 @@ without (invert=T, value = T) I will get all names
 #### 
 ###
 ##
-# file starting with “~$emxxx.xls” ----
+# file starting with “~$emxxx.xls” 
 grep("\\$", list)
+
+
+####
+###
+##
+# be mindful
+
+https://blog.enterprisedna.co/grep-and-grepl-r-functions/
+
+https://www.r-bloggers.com/2013/04/beware-of-grep-with-a-list/
+
+This is one reason why R, great as it is for statistical programming, will never catch on outside the narrow community of those who work with it exclusively or are willing to devote an inordinate amount of energy to dealing with its unpredictable behavior. [https://stackoverflow.com/questions/7591632/why-this-behavior-when-coercing-a-list-to-character-via-as-character]
+
+
+

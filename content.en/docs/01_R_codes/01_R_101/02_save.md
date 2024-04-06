@@ -1,6 +1,6 @@
 ---
-weight: 
-title: 
+weight: 02
+title: Save
 authors: Lenny
 categories: null
 tags: 
@@ -16,3 +16,11 @@ toc: true
 <!--more-->
 ---
 
+####
+###
+##
+# Save entire workspace
+
+```
+save.image(paste0(dest.filepath, "/", "2403_GAB_AEM",".RData"))
+```

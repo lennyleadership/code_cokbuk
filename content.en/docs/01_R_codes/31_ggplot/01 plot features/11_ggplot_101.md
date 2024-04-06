@@ -34,6 +34,7 @@ geom_point(aes(shape = factor(season)), size = 3)
 geom_point(aes(color = factor(`season`))
 ```
 
+
 # Point color condition
 ```
 df_count_date %>%
@@ -47,15 +48,10 @@ df_count_date %>%
  
 ```
 facet_grid(nuclide ~ temp)
+
+facet_grid(rows = vars(year))
 ```
 
-
-
-# jitter points
-
-```
-geom_jitter(color="black", size=0.4, alpha=0.5)
-```
 
 
 # Add points to a boxplot with label
@@ -68,6 +64,13 @@ size=3, alpha=1)
 ```
 
 
+# jitter points
+
+```
+geom_jitter(color="black", size=0.4, alpha=0.5)
+```
+
+
 
 #  ‘jitter’ overlapped geom_pointrange
 ```
@@ -76,6 +79,21 @@ geom_point(aes(y = AssignedValue), shape = 21, size = 3, color = "red",
 geom_pointrange(aes(y = ReportedValue,ymin = Low_Limit, ymax = High_Limit), 
                   size = 1, color = "blue",
                   position = position_dodge2(width = 1))
+```
+
+
+# geom_density 
+
+Use it when putting density plot over histogram plot.  
+
+```
+geom_density(aes( y = ..count../2))
+```
+
+
+# set axis range
+```
+coord_cartesian(ylim = c(0,900))
 ```
 
 
