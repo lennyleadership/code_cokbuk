@@ -1,6 +1,6 @@
 ---
 weight: 11
-title: ggplot2 Plot Property
+title: ggplot2 101
 authors: Lenny
 categories: null
 tags: 
@@ -51,7 +51,7 @@ facet_grid(nuclide ~ temp)
 
 
 
-# Add jitter points
+# jitter points
 
 ```
 geom_jitter(color="black", size=0.4, alpha=0.5)
@@ -67,26 +67,6 @@ position = position_jitterdodge(dodge.width = 0.1),
 size=3, alpha=1)
 ```
 
-
-# Add a horizontal line
-```
-geom_hline(yintercept = 60, linetype="dashed", color = "brown")+
-  geom_hline(yintercept = 160, linetype="dashed", color = "brown")+
-```
-
-
-# Add a line segment
-```
-geom_segment(aes(x = ##, y = 0, xend = ##, yend = 10), 
-color = "darkgreen", linewidth = 1.5)
-```
-
-
-# Add an arrow segment
-```
-geom_segment(aes(x = 9, y = -4, xend = 9, yend = -5), 
-               arrow = arrow(length = unit(0.3, "cm")))
-```
 
 
 #  ‘jitter’ overlapped geom_pointrange
@@ -138,11 +118,4 @@ geom_hline(data = df2, aes(yintercept = eff_alpha_upper_limit), linetype = 2)+
 
 
 
-# place multiple charts side-by-side
-```
-library(gridExtra)
-plot1 <- ggplot()
-plot2 <- ggqqplot()
 
-grid.arrange(plot1, plot2, ncol = 2)
-```

@@ -1,5 +1,5 @@
 ---
-weight: 21
+weight: 12
 title: Add text layer
 authors: Lenny
 categories: null

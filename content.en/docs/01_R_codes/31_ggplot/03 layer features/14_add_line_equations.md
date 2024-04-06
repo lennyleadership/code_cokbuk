@@ -1,5 +1,5 @@
 ---
-weight: 23
+weight: 14
 title: Add line equation
 authors: Lenny
 categories: null

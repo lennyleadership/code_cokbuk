@@ -1,6 +1,6 @@
 ---
 Weight: 02
-title: 
+title: Text features
 authors: Lenny Lin
 categories: null
 tags: 
