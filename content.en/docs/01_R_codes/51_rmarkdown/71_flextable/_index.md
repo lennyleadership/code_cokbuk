@@ -1,5 +1,5 @@
 ---
-Weight: 2
+Weight: 71
 title: flextable
 authors: Lenny Lin
 categories: null
