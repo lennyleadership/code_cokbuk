@@ -1,11 +1,11 @@
 ---
 weight: 06
-title: Tuftr Style
+title: Tufte Style
 authors: Lenny
 categories: null
 tags: 
 description: 
-draft: true
+draft: false
 date: "2024-04-20"
 lastmod: "2024-04-20"
 series:
