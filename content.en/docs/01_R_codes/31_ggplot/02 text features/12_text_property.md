@@ -19,9 +19,9 @@ toc: true
 # Chart title: Position, size
 
 ```
-theme(plot.title = element_text(hjust = .5, vjust = -10)
+theme(plot.title = element_text(hjust = .5, vjust = -10))
 
-theme(plot.title = element_text(size = 10)
+theme(plot.title = element_text(size = 10))
 ```
 note <label for="note" class="margin-toggle sidenote-number"></label><span class="sidenote">Hjust = .5 means center, Vjust = -10 means “in the chart” </span>
 
@@ -31,17 +31,19 @@ note <label for="note" class="margin-toggle sidenote-number"></label><span class
 ```
 labs(x = "additional acid volume (mL)", y = "Recovery (%)")
 
-theme(axis.title.x = element_text(size = 7)
+theme(axis.title.x = element_text(size = 7))
 theme(axis.title.y = element_text(size = 7))
+
+theme(axis.text = element_text(size = 5)) # for both x and y axis
 ```
 
 
-# x axis text angle and size 
+# x axis text angle
 
 ```
-theme(axis.text.x = element_text(angle = 90)
+theme(axis.text.x = element_text(angle = 90))
 
-theme(axis.text = element_text(size = 5)
+
 ```
 
 
@@ -55,7 +57,7 @@ hjust = 0, fontface = "plain", size = 2.5)
 
 # Add legend as caption
 ```
-labs(title = "Alpha Efficiency of Calibration Source Am-241 in 2019 - 2023", 
+labs(title = "TITLE", 
       x = "", y = "Alpha Counts", 
       caption = "Black solid line: average \nBlack dash line: Upper limit (avg + 2SD) and lower limit (avg - 2SD) \nBlue solid line: trend",
         color = "Dot Colors:") +  # customize the legend title
@@ -66,7 +68,7 @@ theme(plot.title = element_text(hjust = 0.5, vjust = 0.5, size = 9),
       strip.text = element_text(size = 5), # change the font size of subtitle of facet-chart
       legend.title = element_text(size = 7),
       legend.text = element_text(size = 7),
-      legend.position = "bottom",
+      legend.position = "bottom", # move the legend to the plot bottom
       legend.justification = "left")
 
 ```
