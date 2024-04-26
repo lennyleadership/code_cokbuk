@@ -43,19 +43,18 @@ theme(axis.text = element_text(size = 5)) # for both x and y axis
 ```
 theme(axis.text.x = element_text(angle = 90))
 
-
 ```
 
 
 
-# Add legend inside the plot
+# Legend location: inside the plot
 ```
 geom_text(x = 50, y = 200, label = "Legend:\nRed line: 99.7% quantile\nBlue dash line: 90% quantile\nHistogram plot in sage color\nBox plot in orange color", 
 hjust = 0, fontface = "plain", size = 2.5)
 ```
 
 
-# Add legend as caption
+# Legend location: at the bottom of the plot
 ```
 labs(title = "TITLE", 
       x = "", y = "Alpha Counts", 
@@ -88,5 +87,9 @@ facet_wrap(~detector_id, labeller = labeller(detector_id = facet_label))
 
 
 
+# When dot label overlaid
 
+```
+geom_text(position = position_jitterdodge(dodge.width = 0.1))
+```
 
