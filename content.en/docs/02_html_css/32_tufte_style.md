@@ -1,6 +1,6 @@
 ---
 weight: 32
-title: Tufte Sidenote
+title: Tufte Style
 authors: Lenny
 categories: null
 tags: 
@@ -22,6 +22,9 @@ Apply the following html line to the body:
 `<label for="text content" class="margin-toggle sidenote-number"></label><span class="sidenote"></span>` 
 
 `<a></a>` works, but the `<a></a>` gives blue color to the text.
+
+# Margin note
+`<label for="" class="margin-toggle marginnote"></label><span class="marginnote"><em>test</em></span>`
 
 Below is the css: 
 
@@ -100,3 +103,12 @@ label.margin-toggle:not(.sidenote-number) {
 
 /* end **************************************************************************/
 ```
+
+# Tufte codes
+
+<a href = "https://github.com/edwardtufte/tufte-css/blob/gh-pages/index.html" target="_blank" rel="noopener noreferrer">Tufte codes</a>
+
+ 
+# Tufte demo
+<a href = "edwardtufte.github.io" target="_blank" rel="noopener noreferrer">Tufte CSS demo</a>
+

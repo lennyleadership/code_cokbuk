@@ -16,15 +16,11 @@ toc: true
 <!--more-->
 ---
 
-####
-###
-##
-# filter out 
+
+# inclusive with grep 
 
 ```
-
 grep("*GC.xls|\\$|2018 reports|Temp Stations 2020", list, invert=T, value = T)
-
 ```
 
 grep works with data frame and list.  
@@ -34,16 +30,12 @@ with (invert=T, value = T) I will get all names
 without (invert=T, value = T) I will get all names
 
 
-#### 
-###
-##
-# file starting with “~$emxxx.xls” 
-grep("\\$", list)
+# exclusive with grepl
+```
+n <- which(!grepl("IH",unique(df$parameters))) # name exclusive “IH”
+```
 
 
-####
-###
-##
 # be mindful
 
 https://blog.enterprisedna.co/grep-and-grepl-r-functions/

@@ -36,3 +36,12 @@ ggsave(filename = "images/atten_eff_curves_combine_alpha.png", plot_combine,
 limitsize = F, device = 'png', dpi = 400)
 
 ```
+
+```
+library(ggpubr)
+
+theme_set(theme_pubr())
+ggarrange(bxp, dp, lp,
+          labels = c("A", "B", "C"),
+          ncol = 2, nrow = 2)
+```

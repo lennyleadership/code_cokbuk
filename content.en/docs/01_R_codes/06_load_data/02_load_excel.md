@@ -41,8 +41,7 @@ df <- read.csv(filename)
 # Load multiple excel files
 
 ```
-
-list_files <- list.files(filepath, pattern='*.xlsm$|*.xlsx$|*.xls$', full.names = T,  recursive = T)
+list_files <- list.files(filepath, pattern='*.xlsm$|*.xlsx$|*.xls$', full.names = T,  recursive = T, ignore.case = T)
 
 ```
 

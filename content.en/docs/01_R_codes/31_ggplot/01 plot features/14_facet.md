@@ -24,6 +24,15 @@ facet_grid(nuclide ~ temp)
 facet_grid(rows = vars(year))
 ```
 
+# Reorder facets
+```
+df_flow_L$location_code <- factor(df_flow_L$location_code, levels = c("INFL", "EFFL"))
+ 
+in ggplot:
+facet_grid(rows = vars(location_code))
+
+```
+
 
 #  customize facet title
 ```
