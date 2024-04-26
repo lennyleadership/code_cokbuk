@@ -19,14 +19,25 @@ toc: true
 
 Apply the following html line to the body:  
 
-`<label for="text content" class="margin-toggle sidenote-number"></label><span class="sidenote"></span>` 
+```
+<label for="text content" class="margin-toggle sidenote-number"></label><span class="sidenote"></span>
+``` 
 
 `<a></a>` works, but the `<a></a>` gives blue color to the text.
 
-# Margin note
-`<label for="" class="margin-toggle marginnote"></label><span class="marginnote"><em>test</em></span>`
+# An image can be used in the sidenote
 
-Below is the css: 
+```
+<label for="cambium" class="margin-toggle sidenote-number"></label><span class="sidenote">Palm tree distinction <br>![](https://d55v7rs15ikf5.cloudfront.net/original/3X/3/8/38f1c61f53239f18824e5ae43c87c4d8217ee3bf.jpeg)</span>
+```
+
+# Margin note
+```
+<label for="" class="margin-toggle marginnote"></label><span class="marginnote"><em>test</em></span>
+```
+
+
+# Below is the css
 
 ```
 /* Tufte webpage (body and margine) layout *********************************/
