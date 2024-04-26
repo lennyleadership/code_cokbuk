@@ -37,4 +37,6 @@ Place it at the front, when the following letter is the first letter of the file
 The example is `^stp_process.*\\.xlsx`
 
 # Wild card `\\`
-Add it before `.`. The example is `^stp_process.*\\.xlsx`
+Add it before `.`. The example is: `^stp_process.*\\.xlsx`
+
+Add it before `$`.  The example is: `\\$ICPMS-GWMP_`
