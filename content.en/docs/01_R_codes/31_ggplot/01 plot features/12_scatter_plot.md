@@ -40,7 +40,6 @@ df_count_date %>%
 
 # Customize dot color - Option #2
 
-# Define dot colors
 
 ```
 color.codes <- as.character((c("blue", "red")))

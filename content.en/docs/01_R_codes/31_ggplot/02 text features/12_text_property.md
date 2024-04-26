@@ -74,19 +74,6 @@ theme(plot.title = element_text(hjust = 0.5, vjust = 0.5, size = 9),
 
 
 
-
-#  customize facet title
-```
-facet_label <- as.character(df_label$label)
-
-names(facet_label) <- as.character(df_label$detector_id)
-
-then
-facet_wrap(~detector_id, labeller = labeller(detector_id = facet_label))
-```
-
-
-
 # When dot label overlaid
 
 ```

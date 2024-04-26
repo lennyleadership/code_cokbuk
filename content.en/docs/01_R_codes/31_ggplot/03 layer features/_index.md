@@ -1,6 +1,6 @@
 ---
 Weight: 03
-title: Adding Layers
+title: Add Layers
 authors: Lenny Lin
 categories: null
 tags: 
