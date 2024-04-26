@@ -53,6 +53,16 @@ list_files <- list.files(filepath, pattern='*.xlsm$|*.xlsx$|*.xls$', full.names 
 `$`: put it at the end to ensure xls is the file extension.  Some file may have xls in the file name.
 
 
+# Load multiple excel files with partial-matched file namee
+
+```
+list_files <- list.files(filepath_import, pattern = "^stp_process.*\\.xlsx", full.names = T, recursive = FALSE)
+
+```
+
+Note: Load excel files of which the file name begins with stp_process. `^` means 'to begin with'. `.*\\` is the wild card.
+
+
 # Vignette: Read Multiple Excel files with purr
 
 ```

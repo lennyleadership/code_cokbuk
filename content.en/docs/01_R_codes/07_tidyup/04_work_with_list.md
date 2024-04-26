@@ -15,11 +15,11 @@ toc: true
 
 <!--more-->
 
-####
-###
-##
-# Create a list case #1----
+
+# Create a list case #1 
+
 Extract information, put them in a list of data frames.  
+
 give row number.
 
 ```
@@ -49,11 +49,10 @@ list_temp <- data.frame()
 
 ```
 
-####
-###
-##
-# Create a list case #2 ----
+
+# Create a list case #2
 Extract information, put them in a list of data frames.  
+
 list [[i]]$file_names[1] determines the number of rows.
 
 ```
@@ -73,10 +72,8 @@ for (i in 1:length(list)){
 I parse cell info from excel files in a list, then make a list by merging all contents together
 
 
-####
-###
-##
-# Create a list case #3 ----
+
+# Create a list case #3
 Read the excel files, put one excel file info in one data frame in the list.
 
 ```
@@ -92,10 +89,8 @@ for (i in 1: length(list)){
 I create a list of data.frame with this command 
 
 
-####
-###
-##
-# lapply and FUN application to a list ----
+
+# lapply and FUN application to a list
 
 ```
 
@@ -103,10 +98,8 @@ list _2 <- lapply(list_1, FUN = function(t) gsub("search", "", x = t, fixed = T)
 
 ```
 
-####
-###
-##
-# filter out ----
+
+# filter out
 
 ```
 
@@ -122,9 +115,7 @@ without (invert=T, value = T) I will get all names
 
 
 
-####
-###
-##
+
 # turn list to dataset
 
 ```
@@ -133,4 +124,13 @@ df <- as.data.frame(do.call(cbind, list))
 
 df <- as.data.frame(do.call(rbind, list))
 
+```
+
+## Difference list[1] from list[[1]]
+
+Two outputs are different
+```
+df_1 <- as.data.frame(df_original[1])  # the file name is included in colnames
+ 
+df_1 <- as.data.frame(df_original[[1]]) # the file name is not included in colnames
 ```
