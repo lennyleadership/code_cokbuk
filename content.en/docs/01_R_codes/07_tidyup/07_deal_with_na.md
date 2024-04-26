@@ -16,6 +16,13 @@ toc: true
 <!--more-->
 ---
 
+# Remove empty rows and columns at one time
+``` 
+library(janitor) # remove_empty comes from this package
+
+remove_empty(df, c("rows", "cols"))
+``` 
+
 
 # filter na from multiple columns
 Using dplyr, you can also use the filter_at function
@@ -35,10 +42,20 @@ df_non_na <- df %>% filter_at(vars(type,company),any_vars(!is.na(.)))
 
 
 
-# count number of na in a dataset
+# count number of na in columns of a dataset
 
 ```
 colSums(is.na(df))
+
+colSums(is.na(df[,7:22]))
+```
+
+# count number of na in rows of a dataset
+
+```
+rowSums(is.na(df))
+
+rowSums(is.na(df[1:nrow(df),]))
 ```
 
 
