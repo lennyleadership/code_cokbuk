@@ -14,6 +14,6 @@ toc: true
 
 
 <!--more-->
----
+
 
 <a href = "https://stackoverflow.com/questions/7549694/add-regression-line-equation-and-r2-on-graph" target="_blank" rel="noopener noreferrer">stack overflow | Line equation reference</a>

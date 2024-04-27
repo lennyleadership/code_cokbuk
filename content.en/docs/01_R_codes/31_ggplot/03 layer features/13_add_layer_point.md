@@ -14,10 +14,8 @@ toc: true
 
 
 <!--more-->
----
+
 
 ```
-
 annotate("point", x = "2021-Q1", y = 112.260, color = "brown", size = 3)
-
 ```
