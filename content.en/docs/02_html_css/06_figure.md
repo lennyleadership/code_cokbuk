@@ -1,6 +1,6 @@
 ---
 weight: 06
-title: 
+title: Figure
 authors: Lenny
 categories: null
 tags: 
