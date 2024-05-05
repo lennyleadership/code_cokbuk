@@ -15,9 +15,7 @@ toc: true
 
 <!--more-->
 
-# 2-Column Table
-
-## HTML code
+# HTML code
 ```
 <table >
 <caption style="text-align:left", align = "top"><b></b></caption>
@@ -47,37 +45,28 @@ toc: true
 
 `VALIGN=TOP`: is used in `<th>` and `<tbody>`.  
 
-## css codes
+# css codes
 ```
 table{
   width: 100%;
-
   border-collapse: collapse; /* single border of table*/
   border-spacing:0;
   border: 1px solid #ddd;
 }
 
-```
-
-```
 th, td{
   padding: 10px 20px; /*row height*/
   border-collapse: collapse; /* single line of inside*/
   border: 1px solid #ddd;
 }
-```
 
-To style the header of the table.
 
-```
 th{
   background-color: lightblue; /*add background color to the header*/
   border-bottom: double;
 }
 
-```
 
-```
 tr:nth-child(even){
   back-ground-color: #f2f2f2; /*zebra strip*/
 }

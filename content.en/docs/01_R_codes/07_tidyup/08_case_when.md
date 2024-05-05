@@ -70,7 +70,6 @@ toy_data <- tibble(
   value = sample(1:10, 20, replace = TRUE) )
 
 
-sample(1:10, 20, replace = TRUE)
 
 
 # ----------------
