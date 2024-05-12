@@ -27,7 +27,7 @@ Use `&` in HTML.
 
 # Micro sign
 
-Use `&#181;`, `&#956`; or `&mu;` or `μ` in HTML
+Use `&#181;`, `&#956;` or `&mu;` or `μ` in HTML
 
 Use `\u03BC`g/L in c() and add it to colname().
 
