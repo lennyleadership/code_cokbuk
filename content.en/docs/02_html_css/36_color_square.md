@@ -73,8 +73,85 @@ toc: true
 }
 </style>
 
-<div><div class='box red'></div>= Super Fast Trains</div>
+<div><div class='box red'></div> = Super Fast Trains</div>
 <br>
-<div><div class='box green'></div>= Mail/Express Trains</div>
+<div><div class='box green'></div> = Mail/Express Trains</div>
 <br>
-<div><div class='box blue'></div>= Local/ Passenger Trains</div>
+<div><div class='box blue'></div> = Local/ Passenger Trains</div>
+
+
+# Option #2
+```
+<div style="color:blue">&#9632;</div>
+```
+
+<div style="color:blue">&#9632;</div>
+
+# Option #3
+
+<b>css</b>
+```
+.box {
+  position: relative;
+  margin-left: 20px;
+}
+.box:before{
+  position: absolute;
+  left: -20px;
+  content: "";
+  height:20px;
+  width:20px;
+  margin-bottom:15px;
+  border:1px solid black;
+}
+.box.red:before{
+  background-color:red;
+}
+.box.green:before{
+  background-color:green;
+}
+.box.blue:before{
+  background-color:blue;
+}
+```
+
+<b>HTML</b>
+```
+<div class='box red'>= Super Fast Trains</div>
+<div class='box green'>= Mail/Express Trains</div>
+<div class='box blue'>= Local/ Passenger Trains</div>
+```
+
+
+<style>
+.box {
+  position: relative;
+  margin-left: 20px;
+}
+.box:before{
+  position: absolute;
+  left: -20px;
+  content: "";
+  height:20px;
+  width:20px;
+  margin-bottom:15px;
+  border:1px solid black;
+}
+.box.red:before{
+  background-color:red;
+}
+.box.green:before{
+  background-color:green;
+}
+.box.blue:before{
+  background-color:blue;
+}
+</style>
+
+<div class='box red'> = Super Fast Trains</div>
+<br>
+<div class='box green'> = Mail/Express Trains</div>
+<br>
+<div class='box blue'> = Local/ Passenger Trains</div>
+
+
