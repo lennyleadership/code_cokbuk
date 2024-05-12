@@ -85,7 +85,7 @@ toc: true
 <div style="color:blue">&#9632; = blue</div>
 ```
 
-<div style="color: "&#9632;">&#9632; = blue</div>
+<div style="color: "&#9632;"">&#9632; = blue</div>
 
 # Option #3
 
