@@ -82,10 +82,10 @@ toc: true
 
 # Option #2
 ```
-<div style="color:#a50b5e;">&#a50b5e; = Jazzberry Jam</div>
+<div style="color:#a50b5e;">&#9632; Jazzberry Jam</div>
 ```
 
-<div style="color: #a50b5e;">>&#9632; = Jazzberry Jam</div>
+<div style="color: #a50b5e;">&#9632; Jazzberry Jam</div>
 
 # Option #3
 
