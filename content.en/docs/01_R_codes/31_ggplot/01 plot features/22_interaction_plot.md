@@ -18,4 +18,4 @@ toc: true
 
 
 
-<a href = "https://ggplot2tutor.com/tutorials/interaction_plot" target="_blank" rel="noopener noreferrer">Tip: Interaction plot https://ggplot2tutor.com/tutorials/interaction_plot</a>
+<a href = "https://ggplot2tutor.com/tutorials/interaction_plot" target="_blank" rel="noopener noreferrer">"Tip: Interaction plot |> https://ggplot2tutor.com/tutorials/interaction_plot"</a>
