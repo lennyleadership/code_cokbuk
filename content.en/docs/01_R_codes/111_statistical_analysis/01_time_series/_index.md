@@ -1,6 +1,6 @@
 ---
 Weight: 01
-title: Tips and Tutorial
+title: Time Series
 authors: Lenny Lin
 categories: null
 tags: 

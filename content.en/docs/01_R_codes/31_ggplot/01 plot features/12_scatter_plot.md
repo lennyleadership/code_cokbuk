@@ -22,15 +22,22 @@ toc: true
 geom_point(aes(shape = factor(season)), size = 3) 
 ```
 
+# jitter points
+
+```
+geom_jitter(color="black", size=0.4, alpha=0.5)
+```
 
 
-# Add color in aes()
+# Differentiate dots by color
+
+## Add color in aes()
 ```
 geom_point(aes(color = factor(`season`))
 ```
 
 
-# Customize dot color - Option #1
+##  Customize dot color - Option #1
 
 ```
 df_count_date %>%
@@ -38,7 +45,7 @@ df_count_date %>%
   geom_point(col =ifelse(df_count_date$freq <10, 'blue', 'red'))
 ```
 
-# Customize dot color - Option #2
+## Customize dot color - Option #2
 
 
 ```
@@ -77,8 +84,3 @@ geom_hline(data = df2, aes(yintercept = eff_alpha_upper_limit), linetype = 2)+
 ```
 
 
-# jitter points
-
-```
-geom_jitter(color="black", size=0.4, alpha=0.5)
-```

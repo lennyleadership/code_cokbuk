@@ -1,13 +1,13 @@
 ---
-Weight: 111
-title: Time Series
+Weight: 22
+title: Regression Modeling
 authors: Lenny Lin
 categories: null
 tags: 
 description: 
 draft: false
-date: "2024-03-17"
-lastmod: "2024-03-17"
+date: "2024-06-02"
+lastmod: "2024-06-02"
 series:
 toc: true
 bookCollapseSection: true
