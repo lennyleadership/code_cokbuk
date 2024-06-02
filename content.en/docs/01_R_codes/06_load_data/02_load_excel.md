@@ -32,10 +32,33 @@ filename <- paste0(filepath, "/", "my filename", ".xls")
 # Read one csv file
 
 ```
-
 df <- read.csv(filename)
 
 ```
+
+# Read one excel file
+```
+library(readxl)
+ 
+read_excel("data/file_name.xls", col_names = F) [no header]
+```
+
+Skip first 22 rows, and do not take the first row as the header
+ 
+```
+library(readxl)
+ 
+read_excel("data/Sampling and Analysis Checklist - Proposed & Agreed Changes for 2022 (2022-Apr-05).xlsx", 
+                 sheet = "Sheet1", skip = 22, col_names = F)
+```
+
+Take certain range of data
+```
+library(readxl)
+ 
+dt <- read_excel("C:/Users/.../MRAD_ALPHA_Investigation.xlsx", sheet = "Sheet2", range = "A4:j7", col_names = F) #[no header]
+```
+
 
 
 # Load multiple excel files

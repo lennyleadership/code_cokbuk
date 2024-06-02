@@ -90,17 +90,15 @@ geom_hline(data = df2, aes(yintercept = eff_alpha_upper_limit), linetype = 2)+
 
 ## Customize dot color - option #3
 
-A temporary solution.  
+A temporary solution. No need to mutate a new column. 
 
-Use the following line.  
 
 ```
 scale_color_identity()+
 ```
 
 ```
-(plot_manhole_anions <- df_manholes_anions_L |>
-  filter(parameter =="Cl") |>
+(plot <- df |>
   mutate(group = case_when(
     value > 200 ~ "red",
     value > 100 & value < 200 ~ "brown",

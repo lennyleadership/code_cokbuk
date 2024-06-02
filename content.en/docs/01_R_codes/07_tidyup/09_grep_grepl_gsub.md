@@ -35,6 +35,19 @@ without (invert=T, value = T) I will get all names
 n <- which(!grepl("IH",unique(df$parameters))) # name exclusive “IH”
 ```
 
+# gsub application
+Use the following line to get from ` $METALS_ALL_Antimony (Sb)` to `Antimony (Sb)`.
+```
+gsub("\\$METALS_ALL_", "", names(df)[7:44])
+```
+ 
+Use the following lines to get from `Antimony (Sb)` to `Sb`
+```
+re <- "\\(([^()]+)\\)"
+ 
+element_names <- gsub(re, "\\1", str_extract_all(colnames(df)[7:44], re))
+```
+
 
 # be mindful
 

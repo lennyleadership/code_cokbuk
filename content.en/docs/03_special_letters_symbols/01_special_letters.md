@@ -72,6 +72,13 @@ Reference: https://ww.w3schools.com/html/html_symbols.asp
 # Trademark symbol 
 `&trade;`
 
+Trade mark in ggplot2
+`labs(x = "", y = paste0("SENTRY", "\U2122"," Signal (Consumable BOD) ") )`
+
+
+# Temperature
+`&deg;`
+
 
 # letter with accent
 

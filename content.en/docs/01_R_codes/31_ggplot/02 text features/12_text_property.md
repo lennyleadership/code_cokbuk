@@ -45,6 +45,17 @@ theme(axis.text.x = element_text(angle = 90))
 
 ```
 
+# Increase distance between text and title on the axis
+ 
+Set the values of the `margin` on `t`op, `r`ight, `b`ottom, and `l`eft side of the element.
+ 
+```
+axis.title.y = element_text(margin = margin(t = 0, r = 20, b = 0, l = 0))
+ 
+axis.title.x = element_text(margin = margin(t = 20, r = 0, b = 0, l = 0))
+```
+
+
 
 
 # Legend location: inside the plot

@@ -1,13 +1,13 @@
 ---
 weight: 02
-title: Text
+title: Text css
 authors: Lenny
 categories: null
 tags: 
 description: 
 draft: false
 date: "2023-09-09"
-lastmod: "2023-09-09"
+lastmod: "2024-06-02 "
 series:
 toc: true
 ---
