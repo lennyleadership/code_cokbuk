@@ -16,6 +16,11 @@ toc: true
 <!--more-->
 ---
 
+HTML codes and HTML special characters: The complete list
+
+<a href = "https://psdtowp.net/html-codes-special-characters.html" target="_blank" rel="noopener noreferrer">https://psdtowp.net/html-codes-special-characters.html</a>
+
+
 Special letters can be expressed in two forms, hexadecimal and decimal.
 
 Hexadecimal form begins with `\u`, decimal form begins with `&`.
@@ -23,6 +28,8 @@ Hexadecimal form begins with `\u`, decimal form begins with `&`.
 Use `\u` in data frame and rmarkdown code chunk.
 
 Use `&` in HTML.
+
+
 
 
 # Micro sign
