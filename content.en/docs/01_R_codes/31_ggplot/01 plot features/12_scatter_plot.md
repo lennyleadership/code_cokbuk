@@ -57,9 +57,9 @@ then use:
 scale_color_manual(values = setNames(color.codes, detector_cat))+
 ```
 
-having hline of average and upper limit and lower limit
-having annotation text
-having legend
+having hline of average and upper limit and lower limit  
+having annotation text  
+having legend  
 
 ```
 ggplot(df1, aes(x = count_date, y = eff_value, color = detector_cat))+
