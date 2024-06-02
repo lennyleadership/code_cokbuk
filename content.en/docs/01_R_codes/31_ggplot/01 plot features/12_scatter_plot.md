@@ -47,6 +47,8 @@ df_count_date %>%
 
 ## Customize dot color - Option #2
 
+Mutate a new of "detector_cat" column first in the dataset.
+
 ```
 color.codes <- as.character((c("blue", "red")))
 detector_cat <- c("detector IP ended with N","detector IP ended with NN")
@@ -86,4 +88,28 @@ geom_hline(data = df2, aes(yintercept = eff_alpha_upper_limit), linetype = 2)+
         legend.justification = "left") # move the legend to the left.
 ```
 
+## Customize dot color - option #3
 
+A temporary solution.  
+
+Use the following line.  
+
+```
+scale_color_identity()+
+```
+
+```
+(plot_manhole_anions <- df_manholes_anions_L |>
+  filter(parameter =="Cl") |>
+  mutate(group = case_when(
+    value > 200 ~ "red",
+    value > 100 & value < 200 ~ "brown",
+    .default = "#7a7979"
+  )) |>
+  ggplot(aes(x = collection_date, y = value, color = group))+
+  geom_point( )+
+  scale_color_identity()+
+  theme_bw()+
+  facet_wrap(~location_code, ncol = 2)
+)
+```
