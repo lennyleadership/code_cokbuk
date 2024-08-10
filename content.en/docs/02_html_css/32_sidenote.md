@@ -118,11 +118,12 @@ label.margin-toggle:not(.sidenote-number) {
 
 <h1><span class = "overline">Tufte codes</span></h1>
 
-<a href = "https://github.com/edwardtufte/tufte-css/blob/gh-pages/index.html" target="_blank" rel="noopener noreferrer">Tufte codes</a>
+<a href = "https://github.com/edwardtufte/tufte-css/blob/gh-pages/index.html" target="_blank" rel="noopener noreferrer">edwardtufte | Tufte codes</a>
 
  
 <h1><span class = "overline">Tufte demo</span></h1>
-<a href = "edwardtufte.github.io" target="_blank" rel="noopener noreferrer">Tufte CSS demo</a>
+
+<a href = "https://github.com/edwardtufte/edwardtufte.github.io" target="_blank" rel="noopener noreferrer">Tufte CSS demo</a>
 
 <a href = "https://www.princexml.com/howcome/2022/guides/sidenotes/" target="_blank" rel="noopener noreferrer">A quick guide to creating sidenotes in Prince</a>
 
