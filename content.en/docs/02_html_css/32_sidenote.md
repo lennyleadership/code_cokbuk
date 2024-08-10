@@ -1,6 +1,6 @@
 ---
 weight: 32
-title: ["Tufte Style Sidenote"]
+title: "Tufte Style/ Sidenote"
 authors: Lenny
 categories: null
 tags: 
