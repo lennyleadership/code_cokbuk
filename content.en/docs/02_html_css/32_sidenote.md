@@ -31,7 +31,8 @@ Apply the following html line to the body:
 <label for="cambium" class="margin-toggle sidenote-number"></label><span class="sidenote">Palm tree distinction <br>![](https://d55v7rs15ikf5.cloudfront.net/original/3X/3/8/38f1c61f53239f18824e5ae43c87c4d8217ee3bf.jpeg)</span>
 ```
 
-<h1><span class = "overline">Margin note
+<h1><span class = "overline">Margin note</span></h1>
+
 ```
 <label for="" class="margin-toggle marginnote"></label><span class="marginnote"><em>test</em></span>
 ```
