@@ -7,7 +7,7 @@ tags:
 description: 
 draft: false
 date: "2023-09-09"
-lastmod: "2023-09-09"
+lastmod: "2024-08-09"
 series:
 toc: true
 ---
@@ -15,7 +15,7 @@ toc: true
 
 <!--more-->
 
-# Sidnote and Numbering
+<h1><span class = "overline">Sidnote and Numbering</span></h1>
 
 Apply the following html line to the body:  
 
@@ -25,19 +25,19 @@ Apply the following html line to the body:
 
 `<a></a>` works, but the `<a></a>` gives blue color to the text.
 
-# An image can be used in the sidenote
+<h1><span class = "overline">An image can be used in the sidenote</span></h1>
 
 ```
 <label for="cambium" class="margin-toggle sidenote-number"></label><span class="sidenote">Palm tree distinction <br>![](https://d55v7rs15ikf5.cloudfront.net/original/3X/3/8/38f1c61f53239f18824e5ae43c87c4d8217ee3bf.jpeg)</span>
 ```
 
-# Margin note
+<h1><span class = "overline">Margin note
 ```
 <label for="" class="margin-toggle marginnote"></label><span class="marginnote"><em>test</em></span>
 ```
 
 
-# Below is the css
+<h1><span class = "overline">Below is the css</span></h1>
 
 ```
 /* Tufte webpage (body and margine) layout *********************************/
@@ -115,12 +115,12 @@ label.margin-toggle:not(.sidenote-number) {
 /* end **************************************************************************/
 ```
 
-# Tufte codes
+<h1><span class = "overline">Tufte codes</span></h1>
 
 <a href = "https://github.com/edwardtufte/tufte-css/blob/gh-pages/index.html" target="_blank" rel="noopener noreferrer">Tufte codes</a>
 
  
-# Tufte demo
+<h1><span class = "overline">Tufte demo</span></h1>
 <a href = "edwardtufte.github.io" target="_blank" rel="noopener noreferrer">Tufte CSS demo</a>
 
 <a href = "https://www.princexml.com/howcome/2022/guides/sidenotes/" target="_blank" rel="noopener noreferrer">A quick guide to creating sidenotes in Prince</a>
