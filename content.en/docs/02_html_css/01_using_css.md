@@ -20,7 +20,7 @@ links:
 
 <!--more-->
 
-# Inline
+<h1><span class = "overline">Inline</span></h1>
 
 An inline CSS is used to apply a unique style to <b>a single</b> HTML element.  
 
