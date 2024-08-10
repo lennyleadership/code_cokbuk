@@ -35,7 +35,7 @@ The following example sets the text color of the <span style = "color:red">`<h1>
 
 ```
 
-# Internal
+<h1><span class = "overline">Internal</span></h1>
 
 An internal CSS is used to define a style for <b>a single</b> HTML page.
 
@@ -62,7 +62,7 @@ p    {color: red;}
 </html> 
 ```
 
-# External
+<h1><span class = "overline">External</span></h1>
 
 To use an external style sheet, add a link to it in the `<head>` section of each HTML page:
 
