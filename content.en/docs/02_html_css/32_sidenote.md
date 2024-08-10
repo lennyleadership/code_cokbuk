@@ -1,6 +1,6 @@
 ---
 weight: 32
-title: Tufte Style
+title: ["Tufte Style/ Sidenote"]
 authors: Lenny
 categories: null
 tags: 
@@ -122,4 +122,8 @@ label.margin-toggle:not(.sidenote-number) {
  
 # Tufte demo
 <a href = "edwardtufte.github.io" target="_blank" rel="noopener noreferrer">Tufte CSS demo</a>
+
+<a href = "https://www.princexml.com/howcome/2022/guides/sidenotes/" target="_blank" rel="noopener noreferrer">A quick guide to creating sidenotes in Prince</a>
+
+<a href = "https://gwern.net/sidenote" target="_blank" rel="noopener noreferrer">GWERN | Sidenotes In Web Design</a>
 
