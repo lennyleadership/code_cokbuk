@@ -25,7 +25,7 @@ h6 {
   }
 
 
-// spaced overline for h1 */////////////////////////////////////////////////////////////////////////
+// add an orange line to h1 */////////////////////////////////////////////////////////////////////////
 .overline {
   padding-top: 25px;
   border-top-style: solid;
@@ -38,7 +38,7 @@ h6 {
 h1:before {
   content:' ';
   display:block;
-  padding-top: 25px;
+  padding-top: 50px; /*25*/
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: lightgrey;
