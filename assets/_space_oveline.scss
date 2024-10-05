@@ -1,5 +1,4 @@
-// spaced overline ////////////////////////////////////////////////////////////////////////////////
-
+// add an orange line to h1 */////////////////////////////////////////////////////////////////////////
 .overline {
   padding-top: 25px;
   border-top-style: solid;
@@ -9,13 +8,19 @@
   }
   
 
-h1:before {
+h1 {
   content:' ';
   display:block;
-  padding-top: 25px;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: lightgrey;
+  padding-top: 50px; /*25*/
+  /*border-top-style: solid;*/
+  /*border-top-width: 2px;*/
+  /*border-top-color: lightgrey;*/
+  padding-bottom: 25px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: lightgrey;
+  
 }
 
-//* the end *****************************************************************************************
+
+/* the end ****************************************************************************************/
