@@ -35,13 +35,18 @@ h6 {
   }
   
 
-h1 {
+h1:before {
   content:' ';
   display:block;
   padding-top: 50px; /*25*/
   /*border-top-style: solid;
   border-top-width: 2px;
   border-top-color: lightgrey;*/
+}
+
+h1:after {
+  content:' ';
+  display:block;
   padding-bottom: 25px;
   border-bottom-style: solid;
   border-bottom-width: 2px;
