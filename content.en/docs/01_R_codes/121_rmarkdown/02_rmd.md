@@ -16,6 +16,7 @@ toc: true
 <!--more-->
 
 # Figures can be numbered automatically
+
 Put the following codes in YAML.
 
 ```
@@ -84,6 +85,7 @@ Video #4: General Lab Safety
 ```
 
 # html whitespace
+
 The New Line character – also known as the "carriage return". The HTML code for newline character is: &#13;
 The Tab Character, which is what you get when you press the tab button in a text field. The HTML code for Tab Character is: &#09;
 
