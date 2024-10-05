@@ -14,8 +14,6 @@ toc: true
 
 
 <!--more-->
----
-
 
 # Case #1
 
@@ -25,7 +23,6 @@ get_var <- function(data, column, value) {
 }
  
 get_var(mtcars, cyl, 6)
-
 ```
 
 Note: As of rlang 0.4.0 (2019-06-25) there is now the embrace operator `{{}}`. 

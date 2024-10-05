@@ -7,14 +7,14 @@ tags:
 description: 
 draft: false
 date: "2023-11-15"
-lastmod: "2023-11-15"
+lastmod: "2024-10-04"
 series:
 toc: true
 ---
 
 
 <!--more-->
----
+
 
 # Tips
 
@@ -32,8 +32,15 @@ filename <- paste0(filepath, "/", "my filename", ".xls")
 # Read one csv file
 
 ```
-df <- read.csv(filename)
+library(readxl)
 
+df <- read.csv(filename)
+```
+
+```
+library(readr)
+
+read_csv()
 ```
 
 # Read one excel file
@@ -65,7 +72,6 @@ dt <- read_excel("C:/Users/.../MRAD_ALPHA_Investigation.xlsx", sheet = "Sheet2",
 
 ```
 list_files <- list.files(filepath, pattern='*.xlsm$|*.xlsx$|*.xls$', full.names = T,  recursive = T, ignore.case = T)
-
 ```
 
 `full.name = T`: file name will include file directory.
@@ -79,7 +85,6 @@ list_files <- list.files(filepath, pattern='*.xlsm$|*.xlsx$|*.xls$', full.names 
 
 ```
 list_files <- list.files(filepath_import, pattern = "^stp_process.*\\.xlsx", full.names = T, recursive = FALSE)
-
 ```
 
 Note: Load excel files of which the file name begins with stp_process. `^` means 'to begin with'. `.*\\` is the wild card.
@@ -88,21 +93,16 @@ Note: Load excel files of which the file name begins with stp_process. `^` means
 # Vignette: Read Multiple Excel files with purr
 
 ```
-
 # file source
 wb_source <- "../datasets/test-excel/test-excel.xlsx"
-
 ```
 
 ```
-
 # Extract the sheet names as a character string vector
 wb_sheets <- readxl::excel_sheets(wb_source)
-
 ```
 
 ```
-
 # Load everything into the Global Environment
 wb_sheets %>%
   purrr::map(function(sheet){ # iterate through each sheet name
@@ -110,40 +110,33 @@ wb_sheets %>%
          value = readxl::read_xlsx(path = wb_source, sheet = sheet),
          envir = .GlobalEnv)
 })
-
 ```
 
 ## Read all sheets in Excel into a list
 
 ```
-
 # Load everything into the Global Environment
 wb_sheets %>%
   purrr::map(function(sheet){ # iterate through each sheet name
   readxl::read_xlsx(path = wb_source, sheet = sheet)
 }) -> df_list_read # Assign to a list
-
 ```
 
 
 ```
-
 df_list_read %>%
   map(~select(., Petal.Length, Species) %>%
         head())
-
 ```
 
 ## Read all csv files in directory into a list
 
 ```
-
 # Load everything into the Global Environment
 csv_file_names %>%
   purrr::map(function(file_name){ # iterate through each file name
   read_csv(paste0(file_path, file_name))
 }) -> df_list_read2 # Assign to a list
-
 ```
 
 Reference: <a href = "https://martinctc.github.io/blog/vignette-write-and-read-multiple-excel-files-with-purrr/" target="_blank" rel="noopener noreferrer">Vignette: Write & Read Multiple Excel files with purr</a>
