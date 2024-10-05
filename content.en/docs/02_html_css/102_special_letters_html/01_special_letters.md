@@ -1,13 +1,13 @@
 ---
 weight: 02
-title: Special Letters
+title: Special Signs and Letters
 authors: Lenny
 categories: null
 tags: 
 description: 
 draft: false
 date: "2023-11-19"
-lastmod: "2023-11-19"
+lastmod: "2024-10-05"
 series:
 toc: true
 ---

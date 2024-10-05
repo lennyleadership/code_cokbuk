@@ -1,6 +1,6 @@
 ---
 Weight: 102
-title: Greek Letters and Symbols
+title: Special Signs & Letters in HTML
 authors: Lenny Lin
 categories: null
 tags: 
