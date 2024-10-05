@@ -1,11 +1,11 @@
 ---
-weight: 01
-title: Signs
+weight: 
+title: 
 authors: Lenny
 categories: null
 tags: 
 description: 
-draft: false
+draft: true
 date: "2024-"
 lastmod: "2024-"
 series:
@@ -15,8 +15,5 @@ toc: true
 
 <!--more-->
 
-`\pm`: plus minus
 
-`\alpha`: alpha
-
-`{\rightarrow}`: arrow in chemical equation
+note: change draft version, from true to false

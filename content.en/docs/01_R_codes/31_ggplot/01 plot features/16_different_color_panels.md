@@ -1,6 +1,6 @@
 ---
 weight: 16
-title: Background
+title: Different Color Panels
 authors: Lenny
 categories: null
 tags: 

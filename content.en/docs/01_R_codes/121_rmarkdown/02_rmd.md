@@ -14,7 +14,17 @@ toc: true
 
 
 <!--more-->
----
+
+# Figures can be numbered automatically
+Put the following codes in YAML.
+
+```
+  bookdown::html_document2:
+    theme: journal   
+    css:
+     - css_default_rev04.css
+     - css_disclaimer_rev02.css
+```
 
 # insert an image in *.rmd
 ```
@@ -49,6 +59,7 @@ Video #1: Laboratory Rules by AsapScience
   <div class = "text">Laboratory Safety</div>
 </div>
 ```
+
 Option #2: use data-external= "1", instead of frameborder="0".  It works for one youtube video and a series of videos.
 ```
 <div class = "container">

@@ -14,7 +14,7 @@ toc: true
 
 
 <!--more-->
----
+
 
 `custom-style="Style1"` is the command in pandoc to render a rmarkdown to a word.
 
@@ -29,3 +29,7 @@ To apply formatting styles from a word file
 ```{r fig1, fig.cap='Figure 1: title', out.width="100%", include=T} 
 knitr::include_graphics("./images/Al_in_FB.png")
 ```
+
+# Tips
+
+HTML table can’t be rendered through officer.  Instead, I need to create a data frame/ tibble.

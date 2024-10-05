@@ -57,7 +57,7 @@ Use `\u03BC`g/L in c() and add it to colname().
 
 # alpha
 
-in html: `$\alpha$` <br> in LaTex: `{\alpha}`
+in html: `$\alpha$` 
 
 
 # forward slash
@@ -68,8 +68,7 @@ Reference: https://ww.w3schools.com/html/html_symbols.asp
 # hyphen
 `&dash;`
 
-# arrow in chemical equation in LaTex
-`{\rightarrow}`
+
 
 
 # Registered symbol 

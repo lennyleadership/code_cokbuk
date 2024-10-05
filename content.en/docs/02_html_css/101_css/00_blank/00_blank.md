@@ -1,6 +1,6 @@
 ---
-weight: 01
-title: Signs
+weight: 
+title: 
 authors: Lenny
 categories: null
 tags: 
@@ -15,8 +15,4 @@ toc: true
 
 <!--more-->
 
-`\pm`: plus minus
 
-`\alpha`: alpha
-
-`{\rightarrow}`: arrow in chemical equation

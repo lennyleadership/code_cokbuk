@@ -1,7 +1,7 @@
 ---
-weight: 
+Weight: 999
 title: 
-authors: Lenny
+authors: Lenny Lin
 categories: null
 tags: 
 description: 
@@ -10,10 +10,13 @@ date: "2024-"
 lastmod: "2024-"
 series:
 toc: true
+bookCollapseSection: true
 ---
 
 
 <!--more-->
----
 
-note: change draft version, from true to false
+
+
+
+
