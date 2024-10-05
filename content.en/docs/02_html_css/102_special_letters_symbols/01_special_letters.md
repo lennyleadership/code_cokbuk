@@ -49,6 +49,11 @@ Use `&` in HTML.
       <td>&amp;nbsp;</td>
     </tr>
     <tr>
+      <td>&#181;, &#956;, &mu;, μ</td>
+      <td>micro</td>
+      <td>&amp;#181;, &amp;#956;, &amp;mu;, μ</td>
+    </tr>
+    <tr>
       <td>&lt;</td>
       <td>less than</td>
       <td>&amp;lt;</td>
@@ -119,6 +124,11 @@ Use `&` in HTML.
     <td>&amp;ast;</td>
     </tr>
     <tr>
+    <td>&sol;</td>
+    <td>forward slash</td>
+    <td>&amp;sol;</td>
+    </tr>
+    <tr>
       <td>↓</td>
       <td>DOWNWARDS ARROW</td>
       <td>&amp;darr;</td>
@@ -147,26 +157,6 @@ Use `&` in HTML.
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>€</td>
-      <td>euro</td>
-      <td>&amp;euro;</td>
-    </tr>
-    <tr>
-      <td>¥</td>
-      <td>yen</td>
-      <td>&amp;yen;</td>
-    </tr>
-    <tr>
-      <td>£</td>
-      <td>pound</td>
-      <td>&amp;pound;</td>
-    </tr>
-    <tr>
-      <td>¢</td>
-      <td>cent</td>
-      <td>&amp;cent;</td>
     </tr>
     <tr>
       <td>“</td>
@@ -299,14 +289,38 @@ Use `&` in HTML.
       <td>parallel</td>
       <td>&amp;parallel;</td>
     </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>€</td>
+      <td>euro</td>
+      <td>&amp;euro;</td>
+    </tr>
+    <tr>
+      <td>¥</td>
+      <td>yen</td>
+      <td>&amp;yen;</td>
+    </tr>
+    <tr>
+      <td>£</td>
+      <td>pound</td>
+      <td>&amp;pound;</td>
+    </tr>
+    <tr>
+      <td>¢</td>
+      <td>cent</td>
+      <td>&amp;cent;</td>
+    </tr>
   </tbody>
 </table>
 
-# Micro sign
 
-Use `&#181;`, `&#956;` or `&mu;` or `μ` in HTML
+# Micro sign in r
 
-Use `\u03BC`g/L in c() and add it to colname().
+`\u03BC`g/L in c() and add it to colname().
 
 mu applied in table generated in {r}  
 
@@ -325,53 +339,18 @@ labs(title = "Chloroform in Field Blanks",
 
 Use `\u03BC`g/L in c() and add it to colname().
 
-# alpha
 
-in html: `$\alpha$` 
-
-
-# forward slash
-`/`
-Reference: https://ww.w3schools.com/html/html_symbols.asp
-
-
-
-
-<table style="text-align:left">
-<colgroup><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" />
-</colgroup>
-  <tr>
-    <th><p>Denotation
-      </p></th>
-    <th><p>Entity Name
-      </p></th>
-  </tr>
-  <tr>
-    <td><p>
-      </p></td>
-    <td><p>
-      </p></td>
-  </tr>
-  <tr>
-    <td><p>
-      </p></td>
-    <td><p>
-      </p></td>
-  </tr>
-</table>
-
-
+# alpha in html
+`$\alpha$` 
 
 
 # Trademark in ggplot2
 `labs(x = "", y = paste0("SENTRY", "\U2122"," Signal (Consumable BOD) ") )`
 
 
-
-
-
 # letter with accent
 E: `&#234;`
+
 
 # Plus minus symbol in tibble
 \u00B1
