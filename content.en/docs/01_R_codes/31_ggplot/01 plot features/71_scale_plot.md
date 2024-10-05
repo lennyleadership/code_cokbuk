@@ -34,6 +34,7 @@ scale_fill_viridis(discrete = TRUE, alpha=0.5)
 ```
 
 
+# set axis range
 ```
 coord_cartesian(ylim = c(0,900))
 ```

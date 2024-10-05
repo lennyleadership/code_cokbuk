@@ -14,7 +14,7 @@ toc: true
 
 
 <!--more-->
----
+
 
 # Two different panel color backgrounds in ggplot
 ``` 

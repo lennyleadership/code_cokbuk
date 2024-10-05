@@ -7,14 +7,19 @@ tags:
 description: 
 draft: false
 date: "2023-09-10"
-lastmod: "2023-10-27"
+lastmod: "2024-10-04"
 series:
 toc: true
 ---
 
 
 <!--more-->
----
+
+# Set the angle of the axis text
+```
+theme(axis ... (angle = 45))
+```
+
 
 # Set the background as black & white:  
 ```
@@ -41,10 +46,7 @@ geom_density(aes( y = ..count../2))
 ```
 
 
-# set axis range
-```
-coord_cartesian(ylim = c(0,900))
-```
+
 
 
 

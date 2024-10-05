@@ -1,20 +1,20 @@
 ---
 weight: 15
-title: Magnify a Plot
+title: Zoom Into a Section of Plot
 authors: Lenny
 categories: null
 tags: 
 description: 
 draft: false
 date: "2024-04-25"
-lastmod: "2024-04-25"
+lastmod: "2024-10-04"
 series:
 toc: true
 ---
 
 
 <!--more-->
----
+
 
 # Solution #1
 
