@@ -14,7 +14,7 @@ toc: true
 
 
 <!--more-->
----
+
 
 HTML codes and HTML special characters: The complete list
 
@@ -65,9 +65,14 @@ in html: `$\alpha$`
 Reference: https://ww.w3schools.com/html/html_symbols.asp
 
 
-# 
+# hyphen
+`&dash;`
 
+# Registered symbol 
+`&reg;`
 
+# asterisk sign
+`&ast;`
 
 <table >
 <caption style="text-align:left", align = "top"><b></b></caption>
@@ -82,19 +87,19 @@ Reference: https://ww.w3schools.com/html/html_symbols.asp
   <tr>
     <td><p>hyphen
       </p></td>
-    <td><p>`&dash;`
+    <td><p><span>`&dash;`</span>
       </p></td>
   </tr>
   <tr>
     <td><p>Registered symbol 
       </p></td>
-    <td><p>`&reg;`
+    <td><p><span>&reg;</span>
       </p></td>
   </tr>
   <tr>
-    <td><p>
+    <td><p>asterisk sign
       </p></td>
-    <td><p>
+    <td><p>`&ast;`
       </p></td>
   </tr>
   <tr>
