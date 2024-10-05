@@ -6,8 +6,8 @@ categories: null
 tags: 
 description: 
 draft: false
-date: "2024-"
-lastmod: "2024-"
+date: "2024-10-05"
+lastmod: "2024-10-05"
 series:
 toc: true
 ---
