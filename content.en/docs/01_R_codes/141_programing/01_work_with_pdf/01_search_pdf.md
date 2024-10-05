@@ -16,9 +16,9 @@ toc: true
 <!--more-->
 
 ```
-library(pdf)
+library(pdftools)
 
-filepath <- r"(K:\...\PDF)"
+filepath <- r"(K:\...\...)"
 
 list_files <- list.files(filepath, pattern = ".pdf", full.names = T, recursive = F)
  

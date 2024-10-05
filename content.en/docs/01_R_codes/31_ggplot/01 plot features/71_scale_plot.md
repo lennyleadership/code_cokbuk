@@ -1,6 +1,6 @@
 ---
 weight: 71
-title: Scale plot
+title: Scale Up Axis
 authors: Lenny
 categories: null
 tags: 
@@ -14,35 +14,26 @@ toc: true
 
 
 <!--more-->
----
 
 # Facet grid-independant axis scale
 
 ```
-
 facet_wrap(~element, scales = "free_y")
-
 ```
 
 # zoom x-axis
 
 ```
-
 ggplot(...)+
   geom_point()+
   xlim(0,100)
-  
 ```
 
 ```
-
 scale_fill_viridis(discrete = TRUE, alpha=0.5)
-
 ```
 
 
 ```
-
 coord_cartesian(ylim = c(0,900))
-
 ```

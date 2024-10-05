@@ -29,6 +29,10 @@ filename <- paste0(filepath, "/", "my filename", ".xls")
 
 ```
 
+# Libraries
+
+readxl can read xls and xlsx files.
+
 # Read one csv file
 
 ```
