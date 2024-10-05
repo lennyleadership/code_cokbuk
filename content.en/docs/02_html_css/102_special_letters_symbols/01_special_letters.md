@@ -49,7 +49,7 @@ Use `&` in HTML.
       <td>&amp;nbsp;</td>
     </tr>
     <tr>
-      <td>&#181;, &#956;, &mu;, μ</td>
+      <td>&#181;</td>
       <td>micro</td>
       <td>&amp;#181;, &amp;#956;, &amp;mu;, μ</td>
     </tr>
@@ -318,42 +318,12 @@ Use `&` in HTML.
 </table>
 
 
-# Micro sign in r
-
-`\u03BC`g/L in c() and add it to colname().
-
-mu applied in table generated in {r}  
-
-in ggplot2 title and legends
-
-```
-labs(title = "Chloroform in Field Blanks",
-       subtitle = "2019 -2023",
-       y = bquote(conc~(mu*g/L)))
-```
-
-
-# Temperture
-
-`\u2070`C [in rmarkdown code chunk]
-
-Use `\u03BC`g/L in c() and add it to colname().
-
-
 # alpha in html
 `$\alpha$` 
 
 
-# Trademark in ggplot2
-`labs(x = "", y = paste0("SENTRY", "\U2122"," Signal (Consumable BOD) ") )`
-
-
 # letter with accent
 E: `&#234;`
-
-
-# Plus minus symbol in tibble
-\u00B1
 
 
 # Links
