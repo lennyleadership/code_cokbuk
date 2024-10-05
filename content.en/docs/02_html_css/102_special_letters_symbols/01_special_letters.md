@@ -34,270 +34,270 @@ Use `&` in HTML.
 </colgroup>
   <thead>
     <tr>
-      <th><span>Symbol</span>
+      <th>Symbol
       </th>
-      <th><span>Description</span>
+      <th>Description
       </th>
-      <th><span>HTML Entity</span>
+      <th>HTML Entity
       </th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><span>&nbsp;</span></td>
-      <td><span>non-breaking space</span></td>
-      <td><span>&amp;nbsp;</span></td>
+      <td>&nbsp;</td>
+      <td>non-breaking space</td>
+      <td>&amp;nbsp;</td>
     </tr>
     <tr>
-      <td><span>&lt;</span></td>
-      <td><span>less than</span></td>
-      <td><span>&amp;lt;</span></td>
+      <td>&lt;</td>
+      <td>less than</td>
+      <td>&amp;lt;</td>
     </tr>
     <tr>
-      <td><span>&gt;</span></td>
-      <td><span>greater than</span></td>
-      <td><span>&amp;gt;</span></td>
+      <td>&gt;</td>
+      <td>greater than</td>
+      <td>&amp;gt;</td>
     </tr>
     <tr>
-      <td><span>±</span></td>
-      <td><span>plus-minus</span></td>
-      <td><span>&amp;plusmn;</span></td>
+      <td>±</td>
+      <td>plus-minus</td>
+      <td>&amp;plusmn;</td>
     </tr>
     <tr>
-      <td><span>+</span></td>
-      <td><span>PLUS SIGN</span></td>
-      <td><span>&amp;plus;</span></td>
+      <td>+</td>
+      <td>PLUS SIGN</td>
+      <td>&amp;plus;</td>
     </tr>    
     <tr>
-      <td><span>–</span></td>
-      <td><span>minus sign</span></td>
-      <td><span>&amp;minus;</span></td>
+      <td>–</td>
+      <td>minus sign</td>
+      <td>&amp;minus;</td>
     </tr>    
     <tr>
-      <td><span>&nbsp;</span></td>
-      <td><span>&nbsp;</span></td>
-      <td><span>&nbsp;</span></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><span>®</span></td>
-      <td><span>registered trademark</span></td>
-      <td><span>&amp;reg;</span></td>
+      <td>®</td>
+      <td>registered trademark</td>
+      <td>&amp;reg;</td>
     </tr>
     <tr>
-      <td><span>©</span></td>
-      <td><span>copyright</span></td>
-      <td><span>&amp;copy;</span></td>
+      <td>©</td>
+      <td>copyright</td>
+      <td>&amp;copy;</td>
     </tr>
     <tr>
-      <td><span>™</span></td>
-      <td><span>TRADEMARK</span></td>
-      <td><span>&amp;trade;</span></td>
+      <td>™</td>
+      <td>TRADEMARK</td>
+      <td>&amp;trade;</td>
     </tr>
     <tr>
-      <td><span>°</span></td>
-      <td><span>degree</span></td>
-      <td><span>&amp;deg;</span></td>
+      <td>°</td>
+      <td>degree</td>
+      <td>&amp;deg;</td>
     </tr>
     <tr>
-      <td><span>%</span></td>
-      <td><span>percent sign</span></td>
-      <td><span>&amp;percent;</span></td>
+      <td>%</td>
+      <td>percent sign</td>
+      <td>&amp;percent;</td>
     </tr>
     <tr>
-      <td><span>&nbsp;</span></td>
-      <td><span>&nbsp;</span></td>
-      <td><span>&nbsp;</span></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><span>&dash;</span></td>
-      <td><span>hyphen</span></td>
-      <td><span>&amp;dash;</span></td>
+      <td>&dash;</td>
+      <td>hyphen</td>
+      <td>&amp;dash;</td>
     </tr>
     <tr>
-    <td><span>&ast;</span></td>
-    <td><span>asterisk</span></td>
-    <td><span>&amp;ast;</span></td>
+    <td>&ast;</td>
+    <td>asterisk</td>
+    <td>&amp;ast;</td>
     </tr>
     <tr>
-      <td><span>↓</span></td>
-      <td><span>DOWNWARDS ARROW</span></td>
-      <td><span>&amp;darr;</span></td>
+      <td>↓</td>
+      <td>DOWNWARDS ARROW</td>
+      <td>&amp;darr;</td>
     </tr>
     <tr>
-      <td><span>→</span></td>
-      <td><span>RIGHTWARDS ARROW</span></td>
-      <td><span>&amp;rarr;</span></td>
+      <td>→</td>
+      <td>RIGHTWARDS ARROW</td>
+      <td>&amp;rarr;</td>
     </tr>
     <tr>
-      <td><span>↑</span></td>
-      <td><span>UPWARDS ARROW</span></td>
-      <td><span>&amp;uarr;</span></td>
+      <td>↑</td>
+      <td>UPWARDS ARROW</td>
+      <td>&amp;uarr;</td>
     </tr>
     <tr>
-      <td><span>←</span></td>
-      <td><span>LEFTWARDS ARROW</span></td>
-      <td><span>&amp;larr;</span></td>
+      <td>←</td>
+      <td>LEFTWARDS ARROW</td>
+      <td>&amp;larr;</td>
     </tr>
     <tr>
-      <td><span>⋅</span></td>
-      <td><span>dot operator</span></td>
-      <td><span>&amp;sdot;</span></td>
+      <td>⋅</td>
+      <td>dot operator</td>
+      <td>&amp;sdot;</td>
     </tr>
     <tr>
-      <td><span>&nbsp;</span></td>
-      <td><span>&nbsp;</span></td>
-      <td><span>&nbsp;</span></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
     </tr>
     <tr>
-      <td><span>€</span></td>
-      <td><span>euro</span></td>
-      <td><span>&amp;euro;</span></td>
+      <td>€</td>
+      <td>euro</td>
+      <td>&amp;euro;</td>
     </tr>
     <tr>
-      <td><span>¥</span></td>
-      <td><span>yen</span></td>
-      <td><span>&amp;yen;</span></td>
+      <td>¥</td>
+      <td>yen</td>
+      <td>&amp;yen;</td>
     </tr>
     <tr>
-      <td><span>£</span></td>
-      <td><span>pound</span></td>
-      <td><span>&amp;pound;</span></td>
+      <td>£</td>
+      <td>pound</td>
+      <td>&amp;pound;</td>
     </tr>
     <tr>
-      <td><span>¢</span></td>
-      <td><span>cent</span></td>
-      <td><span>&amp;cent;</span></td>
+      <td>¢</td>
+      <td>cent</td>
+      <td>&amp;cent;</td>
     </tr>
     <tr>
-      <td><span>“</span></td>
-      <td><span>double quotation mark</span></td>
-      <td><span>&amp;quot;</span></td>
+      <td>“</td>
+      <td>double quotation mark</td>
+      <td>&amp;quot;</td>
     </tr>
     <tr>
-      <td><span>&amp;</span></td>
-      <td><span>ampersand</span></td>
-      <td><span>&amp;amp;</span></td>
+      <td>&amp;</td>
+      <td>ampersand</td>
+      <td>&amp;amp;</td>
     </tr>
     <tr>
-      <td><span>∂</span></td>
-      <td><span>PARTIAL DIFFERENTIAL</span></td>
-      <td><span>&amp;part;</span></td>
+      <td>∂</td>
+      <td>PARTIAL DIFFERENTIAL</td>
+      <td>&amp;part;</td>
     </tr>
     <tr>
-      <td><span>∃</span></td>
-      <td><span>THERE EXISTS</span></td>
-      <td><span>&amp;exist;</span></td>
+      <td>∃</td>
+      <td>THERE EXISTS</td>
+      <td>&amp;exist;</td>
     </tr>
     <tr>
-      <td><span>∅</span></td>
-      <td><span>EMPTY SETS</span></td>
-      <td><span>&amp;empty;</span></td>
+      <td>∅</td>
+      <td>EMPTY SETS</td>
+      <td>&amp;empty;</td>
     </tr>
     <tr>
-      <td><span>∇</span></td>
-      <td><span>NABLA</span></td>
-      <td><span>&amp;nabla;</span></td>
+      <td>∇</td>
+      <td>NABLA</td>
+      <td>&amp;nabla;</td>
     </tr>
     <tr>
-      <td><span>∈</span></td>
-      <td><span>ELEMENT OF</span></td>
-      <td><span>&amp;isin;</span></td>
+      <td>∈</td>
+      <td>ELEMENT OF</td>
+      <td>&amp;isin;</td>
     </tr>
     <tr>
-      <td><span>∉</span></td>
-      <td><span>NOT AN ELEMENT OF</span></td>
-      <td><span>&amp;notin;</span></td>
+      <td>∉</td>
+      <td>NOT AN ELEMENT OF</td>
+      <td>&amp;notin;</td>
     </tr>
     <tr>
-      <td><span>∏</span></td>
-      <td><span>N-ARY PRODUCT</span></td>
-      <td><span>&amp;prod;</span></td>
+      <td>∏</td>
+      <td>N-ARY PRODUCT</td>
+      <td>&amp;prod;</td>
     </tr>
     <tr>
-      <td><span>∑</span></td>
-      <td><span>N-ARY SUMMATION</span></td>
-      <td><span>&amp;sum;</span></td>
+      <td>∑</td>
+      <td>N-ARY SUMMATION</td>
+      <td>&amp;sum;</td>
     </tr>
     <tr>
-      <td><span>Α</span></td>
-      <td><span>Alpha</span></td>
-      <td><span>&amp;Alpha;</span></td>
+      <td>Α</td>
+      <td>Alpha</td>
+      <td>&amp;Alpha;</td>
     </tr>
     <tr>
-      <td><span>Β</span></td>
-      <td><span>Beta</span></td>
-      <td><span>&amp;Beta;</span></td>
+      <td>Β</td>
+      <td>Beta</td>
+      <td>&amp;Beta;</td>
     </tr>
     <tr>
-      <td><span>Γ</span></td>
-      <td><span>Gamma</span></td>
-      <td><span>&amp;Gamma;</span></td>
+      <td>Γ</td>
+      <td>Gamma</td>
+      <td>&amp;Gamma;</td>
     </tr>
     <tr>
-      <td><span>Δ</span></td>
-      <td><span>delta</span></td>
-      <td><span>&amp;Delta;</span></td>
+      <td>Δ</td>
+      <td>delta</td>
+      <td>&amp;Delta;</td>
     </tr>
     <tr>
-      <td><span>Ε</span></td>
-      <td><span>Epsilon</span></td>
-      <td><span>&amp;Epsilon;</span></td>
+      <td>Ε</td>
+      <td>Epsilon</td>
+      <td>&amp;Epsilon;</td>
     </tr>
     <tr>
-      <td><span>Ζ</span></td>
-      <td><span>Zeta</span></td>
-      <td><span>&amp;Zeta;</span></td>
+      <td>Ζ</td>
+      <td>Zeta</td>
+      <td>&amp;Zeta;</td>
     </tr>
     <tr>
-      <td><span>♥</span></td>
-      <td><span>BLACK HEART SUIT = valentine</span></td>
-      <td><span>&amp;hearts;</span></td>
+      <td>♥</td>
+      <td>BLACK HEART SUIT = valentine</td>
+      <td>&amp;hearts;</td>
     </tr>
     <tr>
-      <td><span>♣</span></td>
-      <td><span>BLACK CLUB SUIT = shamrock</span></td>
-      <td><span>&amp;clubs;</span></td>
+      <td>♣</td>
+      <td>BLACK CLUB SUIT = shamrock</td>
+      <td>&amp;clubs;</td>
     </tr>
     <tr>
-      <td><span>♠</span></td>
-      <td><span>BLACK SPADE SUIT</span></td>
-      <td><span>&amp;spades;</span></td>
+      <td>♠</td>
+      <td>BLACK SPADE SUIT</td>
+      <td>&amp;spades;</td>
     </tr>
     <tr>
-      <td><span>♦</span></td>
-      <td><span>BLACK DIAMOND SUIT</span></td>
-      <td><span>♦</span></td>
+      <td>♦</td>
+      <td>BLACK DIAMOND SUIT</td>
+      <td>♦</td>
     </tr>
     <tr>
-      <td><span>∞</span></td>
-      <td><span>infinity</span></td>
-      <td><span>&amp;infin;</span></td>
+      <td>∞</td>
+      <td>infinity</td>
+      <td>&amp;infin;</td>
     </tr>
     <tr>
-      <td><span>‰</span></td>
-      <td><span>per-mille</span></td>
-      <td><span>&amp;permil;</span></td>
+      <td>‰</td>
+      <td>per-mille</td>
+      <td>&amp;permil;</td>
     </tr>
     <tr>
-      <td><span>†</span></td>
-      <td><span>hermitian</span></td>
-      <td><span>&amp;hercon;</span></td>
-      <td><span>⊹</span></td>
+      <td>†</td>
+      <td>hermitian</td>
+      <td>&amp;hercon;</td>
+      <td>⊹</td>
     </tr>
     <tr>
-      <td><span>¬</span></td>
-      <td><span>–</span></td>
-      <td><span>&amp;not;</span></td>
+      <td>¬</td>
+      <td>–</td>
+      <td>&amp;not;</td>
     </tr>
     <tr>
-      <td><span>f</span></td>
-      <td><span>Function</span></td>
-      <td><span>&amp;fnof;</span></td>
+      <td>f</td>
+      <td>Function</td>
+      <td>&amp;fnof;</td>
     </tr>
     <tr>
-      <td><span>∥</span></td>
-      <td><span>parallel</span></td>
-      <td><span>&amp;parallel;</span></td>
+      <td>∥</td>
+      <td>parallel</td>
+      <td>&amp;parallel;</td>
     </tr>
   </tbody>
 </table>
