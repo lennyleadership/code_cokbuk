@@ -7,6 +7,8 @@
 
 h1 {
     display: block;
+    
+    /* this padding-top setting must be greater than that in overline*/
     padding-top: 50px; /* dedine the header and the previous section */    
     padding-bottom: 20px; /* define the distance between the line and the header */
     border-bottom: 5px solid lightgrey;

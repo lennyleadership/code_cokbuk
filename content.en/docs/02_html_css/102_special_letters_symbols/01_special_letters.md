@@ -65,14 +65,54 @@ in html: `$\alpha$`
 Reference: https://ww.w3schools.com/html/html_symbols.asp
 
 
-# hyphen
-`&dash;`
+# 
 
 
 
+<table >
+<caption style="text-align:left", align = "top"><b></b></caption>
+<colgroup><col style="width: 40%" /><col style="width: 60%" />
+</colgroup>
+  <tr>
+    <th><p>Denotation
+      </p></th>
+    <th><p>Expression
+      </p></th>
+  </tr>
+  <tr>
+    <td><p>hyphen
+      </p></td>
+    <td><p>`&dash;`
+      </p></td>
+  </tr>
+  <tr>
+    <td><p>Registered symbol 
+      </p></td>
+    <td><p>`&reg;`
+      </p></td>
+  </tr>
+  <tr>
+    <td><p>
+      </p></td>
+    <td><p>
+      </p></td>
+  </tr>
+  <tr>
+    <td><p>
+      </p></td>
+    <td><p>
+      </p></td>
+  </tr>
+  <tr>
+    <td><p>
+      </p></td>
+    <td><p>
+      </p></td>
+  </tr>
+</table>
 
-# Registered symbol 
-`&reg;`
+# 
+
 
 
 # Trademark symbol 
