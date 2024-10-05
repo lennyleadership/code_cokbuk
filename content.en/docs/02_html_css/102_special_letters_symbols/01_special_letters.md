@@ -93,8 +93,7 @@ Reference: https://ww.w3schools.com/html/html_symbols.asp
   <tr>
     <td><p>Registered symbol 
       </p></td>
-    <td><span>&reg;</span>
-      </td>
+    <td><span>&amp;reg;</span></td>
   </tr>
   <tr>
     <td><p>asterisk sign
