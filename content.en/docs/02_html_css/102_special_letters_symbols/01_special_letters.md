@@ -70,7 +70,7 @@ Use `&` in HTML.
     </tr>
     <tr>
       <td>+</td>
-      <td>PLUS SIGN</td>
+      <td>plus sign</td>
       <td>&amp;plus;</td>
     </tr>    
     <tr>
