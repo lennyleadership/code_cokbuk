@@ -28,3 +28,18 @@ or
 geom_rect(aes(xmin = as.Date("2022-05-03"), xmax = as.Date("2023-10-18"),
                 ymin = -Inf, ymax = Inf), fill = "#baffc9") # alpha = .2 does not work
 ```
+
+```
+(plot_wkly_sentry <- df |>
+  filter(wkends != "other") |>
+  ggplot(aes(x = time, y = consumable_bod))+
+  geom_line(color = "#004C80")+
+  theme_bw()+
+  annotate("rect", fill = "#ffdd7c", alpha = .3, xmin = as_hms("00:00:00"), xmax = as_hms("23:59:59"),  
+           ymin = 0, ymax = 20)+
+  annotate("rect", fill = "#ffdd7c", alpha = .3, xmin = as_hms("00:00:00"), xmax = as_hms("23:59:59"),  
+           ymin = 180, ymax = 300)+
+  labs(x = "", y = paste0("SENTRY", "\U2122"," Signal (Consumable BOD) ") )+
+  facet_grid(wkends ~ wkday )
+)
+```
