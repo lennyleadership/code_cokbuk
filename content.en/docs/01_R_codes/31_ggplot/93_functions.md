@@ -16,8 +16,11 @@ toc: true
 <!--more-->
 ---
 
-# Make a plot function
+# scatter plot function
+
 sometimes you’re creating the same plot over and over again, and you don’t need that flexibility. Instead of creating components, you might want to write a function that takes data and parameters and returns a complete plot.  
+
+## example #1
 
 ```
 scatter_plot2 <- function(data, x, y, mytitle) {
@@ -29,8 +32,24 @@ scatter_plot2 <- function(data, x, y, mytitle) {
 }
  
 scatter_plot2(mtcars, hp, mpg, "my Title")
+```
+
+## example #2
 
 ```
+scatter_plot2 <- function(data, x, y, color_group, color_codes,mytitle) {
+  ggplot(data, aes({{x}}, {{y}}))+
+    geom_point(aes(color = {{color_group}}) )+
+    theme_bw()+
+    scale_color_manual(values = setNames({{color_codes}}, {{color_group}}))+
+    labs(title = {{mytitle}})+
+    theme(plot.title = element_text(hjust = .5),
+          legend.position = "none")
+}
+```
+
+
+# piechart function
 
 ```
 piechart <- function(data, mapping) {
@@ -45,7 +64,8 @@ piechart(mpg, aes(factor(1), fill = class))
 ```
 
 
-# Make a single component
+# geom_smooth function
+
 ```
 bestfit <- geom_smooth(
   method = "lm", 
@@ -63,6 +83,8 @@ ggplot(mpg, aes(displ, hwy)) +
   bestfit
 ```
 
+# geom_lm function
+
 ```
 geom_lm <- function(formula = y ~ x, colour = alpha("steelblue", 0.5), 
                     linewidth = 2, ...){
@@ -79,11 +101,15 @@ ggplot(mpg, aes(displ, 1 / hwy)) +
   geom_point() + 
   geom_lm(y ~ poly(x, 2), linewidth = 1, colour = "red")
 ```
+
 Note: Pay close attention to the use of `...`. When included in the function definition `...` allows a function to accept arbitrary additional arguments. Inside the function, you can then use `...` to pass those arguments on to another function. Here we pass `...` onto geom_smooth() so the user can still modify all the other arguments we haven’t explicitly overridden. When you write your own component functions, it’s a good idea to always use `...` in this way.
 
 Finally, note that you can only add components to a plot; you can’t modify or remove existing objects.
 
-# Make multiple plot components
+
+
+# geom_mean function
+
 ```
 geom_mean <- function() {
   list(
@@ -110,6 +136,7 @@ You’re not just limited to adding layers in this way. You can also include any
 * Theme components, which override the specified components.
 
 # Make multiple annotation
+
 It’s often useful to add standard annotations to a plot. In this case, your function will also set the data in the layer function, rather than inheriting it from the plot. There are two other options that you should set when you do this. These ensure that the layer is self-contained:
 
 * `inherit.aes = FALSE` prevents the layer from inheriting aesthetics from the parent plot. This ensures your annotation works regardless of what else is on the plot.
@@ -167,7 +194,8 @@ ggplot(mpg, aes(class, cty)) +
   )
 ```
 
-# Functional programming
+# geom function
+
 Since ggplot2 objects are just regular R objects, you can put them in a list. This means you can apply all of R’s great functional programming tools. For example, if you wanted to add different geoms to the same base plot, you could put them in a list and use `lapply()`.
 
 ```
@@ -182,5 +210,43 @@ p <- ggplot(mpg, aes(displ, hwy))
 lapply(geoms, function(g) p + g)
 ```
 
-# Reference
+# customized geom_color function
+
+```
+geom_customized_color <- function(){
+    list(geom_point(aes(color = group)),
+    scale_color_manual(values = setNames(color.codes, group))
+    )
+}
+```
+
+# customized geom_text function
+
+```
+geom_text_dek <- function(x,y,mylabel){
+  list(geom_text(aes(x = {{x}},y = {{y}}),label = mylabel, size = 4, vjust = -.5, hjust = 0, color = "#0000ff")
+  )
+}
+```
+
+# References
+
 <a href = "https://ggplot2-book.org/programming" target="_blank" rel="noopener noreferrer">ggplot2: Elegant Graphics for Data Analysis (3e) | Chapter 18 Programming with ggplot2</a>
+
+https://ggplot2tutor.com/tutorials/sampling_distributions
+ 
+https://ggplot2.tidyverse.org/reference/geom_function.html#ref-examples
+ 
+https://stackoverflow.com/questions/6967664/ggplot2-histogram-with-normal-curve
+ 
+https://t-redactyl.io/blog/2016/03/creating-plots-in-r-using-ggplot2-part-9-function-plots.html
+ 
+https://r-charts.com/evolution/draw-functions-ggplot2/
+ 
+https://stackoverflow.com/questions/55272168/plotting-different-custom-stat-function-on-different-group-of-data
+ 
+https://www.andrewheiss.com/blog/2023/09/18/understanding-dirichlet-beta-intuition/
+ 
+https://r-graphics.org/recipe-miscgraph-function
+ 
+https://www.tidyverse.org/blog/2022/11/ggplot2-3-4-0/

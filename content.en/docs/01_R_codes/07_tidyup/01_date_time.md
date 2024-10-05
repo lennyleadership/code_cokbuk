@@ -21,6 +21,36 @@ toc: true
 df$collection_time <- format(df$collection_time, format = "%H:%M")
 ```
 
+```
+# create variable with one time stamp
+data ="2021/05/25 12:34:25"
+                                                       
+# get time from date using format in the
+# form of hours
+print(paste(
+"Hours : ", format(as.POSIXct(data), format = "%H")))
+ 
+# get time from date using format in the
+# form of minutes
+print(paste(
+"Minutes : ", format(as.POSIXct(data), format = "%M")))
+ 
+# get time from date using format in the
+# form of seconds
+print(paste(
+"Seconds : ", format(as.POSIXct(data), format = "%S")))
+ 
+# get time from date using format in the
+# form of minutes
+print(paste(
+"Hours and Minutes : ", format(as.POSIXct(data), format = "%H:%M")))
+ 
+# get time from date using format in the
+# form of seconds
+print(paste(
+"Time : ", format(as.POSIXct(data), format = "%H:%M:%S")))
+```
+
 # Turn character into date and time
 
 use parse_date_time()

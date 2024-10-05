@@ -1,6 +1,6 @@
 ---
 weight: 07
-title: Deal With na
+title: Deal With NA
 authors: Lenny
 categories: null
 tags: 

@@ -21,6 +21,14 @@ toc: true
 facet_wrap(~element, scales = "free_y")
 ```
 
+# facet_zoom
+
+```
+plot_NH3_inf_big+
+  facet_zoom(xlim = as.Date(c("2023-06-02", "2023-08-15")),
+             ylim = c(0,20) )
+```
+
 # zoom x-axis
 
 ```
