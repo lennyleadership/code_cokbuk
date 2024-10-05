@@ -44,6 +44,15 @@ h1:before {
   border-top-color: lightgrey;
 }
 
+h1:after {
+  content:' ';
+  display:block;
+  padding-bottom: 50px; /*25*/
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: lightgrey;
+}
+
 
 /* the end ****************************************************************************************/
 
