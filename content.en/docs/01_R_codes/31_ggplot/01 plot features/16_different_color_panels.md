@@ -17,6 +17,7 @@ toc: true
 
 
 # Two different panel color backgrounds in ggplot
+
 ``` 
 annotate("rect", fill = "#baffc9", alpha = .3, xmin = as.Date("2022-05-03"), xmax = as.Date("2023-10-18"),ymin = -Inf, ymax = Inf)
 

@@ -1,6 +1,6 @@
 ---
 weight: 16
-title: Add imagines to ggplot2
+title: Add images to ggplot2
 authors: Lenny
 categories: null
 tags: 
