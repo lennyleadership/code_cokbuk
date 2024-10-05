@@ -90,6 +90,9 @@ Trade mark in ggplot2
 
 E: `&#234;`
 
+# Plus minus symbol in html
+\u00B1 (works in tibble)
+
 
 # Links
 <a href = "https://www.w3schools.com/charsets/ref_utf_latin1_supplement.asp" target="_blank" rel="noopener noreferrer">w3schools | UTF-8 Latin1 Supplement </a>

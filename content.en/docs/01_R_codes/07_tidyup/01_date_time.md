@@ -14,7 +14,12 @@ toc: true
 
 
 <!--more-->
----
+
+# Extract time from date + time
+
+```
+df$collection_time <- format(df$collection_time, format = "%H:%M")
+```
 
 # Turn character into date and time
 

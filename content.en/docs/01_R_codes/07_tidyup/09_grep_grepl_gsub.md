@@ -14,10 +14,10 @@ toc: true
 
 
 <!--more-->
----
 
 
-# inclusive with grep 
+
+# grep with multiple patterns
 
 ```
 grep("*GC.xls|\\$|2018 reports|Temp Stations 2020", list, invert=T, value = T)
@@ -27,15 +27,52 @@ grep works with data frame and list.
 
 with (invert=T, value = T) I will get all names  
 
-without (invert=T, value = T) I will get all names
+without (invert=T, value = T) I will get all names (??)
+
+
+```
+patterns <- c("QDUP", "QSPK", "\\$")
+ 
+grep(paste(patterns, collapse = "|"), names(df_stp_ch))
+```
+
+# grepl with multiple patterns
+
+```
+patterns <- c("A1", "A9", "A6")
+
+>your_df
+  FirstName Letter
+1      Alex     A1
+2      Alex     A6
+3      Alex     A7
+4       Bob     A1
+5     Chris     A9
+6     Chris     A6
+ 
+result <- filter(your_df, grepl(paste(patterns, collapse="|"), Letter))
+ 
+>result
+  FirstName Letter
+1      Alex     A1
+2      Alex     A6
+3       Bob     A1
+4     Chris     A9
+5     Chris     A6
+ 
+https://stackoverflow.com/questions/7597559/grep-using-a-character-vector-with-multiple-patterns
+```
+
 
 
 # exclusive with grepl
+
 ```
 n <- which(!grepl("IH",unique(df$parameters))) # name exclusive “IH”
 ```
 
 # gsub application
+
 Use the following line to get from ` $METALS_ALL_Antimony (Sb)` to `Antimony (Sb)`.
 ```
 gsub("\\$METALS_ALL_", "", names(df)[7:44])

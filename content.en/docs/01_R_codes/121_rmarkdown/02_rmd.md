@@ -26,6 +26,16 @@ Put the following codes in YAML.
      - css_disclaimer_rev02.css
 ```
 
+# fig.align for figure position
+
+```{r, fig.align='center'}
+ 
+knitr::include_graphics("./images/name.png")
+```
+
+# fit.align for table position
+
+
 # insert an image in *.rmd
 ```
 <div class = "container">
@@ -85,3 +95,21 @@ Standard-width space. This is also called "non-line breaking space" because it w
 Em space. This is called "Em" because it's as wide as the letter M is in whichever typeface you're using. (If you've heard the term em-dash, this is a dash as wide as the letter M.)
 En space. This is called "En" because it's as wide as the letter n is in your typeface.
 And finally, there's "Thin space", which is the thinnest of all spaces.
+
+# To plot correlation plots in rmarkdown
+
+```{r, plot_heatmap}
+col <- colorRampPalette(c("#BB4444", "#EE9988", "#FFFFFF", "#c2e4c9", "#5cb86f"))
+ 
+corrplot(df_bvmetals_all_original_corr, method = "color", col = col(200),
+                              diag = F, type = "upper", addCoef.col = "black",
+                              tl.cex = .7, number.cex = 8/ncol(df_bvmetals_all_original_corr),
+                              title = "Correlation Among Elements Without Removing Outliers at STP_CH", mar = c(0,0,1,0))
+```
+ 
+ 
+```{r, plot_pair}
+pairs(df_bvmetals_all_original_3, lower.panel = NULL, col = 4,
+      font.labels = .6)
+ 
+```
