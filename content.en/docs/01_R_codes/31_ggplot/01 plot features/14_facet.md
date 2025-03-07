@@ -7,14 +7,12 @@ tags:
 description: 
 draft: false
 date: "2024-04-25"
-lastmod: "2024-04-25"
+lastmod: "2025-03-06"
 series:
 toc: true
 ---
 
 
-<!--more-->
----
 
 # Facet
  
@@ -64,6 +62,7 @@ Reference: <a href = "https://stackoverflow.com/questions/11889625/annotating-te
 
 
 # annotate text on individual facet with two-factor grid in ggplot2.
+
 ```
 text_eff_std <- data.frame(
   count_date = as.Date("2019-01-01", "2019-01-01"), 

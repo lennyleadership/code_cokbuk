@@ -13,9 +13,6 @@ toc: true
 ---
 
 
-<!--more-->
----
-
 # Option #1: position is fixed.
 
 ```
