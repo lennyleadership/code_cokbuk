@@ -115,7 +115,7 @@ without (invert=T, value = T) I will get all names
 
 
 
-## Difference list[1] from list[[1]]
+## Difference between list[1] and list[[1]]
 
 Two outputs are different
 ```
@@ -153,6 +153,7 @@ df <- as.data.frame(do.call(cbind, list))
 
 df <- as.data.frame(do.call(rbind, list))
 ```
+
 
 ## rbind files in list to dataset when arguments in each file does not match
 ```
