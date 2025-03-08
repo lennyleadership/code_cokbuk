@@ -14,6 +14,6 @@ toc: true
 
 
 <!--more-->
----
+
 
 <a href = "https://stackoverflow.com/questions/3505701/grouping-functions-tapply-by-aggregate-and-the-apply-family?rq=3" target="_blank" rel="noopener noreferrer">stack<b>overflow</b> | Grouping functions (tapply, by, aggregate) and the *apply family</a>

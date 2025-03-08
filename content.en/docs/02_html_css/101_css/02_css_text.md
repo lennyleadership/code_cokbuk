@@ -15,7 +15,7 @@ toc: true
 
 <!--more-->
 
-<h1><span class = "overline">Font</span></h1>
+# Font
 
 ```
 font-size: 2rem;
@@ -29,6 +29,8 @@ font-weight: $head-font-weight; /*scss style*/
 ```
 
 Reference: https://www.w3schools.com/cssref/pr_font_weight.php
+
+
 
 
 # Text

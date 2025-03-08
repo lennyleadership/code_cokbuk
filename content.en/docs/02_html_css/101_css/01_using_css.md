@@ -24,9 +24,9 @@ links:
 
 An inline CSS is used to apply a unique style to <b>a single</b> HTML element.  
 
-An inline CSS uses the <span style = "color:red">`style`</span> attribute of an HTML element.
+An inline CSS uses the `style` attribute of an HTML element.
 
-The following example sets the text color of the <span style = "color:red">`<h1>`</span> element to blue, and the text color of the <span style = "color:red">`<p>`</span> element to red:  
+The following example sets the text color of the `<h1>` element to blue, and the text color of the `<p>` element to red:  
 
 ```  
 <h1 style="color:blue;">A Blue Heading</h1>

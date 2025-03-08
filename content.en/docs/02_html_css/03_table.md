@@ -7,7 +7,7 @@ tags:
 description: 
 draft: false
 date: "2023-09-09"
-lastmod: "2023-09-09"
+lastmod: "2025-03-07"
 series:
 toc: true
 ---
@@ -15,7 +15,9 @@ toc: true
 
 <!--more-->
 
-# HTML code
+# Create a table
+
+## HTML code
 ```
 <table >
 <caption style="text-align:left", align = "top"><b></b></caption>
@@ -45,7 +47,7 @@ toc: true
 
 `VALIGN=TOP`: is used in `<th>` and `<tbody>`.  
 
-# css codes
+## css codes
 ```
 table{
   width: 100%;
@@ -79,6 +81,7 @@ use the CSS `padding` property to add padding on table <b>cells</b>.
   <figcaption class = "bottom"></figcaption>
 </figure>
 
+
 # Merge two columns
 
 inline css style.   
@@ -92,3 +95,36 @@ inline css style.
 ```
 <td rowspan = "2">Warranty</td>
 ```
+
+# Page break when printing a large HTML table
+
+try this
+```
+table { page-break-inside:auto }
+tr    { page-break-inside:avoid; page-break-after:auto }
+thead { display:table-header-group }
+tfoot { display:table-footer-group }
+```
+
+try this
+```
+@media print
+{
+  table { page-break-after:auto }
+  tr    { page-break-inside:avoid; page-break-after:auto }
+  td    { page-break-inside:avoid; page-break-after:auto }
+  thead { display:table-header-group }
+  tfoot { display:table-footer-group }
+}
+```
+
+try this
+```
+@media print
+{
+table {page-break-after:always}
+}
+
+```
+
+Reference: <a href = "https://stackoverflow.com/questions/1763639/how-to-deal-with-page-breaks-when-printing-a-large-html-table" target="_blank" rel="noopener noreferrer">stackoverflow | </a>
