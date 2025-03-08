@@ -146,3 +146,67 @@ csv_file_names %>%
 Reference: <a href = "https://martinctc.github.io/blog/vignette-write-and-read-multiple-excel-files-with-purrr/" target="_blank" rel="noopener noreferrer">Vignette: Write & Read Multiple Excel files with purr</a>
 
 
+# Read multiple spreadsheets in multiple excel files
+
+Note: there must be header line on each spreadsheet
+
+## option #1 [one excel file]
+``` 
+path_import <- r"()"
+ 
+file_name <- paste0(path_import, "/","file_name",".xlsx")
+
+multiplesheets <- function(filename) {
+  sheets <- readxl::excel_sheets(filename)
+  z1 <- lapply(sheets, function(x) readxl::read_excel(filename, sheet = x))
+  z2 <- do.call(rbind, z1)
+}
+ 
+file_original <- multiplesheets(file_name)
+```
+
+## option #2 process multiple files
+
+Note: Each file has multiple sheets.
+
+```
+list_SW_GAB_original <- lapply(list_files, multiplesheets)
+``` 
+ 
+## option #3
+
+```
+multiplesheets <- function(fname) {
+  # getting info about all excel sheets
+  sheets <- readxl::excel_sheets(fname)
+  tibble <- lapply(sheets, function(x) readxl::read_excel(fname, sheet = x))
+  data_frame <- lapply(tibble, as.data.frame)
+ 
+  # assigning names to data frames
+  names(data_frame) <- sheets
+ 
+  # print data frame
+   print(data_frame)
+}
+ 
+df <- multiplesheets(file_name)
+ 
+file_original <- do.call(rbind, df)
+```
+
+## option #4
+
+```
+sheet = excel_sheets(file_name)
+ 
+z <- list()
+ 
+for (i in 1:length(sheet)){
+  z[[i]] <- read_excel(filename, sheet = sheet[i])
+  # include the following lines due to
+  z[[i]]$`$ALPHA_LIQ_RAW_Count Date` <- as.Date.POSIXct(as.numeric(z[[i]]$`$ALPHA_LIQ_RAW_Count Date`))
+  z[[i]]$`$BETA_LIQ_RAW_Count Date` <- as.Date.POSIXct(as.numeric(z[[i]]$`$BETA_LIQ_RAW_Count Date`))
+}
+ 
+z1 <- do.call(rbind, z)
+```
