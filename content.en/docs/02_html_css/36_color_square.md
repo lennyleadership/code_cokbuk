@@ -12,6 +12,28 @@ series:
 toc: true
 ---
 
+<style>
+.box {
+  float: left;
+  height: 20px;
+  width: 20px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  clear: both;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+</style>
 
 <!--more-->
 
@@ -50,43 +72,24 @@ toc: true
 <div><div class='box blue'></div>= Local/ Passenger Trains</div>
 ```
 
-<style>
-.box {
-  float: left;
-  height: 20px;
-  width: 20px;
-  margin-bottom: 15px;
-  border: 1px solid black;
-  clear: both;
-}
 
-.red {
-  background-color: red;
-}
 
-.green {
-  background-color: green;
-}
+<b>Output</b>   
 
-.blue {
-  background-color: blue;
-}
-</style>
-
-<b>Output</b>  
-
-<div class='box red'></div> = Super Fast Trains
+<body>
+<div><div class='box red'></div>= Super Fast Trains</div>
 <br>
-<div class='box green'></div> = Mail/Express Trains
+<div><div class='box green'></div>= Mail/Express Trains</div>
 <br>
-<div class='box blue'></div> = Local/ Passenger Trains
-
+<div><div class='box blue'></div>= Local/ Passenger Trains</div>
+</body>
 
 # Option #2
 ```
 <div style="color:#a50b5e;">&#9632; Jazzberry Jam</div>
 ```
 
+<b>Output</b>
 <div style="color: #a50b5e;">&#9632; Jazzberry Jam</div>
 
 
