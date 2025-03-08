@@ -21,49 +21,50 @@ toc: true
 df$collection_time <- format(df$collection_time, format = "%H:%M")
 ```
 
-```
-# create variable with one time stamp
+
+
 data ="2021/05/25 12:34:25"
                                                        
-# get time from date using format in the
-# form of hours
-print(paste(
-"Hours : ", format(as.POSIXct(data), format = "%H")))
- 
-# get time from date using format in the
-# form of minutes
-print(paste(
-"Minutes : ", format(as.POSIXct(data), format = "%M")))
- 
-# get time from date using format in the
-# form of seconds
-print(paste(
-"Seconds : ", format(as.POSIXct(data), format = "%S")))
- 
-# get time from date using format in the
-# form of minutes
-print(paste(
-"Hours and Minutes : ", format(as.POSIXct(data), format = "%H:%M")))
- 
-# get time from date using format in the
-# form of seconds
-print(paste(
-"Time : ", format(as.POSIXct(data), format = "%H:%M:%S")))
+# get time from date using format in the form of hours
+```
+print(paste("Hours : ", format(as.POSIXct(data), format = "%H")))
+```
+
+# get time from date using format in the form of minutes
+```
+print(paste("Minutes : ", format(as.POSIXct(data), format = "%M")))
+```
+
+# get time from date using format in the form of seconds
+```
+print(paste("Seconds : ", format(as.POSIXct(data), format = "%S")))
+```
+
+# get time from date using format in the form of hours and minutes
+```
+print(paste("Hours and Minutes : ", format(as.POSIXct(data), format = "%H:%M")))
+```
+
+# get time from date using format in the form of hours, minutes and seconds
+```
+print(paste("Time : ", format(as.POSIXct(data), format = "%H:%M:%S")))
 ```
 
 # Turn character into date and time
 
-use parse_date_time()
+use `parse_date_time()`
 
-```
 "12/11/2004 12:00:00 AM"
 
+```
 df_1$date <- as.Date(parse_date_time(df_1$AnalysisDate, "%m/%d/%y %I:%M:%S %p"))
-
-outcome “2004-12-11”
 ```
 
+outcome “2004-12-11”
+
+
 # Turn number into date
+
 ```
 df$date <- as.Date(as.numeric(df$date), origin = "1900-01-01")
 ```

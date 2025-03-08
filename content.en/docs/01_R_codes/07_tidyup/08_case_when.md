@@ -14,7 +14,7 @@ toc: true
 
 
 <!--more-->
----
+
 
 # To create a categorical column
 ```

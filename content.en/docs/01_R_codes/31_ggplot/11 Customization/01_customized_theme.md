@@ -44,4 +44,4 @@ theme_event <- function(){
 }
 ```
 
-
+Reference: <a href = "https://rpubs.com/mclaire19/ggplot2-custom-themes" target="_blank" rel="noopener noreferrer">RPubs | Learning to create custom themes in ggplot</a>

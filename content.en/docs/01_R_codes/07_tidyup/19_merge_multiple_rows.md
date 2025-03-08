@@ -24,3 +24,9 @@ y1 <- z1 |>
 
 summary(y1)
 ```
+
+```
+df %>%
+group_by() %>%
+summarise_all(funs(trimws(paste(., collapse = ''))))
+```

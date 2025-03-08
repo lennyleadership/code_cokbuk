@@ -73,11 +73,13 @@ toc: true
 }
 </style>
 
-<div><div class='box red'></div> = Super Fast Trains</div>
+<b>Output</b>  
+
+<div><div class='box red'></div> = Super Fast Trains
 <br>
-<div><div class='box green'></div> = Mail/Express Trains</div>
+<div><div class='box green'></div> = Mail/Express Trains
 <br>
-<div><div class='box blue'></div> = Local/ Passenger Trains</div>
+<div><div class='box blue'></div> = Local/ Passenger Trains
 
 
 # Option #2
