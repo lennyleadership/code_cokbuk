@@ -15,7 +15,7 @@ toc: true
 
 <!--more-->
 
-# color palettes ----
+# color palettes
  
 <mark style = "background-color: #f04d43">#f04d43</mark>  
 <mark style = "background-color: #33a02c">#33a02c</mark>  

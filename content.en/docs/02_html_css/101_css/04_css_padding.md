@@ -34,21 +34,17 @@ To shorten the code, it is possible to specify all the padding properties in one
 
 If the padding property has <b>four</b> values:
 
-    padding: 25px 50px 75px 100px;
-        top padding is 25px
-        right padding is 50px
-        bottom padding is 75px
-        left padding is 100px
+          /* top  right bottom left*/
+    padding: 25px 50px  75px   100px;
+
         
 If the padding property has <b>three</b> values:
 
-    padding: 25px 50px 75px;
-        top padding is 25px
-        right and left paddings are 50px
-        bottom padding is 75px
+          /* top  right & left bottom*/
+    padding: 25px 50px         75px;
+
 
 If the padding property has <b>two</b> values:
 
-    padding: 25px 50px;
-        top and bottom paddings are 25px
-        right and left paddings are 50px
+          /* top & bottom  right & left*/
+    padding: 25px          50px;
