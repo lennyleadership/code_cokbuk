@@ -12,6 +12,8 @@ series:
 toc: true
 ---
 
+The following customized theme doesn't have frame, x-axis, y-axis 
+
 ```
 theme_event <- function(){
   theme(
