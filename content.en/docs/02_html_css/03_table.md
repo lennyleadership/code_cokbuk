@@ -22,22 +22,22 @@ toc: true
 <colgroup><col style="width: 40%" /><col style="width: 60%" />
 </colgroup>
   <tr>
-    <th><p>
+    <thead><p>
       </p></th>
-    <th><p>
+    <thead><p>
       </p></th>
   </tr>
   <tr>
-    <td><p>
-      </p></td>
-    <td><p>
-      </p></td>
+    <td>
+      </td>
+    <td>
+      </td>
   </tr>
   <tr>
-    <td><p>
-      </p></td>
-    <td><p>
-      </p></td>
+    <td>
+      </td>
+    <td>
+      </td>
   </tr>
 </table>
 
@@ -83,6 +83,12 @@ use the CSS `padding` property to add padding on table <b>cells</b>.
 
 inline css style.   
 ```
-<th colspan = "2">Warranty</th>
+<td colspan = "2">Warranty</td>
 ```
 
+# Merge two rows
+
+inline css style.   
+```
+<td rowspan = "2">Warranty</td>
+```
