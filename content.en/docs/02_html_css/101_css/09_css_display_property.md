@@ -1,5 +1,5 @@
 ---
-weight: 35
+weight: 309
 title: HTML Display Property
 authors: Lenny
 categories: null
@@ -70,22 +70,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at er
 <body>
 <h1>The display Property</h1>
 
-<h2>display: none:</h2>
+<h2>display: none</h2>
 <div>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex1">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
 </div>
 
-<h2>display: inline:</h2>
+<h2>display: inline</h2>
 <div>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex2">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
 </div>
 
-<h2>display: block:</h2>
+<h2>display: block</h2>
 <div>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex3">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
 </div>
 
-<h2>display: inline-block:</h2>
+<h2>display: inline-block</h2>
 <div>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex4">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
 </div>
