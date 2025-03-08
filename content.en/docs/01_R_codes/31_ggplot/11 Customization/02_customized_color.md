@@ -20,7 +20,6 @@ color_codes <- c("","","")
 # color palettes array ----
 color_palletes <- c("#f04d43","#33a02c", "#ABA6AA")
 
- 
 # link color_palettes with a group by a function.
 customized_color <- function(color_palettes, color_codes){
   scale_color_manual(values = setNames(color_palettes, color_codes) )
@@ -31,6 +30,8 @@ df |>
   ggplot(aes(x = , y = , colour = flag))+
   customized_color(color_palletes, color_codes)
 ###
+Note: the contents in `flag` must match what are in `color_codes`
+
 ```
 
 
