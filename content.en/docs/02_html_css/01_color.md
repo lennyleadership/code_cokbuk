@@ -17,18 +17,26 @@ toc: true
 
 # color palettes ----
  
-<mark style = "background-color: #f04d43">"#f04d43"</mark>,"#33a02c","#f68235","#b2df8a","#A240E8", "#3367d6","#171438", "#0f401f", "#ABA6AA"
+<mark style = "background-color: #f04d43">#f04d43</mark>  
+<mark style = "background-color: #33a02c">#33a02c</mark>  
+<mark style = "background-color: #f68235">#f68235</mark>  
+<mark style = "background-color: #b2df8a">#b2df8a</mark>  
+<mark style = "background-color: #A240E8">#A240E8</mark>  
+<mark style = "background-color: #3367d6">#3367d6</mark>  
+<mark style = "background-color: #171438">#171438</mark>  
+<mark style = "background-color: #0f401f">#0f401f</mark>  
+<mark style = "background-color: #ABA6AA">#ABA6AA</mark>
  
 # dot
-"#004C80"
+<mark style = "background-color: #004C80">#004C80</mark>
  
 # text
-c("#0000ff","#4440ff")
+c(<mark style = "background-color: #0000ff">#0000ff</mark>,<mark style = "background-color: #4440ff">#4440ff</mark>)
  
 # line
-c("#a5252a","#b75454")
+c(<mark style = "background-color: #a5252a">#a5252a</mark>,<mark style = "background-color: #b75454">#b75454</mark>)  
  
+red <- c(<mark style = "background-color: #ff0000">#ff0000</mark>, <mark style = "background-color: #f04d43">#f04d43</mark>)
  
-red <- c("#ff0000","#f04d43")
- 
-purple <- c("#7a49a5","#A240E8")
+purple <- c(<mark style = "background-color: #7a49a5">#7a49a5</mark>,<mark style = "background-color: #A240E8">#A240E8</mark>)
+
