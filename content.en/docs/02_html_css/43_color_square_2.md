@@ -1,5 +1,5 @@
 ---
-weight: 36
+weight: 43
 title: Color Square
 authors: Lenny
 categories: null

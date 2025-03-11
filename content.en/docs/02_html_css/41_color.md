@@ -1,5 +1,5 @@
 ---
-weight: 01
+weight: 41
 title: Color palettes
 authors: Lenny
 categories: null
