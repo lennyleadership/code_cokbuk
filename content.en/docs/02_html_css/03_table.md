@@ -24,10 +24,10 @@ toc: true
 <colgroup><col style="width: 40%" /><col style="width: 60%" />
 </colgroup>
   <tr>
-    <thead><p>
-      </p></th>
-    <thead><p>
-      </p></th>
+    <thead>
+      </thead>
+    <thead>
+      </thead>
   </tr>
   <tr>
     <td>

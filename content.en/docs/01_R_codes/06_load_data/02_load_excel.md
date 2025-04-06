@@ -210,3 +210,5 @@ for (i in 1:length(sheet)){
  
 z1 <- do.call(rbind, z)
 ```
+
+# Extract data from multiple tables in a spreadsheet for multiple Excel files ----
