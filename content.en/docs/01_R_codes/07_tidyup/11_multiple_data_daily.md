@@ -1,6 +1,6 @@
 ---
 weight: 11
-title: "Deal With Multiple date on Days"
+title: "Deal With Multiple Data on Days"
 authors: Lenny
 categories: null
 tags: 
@@ -14,7 +14,6 @@ toc: true
 
 
 <!--more-->
----
 
 Situation: There are multiple data on days.  Dates are duplicated. 
 
