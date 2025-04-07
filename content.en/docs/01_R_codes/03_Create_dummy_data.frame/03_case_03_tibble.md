@@ -1,6 +1,6 @@
 ---
 weight: 03
-title: Tibble
+title: Case 03 Tibble
 authors: Lenny
 categories: null
 tags: 
@@ -14,7 +14,7 @@ toc: true
 
 
 <!--more-->
----
+
 
 ```
 tib <- tibble(v1 = letters[1:4],

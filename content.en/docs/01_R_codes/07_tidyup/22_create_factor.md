@@ -19,3 +19,5 @@ toc: true
 D_labqc2024$anions <- factor(D_labqc2024$anions,
                              levels = c("Fluoride","Chloride","Nitrite","Bromide","Nitrate","Phosphate","Sulphate"))
 ```
+
+Note:  The advantage of setting the column to factor is that the order of component is set, they won't be set by the order of alphabets.

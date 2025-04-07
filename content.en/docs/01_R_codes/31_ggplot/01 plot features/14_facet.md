@@ -17,14 +17,29 @@ toc: true
 # Facet
  
 ```
-facet_grid(nuclide ~ temp)
+facet_grid(nuclide ~ temp, scales = "free")
 
-facet_grid(rows = vars(year))
+facet_grid(rows = vars(year), scalues = "free_y")
+
 ```
+
+If you want to preserve the grid layout, but want wrap-like free scales, you might be interested in `ggh4x::facet_grid2()` which has an independent argument that lets an axis vary within a row or column in a grid-layout.
+
+```
+library(ggplot2)
+
+ggplot(mtcars, aes(mpg, wt, colour = factor(cyl))) + 
+  geom_point() +
+  ggh4x::facet_grid2(. ~ cyl, scales = "free_y", independent = "y")
+
+```
+
+
 
 # Reorder facets
 ```
-df_flow_L$location_code <- factor(df_flow_L$location_code, levels = c("INFL", "EFFL"))
+df_flow_L$location_code <- factor(df_flow_L$location_code, 
+                                  levels = c("INFL", "EFFL"))
  
 in ggplot:
 facet_grid(rows = vars(location_code))
@@ -59,6 +74,7 @@ text_eff <- data.frame(
 )
 ```
 Reference: <a href = "https://stackoverflow.com/questions/11889625/annotating-text-on-individual-facet-in-ggplot2" target="_blank" rel="noopener noreferrer">stackoverflow | Annotating text on individual facet in ggplot2</a>
+
 
 
 # annotate text on individual facet with two-factor grid in ggplot2.

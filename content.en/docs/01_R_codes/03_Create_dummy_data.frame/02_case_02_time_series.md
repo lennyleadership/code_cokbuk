@@ -1,6 +1,6 @@
 ---
 weight: 02
-title: "Data frame for Time Series"
+title: "Case 02 Data frame of Time Series"
 authors: Lenny
 categories: null
 tags: 
@@ -14,7 +14,7 @@ toc: true
 
 
 <!--more-->
----
+
 
 ```
 df <- data.frame(date = as.Date('2022-01-01') + 0:9,

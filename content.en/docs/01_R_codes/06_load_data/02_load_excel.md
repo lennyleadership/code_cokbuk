@@ -20,6 +20,7 @@ toc: true
 
 I personally wouldn't use library(xlsx) (which I believe contains your read.xlsx) because it has a java dependency...
 
+
 # Load one csv, xls, xlsx file
 
 ```
@@ -29,9 +30,11 @@ filename <- paste0(filepath, "/", "my filename", ".xls")
 
 ```
 
+
 # Libraries
 
 readxl can read xls and xlsx files.
+
 
 # Read one csv file
 
@@ -46,6 +49,7 @@ library(readr)
 
 read_csv()
 ```
+
 
 # Read one excel file
 ```
@@ -211,4 +215,22 @@ for (i in 1:length(sheet)){
 z1 <- do.call(rbind, z)
 ```
 
-# Extract data from multiple tables in a spreadsheet for multiple Excel files ----
+# Extract data from multiple tables in a spreadsheet for multiple Excel files
+
+```
+z_anions2024_stds <- list()
+
+
+for (i in 1:length(file_names) ){
+
+  file_name <- file_names_short[[i]]
+
+  timestamp <- readxl::read_excel(file_names[[i]], sheet = "Integration", range = "C6", col_types = "date", col_names = F)
+
+  data <- readxl::read_excel(file_names[[i]], sheet = "Integration", range = "B11:G17", col_names = F)
+
+  z_anions2024_stds[[i]] <- data.frame(file_name, timestamp, data)
+
+}
+
+```
