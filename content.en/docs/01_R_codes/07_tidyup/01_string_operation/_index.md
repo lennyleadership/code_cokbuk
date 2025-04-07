@@ -1,22 +1,20 @@
 ---
-Weight: 999
-title: 
+Weight: 01
+title: String Operation
 authors: Lenny Lin
 categories: null
 tags: 
 description: 
 draft: true
-date: "2024"
-lastmod: "2024"
+date: "2025-04-06"
+lastmod: "2025-04-06"
 series:
 toc: true
 bookCollapseSection: true
 ---
 
 
-<!--more-->
 
----
 
 
 

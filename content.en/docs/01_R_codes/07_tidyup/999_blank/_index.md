@@ -14,9 +14,7 @@ bookCollapseSection: true
 ---
 
 
-<!--more-->
 
----
 
 
 
