@@ -7,7 +7,7 @@ tags:
 description: 
 draft: false
 date: "2024-03-14"
-lastmod: "2024-03-14"
+lastmod: "2025-04-06"
 series:
 toc: true
 ---
@@ -15,6 +15,7 @@ toc: true
 
 <!--more-->
 
+They can be used to replace a pattern, remove a pattern.
 
 
 # grep with multiple patterns
