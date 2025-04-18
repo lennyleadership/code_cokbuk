@@ -14,7 +14,16 @@ toc: true
 
 
 <!--more-->
----
+
+# Uniqueness of the dataset
+```
+df_uniqueness <- sapply(df_files_original, unique)
+
+df_uniqueness[[28]]
+
+sapply(df_files_original, unique)[10]
+```
+
 
 # Top 10 location codes in terms of sample volumes
 
