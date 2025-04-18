@@ -45,3 +45,25 @@ z <- readLines(filename)[2]
  
 unlist(strsplit(z, split = ", "))
 ```
+
+# Parse
+
+Case: `B100-FAN100MAIN_BUBBLER_231004`
+
+Step #1: Parse pieces
+
+```
+AEM_B_files_info$x <- stringr::str_split(AEM_B_files_info$sys_loc_code, "-")
+```
+Note: With `stringr::str_split`, the output is a list-column.
+ 
+
+Step #2: extract the first element.
+
+A dataframe has one column, each row is an arbitrary list. I want the first element of each list.
+
+```
+AEM_B_files_info <- AEM_B_files_info  |>
+  rowwise() |>
+  mutate(builing = x[[1]])
+```
