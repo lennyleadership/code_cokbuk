@@ -3,4 +3,4 @@ title: Introduction
 type: docs
 ---
 
-R, HTML, css
+I collect and organize tips with R, HTML, and css that I am using in my daily job.
