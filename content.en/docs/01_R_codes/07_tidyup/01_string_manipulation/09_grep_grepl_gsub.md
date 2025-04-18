@@ -44,7 +44,7 @@ grep(paste(patterns, collapse = "|"), names(df_stp_ch))
 # `grepl` Used with filter()
 
 Case: 
-
+```
 >your_df  
   FirstName Letter  
 1      Alex     A1  
@@ -53,13 +53,13 @@ Case:
 4       Bob     A1  
 5     Chris     A9  
 6     Chris     A6  
-
+```
 
 ```
 patterns <- c("A1", "A9", "A6")
 result <- filter(your_df, grepl(paste(patterns, collapse="|"), Letter))
 ```
-
+```
 >result  
   FirstName Letter  
 1      Alex     A1  
@@ -67,7 +67,8 @@ result <- filter(your_df, grepl(paste(patterns, collapse="|"), Letter))
 3       Bob     A1  
 4     Chris     A9  
 5     Chris     A6
- 
+```
+
 https://stackoverflow.com/questions/7597559/grep-using-a-character-vector-with-multiple-patterns
 
 
