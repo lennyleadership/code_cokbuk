@@ -41,17 +41,11 @@ Note: Load excel files of which the file name begins with stp_process. `^` means
 ```
 z_anions2024_stds <- list()
 
-
 for (i in 1:length(file_names) ){
-
   file_name <- file_names_short[[i]]
-
   timestamp <- readxl::read_excel(file_names[[i]], sheet = "Integration", range = "C6", col_types = "date", col_names = F)
-
   data <- readxl::read_excel(file_names[[i]], sheet = "Integration", range = "B11:G17", col_names = F)
-
   z_anions2024_stds[[i]] <- data.frame(file_name, timestamp, data)
-
 }
 
 ```
@@ -60,6 +54,27 @@ for (i in 1:length(file_names) ){
 <li>Extract data from multiple tables in a spreadsheet in multiple Excel files,</li>
 <li>Pick up data from multiple places.</li>
 </ol>
+
+
+## Read multiple tables in one sheets from multiple files
+
+```
+z_anions2024_stds <- list()
+
+for (i in 1:length(file_names) ){
+  file_name <- file_names_short[[i]]
+  timestamp <- readxl::read_excel(file_names[[i]], sheet = "Integration", range = "C6", col_types = "date", col_names = F)
+  data <- readxl::read_excel(file_names[[i]], sheet = "Integration", range = "B11:G17", col_names = F)
+  z_anions2024_stds[[i]] <- data.frame(file_name, timestamp, data)
+}
+
+```
+
+<ol>Note:
+<li>Define data type `col_types = "date"`</li>
+<li>Define range `range = "B11:G17"`</li>
+</ol>
+
 
 
 ## Read multiple spreadsheets in multiple excel files
@@ -82,19 +97,17 @@ list_SW_GAB_original <- lapply(list_files, multiplesheets)
 
 
 
-# Read Multiple Excel files with purr
+# Read multiple Sheets in one Excel file with library `purr`
 
 ```
 # file source
 wb_source <- "../datasets/test-excel/test-excel.xlsx"
-```
 
-```
+
 # Extract the sheet names as a character string vector
 wb_sheets <- readxl::excel_sheets(wb_source)
-```
 
-```
+
 # Load everything into the Global Environment
 wb_sheets %>%
   purrr::map(function(sheet){ # iterate through each sheet name
@@ -102,20 +115,14 @@ wb_sheets %>%
          value = readxl::read_xlsx(path = wb_source, sheet = sheet),
          envir = .GlobalEnv)
 })
-```
 
-## Read all sheets in Excel into a list
-
-```
 # Load everything into the Global Environment
 wb_sheets %>%
   purrr::map(function(sheet){ # iterate through each sheet name
   readxl::read_xlsx(path = wb_source, sheet = sheet)
 }) -> df_list_read # Assign to a list
-```
 
 
-```
 df_list_read %>%
   map(~select(., Petal.Length, Species) %>%
         head())

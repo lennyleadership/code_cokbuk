@@ -18,12 +18,10 @@ toc: true
 
 # Tips
 
-I personally wouldn't use library(xlsx) (which I believe contains your read.xlsx) because it has a java dependency...
+I personally wouldn't use library `xlsx` (which I believe contains your read.xlsx) because it has a java dependency...
 
 
-# Load one sheet in a csv, xls, xlsx file
-
-## Libraries
+# Load one sheet in a csv, xls, xlsx file with `readxl`
 
 `readxl` can read xls and xlsx files.
 
@@ -41,15 +39,11 @@ filename <- paste0(filepath, "/", "my filename", ".xls")
 ### Read one csv file
 
 ```
-library(readxl)
-
-df <- read.csv(filename)
+df <- readxl::read.csv(filename)
 ```
 
 ```
-library(readr)
-
-read_csv()
+readr::read_csv()
 ```
 
 
@@ -157,4 +151,25 @@ for (i in 1:length(sheet)){
 }
  
 z1 <- do.call(rbind, z)
+```
+
+
+# Read one Excel file with library `purr`
+
+```
+# step one: file source
+wb_source <- "../datasets/test-excel/test-excel.xlsx"
+
+
+# step two: Extract the sheet names as a character string vector
+wb_sheets <- readxl::excel_sheets(wb_source)
+
+
+# step three: Load everything into the Global Environment
+wb_sheets %>%
+  purrr::map(function(sheet){ # iterate through each sheet name
+  assign(x = sheet,
+         value = readxl::read_xlsx(path = wb_source, sheet = sheet),
+         envir = .GlobalEnv)
+})
 ```
