@@ -38,3 +38,6 @@ list_files <- list.files(filepath, pattern='*.xlsm$|*.xlsx$|*.xls$', ...)
 Add it before `.`.  The example is: `^stp_process.*\\.xlsx`
 
 Add it before `$` because `$` is a wild card.  The example is: `\\$ICPMS-GWMP_`
+
+Pattern: number at the front
+`pattern =” [file://d+C]\\d+C”`

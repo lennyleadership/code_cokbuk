@@ -15,8 +15,7 @@ toc: true
 
 <!--more-->
 
-Add geom_line in facet_wrap
-
+# Case #1
 ```
 # create a separate data frame
 dMean <- mtcars %>%
@@ -29,4 +28,24 @@ ggplot(mtcars) +
 # quote the separate data frame
     geom_hline(data = dMean, aes(yintercept = MN)) +
     facet_wrap(~ gear)
+```
+
+
+# Case #2
+
+```
+group_1 <- BV_elements_limits |>
+  filter(Analysis %in% c("Aluminum (Al)", "Antimony (Sb)", "Arsenic (As)", "Barium (Ba)"))
+
+
+(plot_group_1 <- z_1 |>
+  filter(Analysis %in% c("Aluminum (Al)", "Antimony (Sb)", "Arsenic (As)", "Barium (Ba)")) |>
+  ggplot(aes(x = date, y = raw_value)) +
+  geom_point()+
+  geom_hline(data = group_1, aes(yintercept = `BV RDL (ug/L)`), linetype = "dashed", color = "red")+
+  geom_hline(data = group_1, aes(yintercept = `Now BV LMDL (ug/L)`), linetype = "dashed", color = "black")+ 
+  theme_bw()+
+  facet_wrap(vars(Analysis), scale = "free_y" )
+
+)
 ```

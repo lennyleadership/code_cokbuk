@@ -15,9 +15,9 @@ toc: true
 # To transpose entire table
 
 ```
-table_1 <- reshape2::melt(df)
+table_1 <- reshape2::melt(df, id.vars = "sample_id")
 
-table_2 <- pivot_wide(table_1, names_from = , values_from =)
+table_2 <- pivot_wide(table_1, names_from = "sample_id", values_from = "value")
 ```
 
 # To transpose a table from wide to long
