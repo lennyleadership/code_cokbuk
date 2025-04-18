@@ -17,11 +17,11 @@ toc: true
 
 Explore the spreadsheet names in one excel file
 ```
-excel_sheets(AEM_list_files_names[[1]])
+readxl::excel_sheets(AEM_list_files_names[[1]])
 ```
  
 
 Explore the spreadsheet names in multiple excel files
 ```
-z_sheetnames <- lapply(AEM_list_files_names, excel_sheets)
+z_sheetnames <- lapply(AEM_list_files_names, readxl::excel_sheets)
 ```
