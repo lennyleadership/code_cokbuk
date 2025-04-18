@@ -14,7 +14,7 @@ toc: true
 
 # Extract string before a sign
 
-case: 0.10 +/- 0.04
+case: 0.10 +/- 0.04  
 output: 0.10 (space)
 
 ```

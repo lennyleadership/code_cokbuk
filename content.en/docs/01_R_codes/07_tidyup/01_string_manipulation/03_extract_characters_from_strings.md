@@ -18,7 +18,7 @@ toc: true
 
 # Remove characters with $ at the front
 
-case: ` $METALS_ALL_Antimony (Sb)`
+case: ` $METALS_ALL_Antimony (Sb)`  
 output: `Antimony (Sb)`
 
 ```
@@ -27,7 +27,7 @@ gsub("\\$METALS_ALL_", "", names(df)[7:44])
 
 
 # Extract characters in bracket ()
-case: `Antimony (Sb)`
+case: `Antimony (Sb)`  
 output: `Sb`
 ```
 re <- "\\(([^()]+)\\)"
