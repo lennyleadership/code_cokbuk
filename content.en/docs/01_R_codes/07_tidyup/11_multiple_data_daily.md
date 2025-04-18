@@ -1,6 +1,6 @@
 ---
 weight: 11
-title: "Deal With Multiple Data on Days"
+title: "Deal With Multiple Data Everyday for Days"
 authors: Lenny
 categories: null
 tags: 
@@ -15,7 +15,7 @@ toc: true
 
 <!--more-->
 
-Situation: There are multiple data on days.  Dates are duplicated. 
+Situation: There are multiple data everyday for days.
 
 Solution: Take average.
 
