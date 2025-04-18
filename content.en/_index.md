@@ -11,6 +11,7 @@ Lenny Lin
 
 A chemist specialized in non-radiological analysis and radiological analysis in environmental monitoring
 
+<i class="fa fa-linkedin-square" style="font-size:24px;color:black">https://www.linkedin.com/in/lenny-lin/</i>
 
 [<i class="fa fa-linkedin-square" style="font-size:24px;color:black"></i>](https://www.linkedin.com/in/lenny-lin/)
 

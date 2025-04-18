@@ -12,9 +12,10 @@ series:
 toc: true
 ---
 
-The following customized theme doesn't have frame, x-axis, y-axis 
 
-To embed a plot to a html file, I should do
+
+
+# To embed a plot to a html file, I should do
 
 ```
   theme(plot.title = element_text(size = 15, vjust = -10, hjust = .2),
@@ -22,7 +23,7 @@ To embed a plot to a html file, I should do
         axis.title = element_blank(),
         axis.ticks = element_blank(),
         
-        # to hide the grid by making the color same as the color of html page
+        # no frame, no grid
         panel.grid = element_line(colour = "#fffff8"),
         panel.border = element_blank(),
         
@@ -35,6 +36,75 @@ To embed a plot to a html file, I should do
 
 ```
 
+
+# side by side
+
+```
+theme_side_by_side <- function(){
+
+  theme(
+
+  plot.title = element_text(hjust = .5, size = 14),
+
+  axis.text = element_text(size = 12),
+
+  axis.title = element_text(size = 12),
+
+ 
+
+  panel.grid = element_line(colour = "grey90"),
+
+  panel.border = element_rect(fill = NA,colour = "grey90"),
+
+  panel.background = element_rect(fill = "#fffff8"),
+
+  # color in plot.background defines plot line color
+
+  plot.background = element_rect(fill = "#fffff8", color = "#fffff8")
+
+  )
+
+}
+
+# remove the grid in the master panel
+
+theme(panel.grid = element_line(colour = "white"))
+```
+ 
+
+# single plot
+
+```
+theme_single <- function(){
+
+  theme(
+    plot.title = element_text(hjust = .5, size = 16),
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 12),
+
+
+    panel.grid = element_line(colour = "grey90"),
+
+    # color in panel.border controls the color of the border line
+
+    # fill in panel.border controls the background color of the panel
+
+    panel.border = element_rect(fill = NA, colour = "grey90"),
+
+    panel.background = element_rect(fill = "#fffff8"),
+
+    # color in plot.background defines plot line color
+
+    plot.background = element_rect(fill = "#fffff8", color = "#fffff8")
+
+  )
+
+}
+```
+
+
+# Customize theme for event
+
 ```
 theme_event <- function(){
   theme(
@@ -42,6 +112,7 @@ theme_event <- function(){
     axis.text = element_text(size = 6),
     axis.title = element_text(size = 6),
  
+    # no axis, no 
     axis.line.y=element_blank(),
     axis.text.y=element_blank(),
     axis.title.x=element_blank(),
