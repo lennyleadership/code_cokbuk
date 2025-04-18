@@ -35,3 +35,23 @@ re <- "\\(([^()]+)\\)"
  
 element_names <- gsub(re, "\\1", str_extract_all(colnames(df)[7:44], re))
 ```
+
+
+# Split by pattern and then select character at a specific location
+
+case: EMP_ESW_RA-W_240123_N  
+Extract: “N”
+
+```
+stringr::str_split_i(B_file$`#sys_sample_code`[1], "_", 5)
+```
+
+
+# Substract the text after a symbol
+
+case: EMP_ESW_RA-W_240123_N  
+Extract: “N”
+
+```
+sub(".*_","",EMP_ESW_RA-W_240123_N)
+```

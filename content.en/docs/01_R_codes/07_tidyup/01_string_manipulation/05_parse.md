@@ -15,7 +15,27 @@ toc: true
 
 <!--more-->
 
+# Parse by pattern
 
+```
+stringr::str_split(“EMP_ESW_RA-W_240123_N”, "_")
+```
+ 
+case: EMP_ESW_RA-W_240123_N  
+output:  
+
+```
+[[1]]  
+[1] "EMP"    "ESW"    "RA-W"   "240123" "N"
+```
+
+<ol>
+<li>`stringr::str_split` does not work with one column of the dataset.</li>
+<li>`stringr::str_split_i` is the one that can work with one column of the dataset.</li>
+</ol>
+ 
+ 
+# Parse
 
 ```
 readLines(filename)[2]
