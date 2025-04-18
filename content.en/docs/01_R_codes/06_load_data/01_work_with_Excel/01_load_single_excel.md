@@ -25,7 +25,7 @@ I personally wouldn't use library(xlsx) (which I believe contains your read.xlsx
 
 ## Libraries
 
-readxl can read xls and xlsx files.
+`readxl` can read xls and xlsx files.
 
 
 ## Step One: Read the file name
@@ -86,7 +86,7 @@ Case #3: Take certain range of data
 ```
 library(readxl)
  
-dt <- read_excel("C:/Users/.../MRAD_ALPHA_Investigation.xlsx", sheet = "Sheet2", range = "A4:j7", col_names = F)
+dt <- read_excel("C:/Users/.../MRAD_ALPHA_Investigation.xlsx", sheet = "Sheet2", range = "A4:J7", col_names = F)
 ```
 
 <ol>Note:
@@ -98,7 +98,9 @@ dt <- read_excel("C:/Users/.../MRAD_ALPHA_Investigation.xlsx", sheet = "Sheet2",
 
 ### Read multiple spreadsheets in one excel files
 
-Note: there must be header line on each spreadsheet
+<ol>Note: 
+<li>There must be header line on each spreadsheet; and the header must be identical in order to merge sheets together.</li>
+</ol>
 
 Option #1
 
