@@ -20,16 +20,20 @@ They can be used to replace a pattern, remove a pattern.
 
 # grep with multiple patterns
 
+## put them together separated by `|`
 ```
 grep("*GC.xls|\\$|2018 reports|Temp Stations 2020", list, invert=T, value = T)
 ```
 
-grep works with data frame and list.  
+Note: grep works with data frame and list.  
 
-with (invert=T, value = T) I will get all names  
+<ol>
+<li>with (invert=T, value = T) I will get all names  </li>
+<li>without (invert=T, value = T) I will get all names (??)</li>
+</ol>
 
-without (invert=T, value = T) I will get all names (??)
 
+## put them in a vector.  Easy to read and follow
 
 ```
 patterns <- c("QDUP", "QSPK", "\\$")
@@ -37,10 +41,9 @@ patterns <- c("QDUP", "QSPK", "\\$")
 grep(paste(patterns, collapse = "|"), names(df_stp_ch))
 ```
 
-# grepl with multiple patterns
+# `grepl` Used with filter()
 
-```
-patterns <- c("A1", "A9", "A6")
+Case: 
 
 >your_df
   FirstName Letter
@@ -50,9 +53,13 @@ patterns <- c("A1", "A9", "A6")
 4       Bob     A1
 5     Chris     A9
 6     Chris     A6
- 
+
+
+```
+patterns <- c("A1", "A9", "A6")
 result <- filter(your_df, grepl(paste(patterns, collapse="|"), Letter))
- 
+```
+
 >result
   FirstName Letter
 1      Alex     A1
@@ -62,29 +69,21 @@ result <- filter(your_df, grepl(paste(patterns, collapse="|"), Letter))
 5     Chris     A6
  
 https://stackoverflow.com/questions/7597559/grep-using-a-character-vector-with-multiple-patterns
-```
 
 
 
-# exclusive with grepl
+# `grepl` Used to filter
 
 ```
 n <- which(!grepl("IH",unique(df$parameters))) # name exclusive “IH”
 ```
 
-# gsub application
 
-Use the following line to get from ` $METALS_ALL_Antimony (Sb)` to `Antimony (Sb)`.
-```
-gsub("\\$METALS_ALL_", "", names(df)[7:44])
-```
+
+
+
  
-Use the following lines to get from `Antimony (Sb)` to `Sb`
-```
-re <- "\\(([^()]+)\\)"
- 
-element_names <- gsub(re, "\\1", str_extract_all(colnames(df)[7:44], re))
-```
+
 
 
 # be mindful

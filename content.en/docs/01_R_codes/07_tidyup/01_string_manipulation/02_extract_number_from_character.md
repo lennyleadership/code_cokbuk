@@ -1,5 +1,5 @@
 ---
-weight: 21
+weight: 02
 title: "Extract Numbers from Character"
 authors: Lenny
 categories: null
@@ -12,14 +12,24 @@ series:
 toc: true
 ---
 
+# Extract string before a sign
 
-# Option #1: position is fixed.
+case: 0.10 +/- 0.04
+output: 0.10 (space)
+
+```
+sub("\\+/-.*","","0.10 +/- 0.04")
+
+```
+
+
+# position is fixed.
 
 ```
 substr(week_end, start = 1, stop = 2)
 ```
 
-# Option #2: position is random.
+# position is random.
 
 ```
 # Extract numbers using stringr
