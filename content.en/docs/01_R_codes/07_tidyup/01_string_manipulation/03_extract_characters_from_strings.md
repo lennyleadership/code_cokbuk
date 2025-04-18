@@ -29,6 +29,7 @@ gsub("\\$METALS_ALL_", "", names(df)[7:44])
 # Extract characters in bracket ()
 case: `Antimony (Sb)`  
 output: `Sb`
+
 ```
 re <- "\\(([^()]+)\\)"
  

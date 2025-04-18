@@ -1,6 +1,6 @@
 ---
 weight: 18
-title: Move a column to the left
+title: Move a column to the front
 authors: Lenny
 categories: null
 tags: 

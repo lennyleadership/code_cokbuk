@@ -1,5 +1,5 @@
 ---
-weight: 13
+weight: 18
 title: Move A Column to The End
 authors: Lenny
 categories: null
