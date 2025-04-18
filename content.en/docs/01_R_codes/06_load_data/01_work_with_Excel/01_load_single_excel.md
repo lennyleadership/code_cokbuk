@@ -1,6 +1,6 @@
 ---
 weight: 01
-title: "Load Excel file(s)"
+title: Load Single Excel File
 authors: Lenny
 categories: null
 tags: 
@@ -21,8 +21,14 @@ toc: true
 I personally wouldn't use library(xlsx) (which I believe contains your read.xlsx) because it has a java dependency...
 
 
-# Load one csv, xls, xlsx file
+# Load one sheet in a csv, xls, xlsx file
 
+## Libraries
+
+readxl can read xls and xlsx files.
+
+
+## Step One: Read the file name
 ```
 filename <- paste0(filepath, "/", "my filename", ".csv")
 
@@ -30,14 +36,9 @@ filename <- paste0(filepath, "/", "my filename", ".xls")
 
 ```
 
+## Step Two: Read data into a data frame
 
-# Libraries
-
-readxl can read xls and xlsx files.
-
-
-
-# Read one csv file
+### Read one csv file
 
 ```
 library(readxl)
@@ -52,9 +53,11 @@ read_csv()
 ```
 
 
-# Read one excel file
+### Read one sheet in one excel file
 
-## Case #1: There is no row of header
+Note: We don't define the sheet name.
+
+Case #1: There is no row of header
 
 ```
 library(readxl)
@@ -62,7 +65,7 @@ library(readxl)
 read_excel("data/file_name.xls", col_names = F) [no header]
 ```
 
-## Case #2: Skip some rows, and take everything after them
+Case #2: Skip some rows, and take everything after them
 
 ```
 library(readxl)
@@ -77,7 +80,8 @@ read_excel("data/Sampling and Analysis Checklist - Proposed & Agreed Changes for
 <li>Do not take the first row as the header.</li>
 </ol>
 
-## Case #3: Take certain range of data
+
+Case #3: Take certain range of data
 
 ```
 library(readxl)
@@ -92,3 +96,63 @@ dt <- read_excel("C:/Users/.../MRAD_ALPHA_Investigation.xlsx", sheet = "Sheet2",
 </ol>
 
 
+### Read multiple spreadsheets in one excel files
+
+Note: there must be header line on each spreadsheet
+
+Option #1
+
+``` 
+path_import <- r"()"
+ 
+file_name <- paste0(path_import, "/","file_name",".xlsx")
+
+multiplesheets <- function(filename) {
+  sheets <- readxl::excel_sheets(filename)
+  z1 <- lapply(sheets, function(x) readxl::read_excel(filename, sheet = x))
+  z2 <- do.call(rbind, z1)
+}
+ 
+file_original <- multiplesheets(file_name)
+```
+
+Option #2
+
+```
+multiplesheets <- function(fname) {
+  # getting info about all excel sheets
+  sheets <- readxl::excel_sheets(fname)
+  tibble <- lapply(sheets, function(x) readxl::read_excel(fname, sheet = x))
+  data_frame <- lapply(tibble, as.data.frame)
+ 
+  # assigning names to data frames
+  names(data_frame) <- sheets
+ 
+  # print data frame
+   print(data_frame)
+}
+ 
+df <- multiplesheets(file_name)
+ 
+file_original <- do.call(rbind, df)
+```
+
+
+Option #3
+
+
+Get sheet name with `sheet = excel_sheets(file_name)`
+
+
+```
+z <- list()
+ 
+for (i in 1:length(sheet)){
+  z[[i]] <- read_excel(filename, sheet = sheet[i])
+  # include the following lines due to
+  z[[i]]$`$ALPHA_LIQ_RAW_Count Date` <- as.Date.POSIXct(as.numeric(z[[i]]$`$ALPHA_LIQ_RAW_Count Date`))
+  z[[i]]$`$BETA_LIQ_RAW_Count Date` <- as.Date.POSIXct(as.numeric(z[[i]]$`$BETA_LIQ_RAW_Count Date`))
+}
+ 
+z1 <- do.call(rbind, z)
+```
