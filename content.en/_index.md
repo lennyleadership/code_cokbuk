@@ -9,9 +9,8 @@ I collect and organize tips with R, HTML, and css that I am using in my daily jo
 
 Lenny Lin
 
-Analytical Chemist in Environmental Monitoring
+A chemist specialized in non-radiological analysis and radiological analysis in environmental monitoring
 
-Canadian Nuclear Laboratories (aka Atomic Energy of Canada)
 
 zh.lenny.lin@gmail.com
 

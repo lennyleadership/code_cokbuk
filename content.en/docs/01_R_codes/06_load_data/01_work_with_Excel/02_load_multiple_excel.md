@@ -141,3 +141,31 @@ csv_file_names %>%
 Reference: <a href = "https://martinctc.github.io/blog/vignette-write-and-read-multiple-excel-files-with-purrr/" target="_blank" rel="noopener noreferrer">Vignette: Write & Read Multiple Excel files with purr</a>
 
 
+```
+# multiple files ----
+
+A_list_xlsx <- list.files(path_import, pattern = "evmp ch wef 2024*", full.names = T, 
+                         recursive = FALSE) # T means the file directory is included.
+
+A_list_xlsx_names <- list.files(path_import, pattern = "evmp ch wef 2024*", full.names = F, 
+                         recursive = FALSE) # T means the file directory is included.
+
+# read xlsx, and skip the first two rows ----
+
+z_list <- list()
+
+for (i in 1:length(A_list_xlsx) ){
+  file_name <- A_list_xlsx_names[[i]]
+  xlsx_file <- readxl::read_excel(A_list_xlsx[[i]], sheet = "TestResults_v1", skip = 2, col_names = F)
+  z_list[[i]] <- data.frame(xlsx_file, file_name)
+}
+
+A_EDD <- do.call(rbind, z_list)
+
+
+# get the header names ----
+
+z_header <- readxl::read_excel(A_list_xlsx[[1]], sheet = "TestResults_v1", col_names = T)
+
+names(A_EDD)[1:58] <- names(z_header)
+```
