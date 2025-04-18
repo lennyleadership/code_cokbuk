@@ -1,5 +1,5 @@
 ---
-weight: 93
+weight: 11
 title: Make ggplot2 Function
 authors: Lenny
 categories: null
