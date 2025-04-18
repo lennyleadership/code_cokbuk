@@ -1,5 +1,5 @@
 ---
-weight: 16
+weight: 11
 title: Combine Multiple Characters Into One Character
 authors: Lenny
 categories: null

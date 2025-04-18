@@ -1,5 +1,5 @@
 ---
-weight: 02
+weight: 04
 title: "Extract Numbers from Character"
 authors: Lenny
 categories: null
