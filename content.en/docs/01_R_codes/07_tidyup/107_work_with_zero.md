@@ -1,6 +1,6 @@
 ---
-weight: 18
-title: Shift A Row Upwards
+weight: 107
+title: Work With Zero
 authors: Lenny
 categories: null
 tags: 
@@ -15,10 +15,8 @@ toc: true
 
 <!--more-->
 
+Replacing all zeroes to NA
+
 ```
-shift <- function(x, n){
-  c(x[-(seq(n))], rep(NA, n))
-}
- 
-tbl_brine$regen_date <- shift(tbl_brine$regen_date, 1)
+df[df == 0] <- NA
 ```

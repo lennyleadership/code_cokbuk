@@ -1,5 +1,5 @@
 ---
-weight: 03
+weight: 101
 title: Transpose Table
 authors: Lenny
 categories: null

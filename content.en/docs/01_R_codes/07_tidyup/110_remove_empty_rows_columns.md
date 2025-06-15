@@ -1,5 +1,5 @@
 ---
-weight: 10
+weight: 110
 title: Remove empty columns in rows
 authors: Lenny
 categories: null

@@ -1,11 +1,11 @@
 ---
-Weight: 999
-title: 
+Weight: 04
+title: Aggregate Rows
 authors: Lenny Lin
 categories: null
 tags: 
 description: 
-draft: true
+draft: false
 date: "2024"
 lastmod: "2024"
 series:

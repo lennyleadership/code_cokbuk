@@ -1,5 +1,5 @@
 ---
-weight: 22
+weight: 122
 title: Sort Components with `factor()`
 authors: Lenny
 categories: null

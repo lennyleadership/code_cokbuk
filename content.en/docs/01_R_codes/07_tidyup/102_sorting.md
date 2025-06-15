@@ -1,5 +1,5 @@
 ---
-weight: 06
+weight: 102
 title: Sorting
 authors: Lenny
 categories: null

@@ -1,5 +1,5 @@
 ---
-weight: 20
+weight: 120
 title: purrr application
 authors: Lenny
 categories: null
