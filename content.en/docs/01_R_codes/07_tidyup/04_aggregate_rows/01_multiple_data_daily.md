@@ -1,6 +1,6 @@
 ---
 weight: 11
-title: "Deal With Multiple Data Everyday for Days"
+title: "Aggregate Multiple Data Everyday for Days"
 authors: Lenny
 categories: null
 tags: 

@@ -14,7 +14,7 @@ bookCollapseSection: true
 ---
 
 
-
+change the draft status to false when using this folder.
 
 
 

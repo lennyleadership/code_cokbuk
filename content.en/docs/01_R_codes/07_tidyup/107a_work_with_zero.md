@@ -1,6 +1,6 @@
 ---
 weight: 07
-title: Deal With Zero
+title: Work With Zero
 authors: Lenny
 categories: null
 tags: 

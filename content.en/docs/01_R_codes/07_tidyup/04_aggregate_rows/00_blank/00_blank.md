@@ -1,7 +1,7 @@
 ---
-Weight: 02
-title: Date Manipulation
-authors: Lenny Lin
+weight: 
+title: 
+authors: Lenny
 categories: null
 tags: 
 description: 
@@ -10,11 +10,9 @@ date: "2024"
 lastmod: "2024"
 series:
 toc: true
-bookCollapseSection: false
 ---
 
 
-
-
+<!--more-->
 
 

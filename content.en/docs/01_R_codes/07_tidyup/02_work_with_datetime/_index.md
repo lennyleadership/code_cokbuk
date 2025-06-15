@@ -1,20 +1,20 @@
 ---
-Weight: 
-title: 
+Weight: 02
+title: Work With Date and Time
 authors: Lenny Lin
 categories: null
 tags: 
 description: 
-draft: true
+draft: false
 date: "2024"
 lastmod: "2024"
 series:
 toc: true
-bookCollapseSection: true
+bookCollapseSection: false
 ---
 
 
-change the status of draft to false when using this folder.
+
 
 
 
