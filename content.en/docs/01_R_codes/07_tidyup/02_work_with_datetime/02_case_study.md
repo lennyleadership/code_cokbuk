@@ -1,6 +1,6 @@
 ---
 weight: 02
-title: Date Manipulation
+title: Case Study
 authors: Lenny
 categories: null
 tags: 
@@ -15,18 +15,7 @@ toc: true
 
 <!--more-->
 
-
-```
-Library(stringi) # stri_datetime_fields()
-
-stri_datetime_fields(z$time_stemp[1])
-```
-
-  Year Month Day Hour Minute Second Millisecond WeekOfYear WeekOfMonth DayOfYear DayOfWeek Hour12
-1 2024    11  14   11      9      0           0         46           3       319         5     11
-  AmPm Era
-1    1   2
- 
+# Option #1 epiweek starts on Sunday
 ``` 
 df_rm141_minute <- z %>%
   mutate(# year
@@ -47,7 +36,7 @@ df_rm141_minute <- z %>%
   select(-week_start, -week_end)
 ```
 
-option #2 epiweek starts on Sunday
+# Option #2 epiweek starts on Sunday
 
 ```
 Week_of_year = lubridate::epiweek(as.POSIXct(time_stemp) )

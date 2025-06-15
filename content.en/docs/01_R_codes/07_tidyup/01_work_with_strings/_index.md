@@ -1,6 +1,6 @@
 ---
 Weight: 01
-title: String Manipulation
+title: Work with Strings
 authors: Lenny Lin
 categories: null
 tags: 

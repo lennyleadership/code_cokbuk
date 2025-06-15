@@ -1,6 +1,6 @@
 ---
 Weight: 02
-title: Work With Date and Time
+title: Work with Date and Time
 authors: Lenny Lin
 categories: null
 tags: 

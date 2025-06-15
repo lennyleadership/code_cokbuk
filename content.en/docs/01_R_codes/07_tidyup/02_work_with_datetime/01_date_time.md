@@ -1,6 +1,6 @@
 ---
 weight: 01
-title: Work with Date and Time
+title: Date and Time
 authors: Lenny
 categories: null
 tags: 
@@ -14,38 +14,51 @@ toc: true
 
 
 <!--more-->
+# Break down to pieces
+Case: "2024-11-14 11:09:00"
+
+```
+Library(stringi) # stri_datetime_fields()
+
+stri_datetime_fields(z$time_stemp[1])
+```
+
+  Year Month Day Hour Minute Second Millisecond WeekOfYear WeekOfMonth DayOfYear DayOfWeek Hour12
+1 2024    11  14   11      9      0           0         46           3       319         5     11
+  AmPm Era
+1    1   2
+
 
 # Extract time from date + time
 
+data ="2021/05/25 12:34:25"
 ```
 df$collection_time <- format(df$collection_time, format = "%H:%M")
 ```
 
 
-
-data ="2021/05/25 12:34:25"
-                                                       
-# get time from date using format in the form of hours
+# Get time from datetime                                                       
+## Get hour from datetime using format in the form of hours
 ```
 print(paste("Hours : ", format(as.POSIXct(data), format = "%H")))
 ```
 
-# get time from date using format in the form of minutes
+## Get minute from datetime using format in the form of minutes
 ```
 print(paste("Minutes : ", format(as.POSIXct(data), format = "%M")))
 ```
 
-# get time from date using format in the form of seconds
+## Get second from datetime using format in the form of seconds
 ```
 print(paste("Seconds : ", format(as.POSIXct(data), format = "%S")))
 ```
 
-# get time from date using format in the form of hours and minutes
+## Get hour and minute from datetime using format in the form of hours and minutes
 ```
 print(paste("Hours and Minutes : ", format(as.POSIXct(data), format = "%H:%M")))
 ```
 
-# get time from date using format in the form of hours, minutes and seconds
+## Get hour, minute, and second from datetime using format in the form of hours, minutes and seconds
 ```
 print(paste("Time : ", format(as.POSIXct(data), format = "%H:%M:%S")))
 ```
@@ -82,11 +95,11 @@ as.Date(parse_date_time(count_date, orders = c('mdy HM', 'ymd HMS')))
 
 | Symbol|	Meaning| Example  |
 | --- | --- | --- |
+|%Y	| 4-digit year	| 2007|  
+|%m	| month (00-12)	| 00-12 |
 |%d	| day as a number (0-31) | 01-31|  
 |%a	| abbreviated weekday	| Mon|  
 |%A	| unabbreviated weekday	| Monday|  
-|%m	| month (00-12)	| 00-12 |
+|%y	| 2-digit year	| 07  |
 |%b	| abbreviated month	| Jan|  
 |%B	| unabbreviated month	| January | 
-|%y	| 2-digit year	| 07  |
-|%Y	| 4-digit year	| 2007|  

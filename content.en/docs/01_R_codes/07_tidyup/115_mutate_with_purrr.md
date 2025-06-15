@@ -1,6 +1,6 @@
 ---
 weight: 115
-title: mutate
+title: mutate with purrr
 authors: Lenny
 categories: null
 tags: 

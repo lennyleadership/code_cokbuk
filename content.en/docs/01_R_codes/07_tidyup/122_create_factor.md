@@ -1,6 +1,6 @@
 ---
 weight: 122
-title: Sort Components with `factor()`
+title: Create a Factor
 authors: Lenny
 categories: null
 tags: 
