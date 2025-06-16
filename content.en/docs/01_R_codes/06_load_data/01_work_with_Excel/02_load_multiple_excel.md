@@ -17,22 +17,36 @@ toc: true
 
 # Step One: Make a list of files
 
+## case #1
 ```
 list_files <- list.files(filepath, pattern='*.xlsm$|*.xlsx$|*.xls$', full.names = T,  recursive = T, ignore.case = T)
 ```
-
-<ol>Note:
-<li>`full.name = T`: file name will include file directory,</li>
-<li>`recursive = T`: will drill down to subfolders,</li>
-<li>`$`: put it at the end to ensure xls is the file extension, because some file may have xls in the file name.</li>
-</ol>
+Note of wild card:  
+`$` means 'to end with` to ensure xls is the file extension, because some file may have xls in the file name.   
+`*` means everything.
 
 
+## case #2
 ```
 list_files <- list.files(filepath_import, pattern = "^stp_process.*\\.xlsx", full.names = T, recursive = FALSE)
 ```
+Note of wild card:   
+Load excel files of which the file name begins with stp_process. `^` means 'to begin with'. `.*\\` means everything followed.  
 
-Note: Load excel files of which the file name begins with stp_process. `^` means 'to begin with'. `.*\\` is the wild card.
+
+## case #3
+```
+file_name <- list.files(import_data_folder, pattern = "^edms_res.*_25.06.04.csv$", full.names = T, recursive = F)
+``` 
+Note of wild card:   
+to search csv files beginning with `edms_res` and ending with `_25.06.04`. Two sections were connected with a wildcard `.*`.
+
+
+Note:
+(1) `full.name = T`: file name will include file directory  
+(2) `recursive = T`: will drill down to subfolders
+
+
 
 
 # Setp Two: Read files into a list

@@ -14,7 +14,7 @@ toc: true
 
 
 <!--more-->
----
+
 
 # Remove empty rows and columns at one time
 ``` 
