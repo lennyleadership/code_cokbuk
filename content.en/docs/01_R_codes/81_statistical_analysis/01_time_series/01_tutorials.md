@@ -67,3 +67,16 @@ print(xts_sales)
 ```
 
 <a href = "https://www.r-bloggers.com/2023/12/unlocking-the-power-of-time-transforming-data-frames-into-time-series-in-r/" target="_blank" rel="noopener noreferrer">R-bloggers | Unlocking the Power of Time: Transforming Data Frames into Time Series in R</a>
+
+
+#
+Time series tutorial (1)  
+Time Series 01: Why Metadata Are Important: How to Work with Metadata in Text & EML Format
+ 
+https://www.neonscience.org/resources/learning-hub/tutorials/dc-metadata-importance-eml-r
+ 
+
+Time series tutorial (2)  
+ 
+https://www.neonscience.org/resources/learning-hub/tutorials/dc-convert-date-time-posix-r
+

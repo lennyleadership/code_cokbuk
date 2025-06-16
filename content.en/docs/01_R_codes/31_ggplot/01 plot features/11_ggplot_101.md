@@ -45,7 +45,10 @@ Use it when putting density plot over histogram plot.
 geom_density(aes( y = ..count../2))
 ```
 
-
+# force the origin to start at 0
+```
+scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0))+
+```
 
 
 

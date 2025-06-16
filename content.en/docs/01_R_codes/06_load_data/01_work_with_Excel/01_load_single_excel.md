@@ -34,6 +34,13 @@ filename <- paste0(filepath, "/", "my filename", ".xls")
 
 ```
 
+Define column type for each column when reading Excel files  
+
+```
+readxl::read_excel(paste0(A_folder_import, "/", "file_name.xlsx"),
+                  col_types = c("text", "date", "text", "text") )
+```
+
 ## Step Two: Read data into a data frame
 
 ### Read one csv file

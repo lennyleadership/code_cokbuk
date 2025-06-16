@@ -15,4 +15,4 @@ toc: true
 
 <!--more-->
 
-change draft status from true to false
+change draft status from `true` to `false`

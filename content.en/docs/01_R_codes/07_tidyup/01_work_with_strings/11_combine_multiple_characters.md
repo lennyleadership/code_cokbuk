@@ -26,8 +26,9 @@ str_c(z2, collapse = ",")
 ```
 
 
-# create a nuclide vector
+# words separated by space 
 
+Step 1: 
 ```
 z <- c("Ac-228  Ag-108m Ag-110m Am-241  Ar-41   Ba-133  Ba-140  Be-7    Bi-212  Bi-214  Ce-141  
         Ce-144  Co-57   Co-60   Cr-51   Cs-134  Cs-137  Eu-152  Eu-154  Eu-155  Fe-59   Hf-175  
@@ -36,6 +37,35 @@ z <- c("Ac-228  Ag-108m Ag-110m Am-241  Ar-41   Ba-133  Ba-140  Be-7    Bi-212  
         U-235   U-238   Zn-65   Zr-95")
 
 z1 <- stringr::str_split(z, "\t")
+```
 
+Step 2:
+```
 gamma_nuclides <- unlist(z1)
+```
+
+Option:
+```
+z3 <- unique(z1[[1]])
+ 
+z4<- sort(z3, decreasing = F)
+ 
+paste0(z4, collapse = " ")
+```
+
+
+# words separated by comma
+
+```
+z_vector <- names(B_SW_GAB_ALPHA)
+ 
+z_vector_1 <- paste0(z_vector, collapse = ", ")
+ 
+z_vector_2 <- c("sample_id, loc_desc, loc_code, col_date, FIELD_QC_TYPE, ANALYSIS_FREQ, att_eff, background, count_time, detector_id, res_mass, Sample_Units, sample_vol, total_alpha_counts, GROSS_ALPHA, GROSS_ALPHA_FO")
+ 
+z_vector_3 <- stringr::str_split(z_vector_2, ", ")
+ 
+z_header <- unlist(z_vector_3)
+ 
+names(B_SW_GAB_ALPHA) <- z_header
 ```

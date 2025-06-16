@@ -63,17 +63,23 @@ print(paste("Hours and Minutes : ", format(as.POSIXct(data), format = "%H:%M")))
 print(paste("Time : ", format(as.POSIXct(data), format = "%H:%M:%S")))
 ```
 
-# Turn character into date and time
+# Turn character into date and time using `parse_date_time()`
 
-use `parse_date_time()`
-
-"12/11/2004 12:00:00 AM"
+Case #1: Before: `12/11/2004 12:00:00 AM`
 
 ```
-df_1$date <- as.Date(parse_date_time(df_1$AnalysisDate, "%m/%d/%y %I:%M:%S %p"))
+df_1$date <- as.Date(lubridate::parse_date_time(df_1$AnalysisDate, "%m/%d/%y %I:%M:%S %p"))
 ```
 
-outcome “2004-12-11”
+After: `2004-12-11`
+
+
+Case #2: Before: `2025-01-09 15:00:00`
+``` 
+lubridate::parse_date_time(z$analysis_date[1], orders = 'ymd HMS')
+ 
+as.Date(lubridate::parse_date_time(z$analysis_date[1], 'ymd HMS'))
+```
 
 
 # Turn number into date
@@ -87,6 +93,13 @@ df$date <- as.Date(as.numeric(df$date), origin = "1900-01-01")
 
 ```
 as.Date(parse_date_time(count_date, orders = c('mdy HM', 'ymd HMS')))
+```
+
+
+# Change two date columns using format in sapply()
+
+``` 
+A_csv_2025[,10:11] <- sapply(A_csv_2025[,10:11], format, format= "%Y-%m-%d")
 ```
 
 

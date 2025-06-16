@@ -1,5 +1,5 @@
 ---
-weight: 02
+weight: 04
 title: Change the structure of columns in a list
 authors: Lenny
 categories: null

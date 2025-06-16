@@ -15,6 +15,16 @@ toc: true
 
 <!--more-->
 
+# Tip
+readr::read_csv can take a list with one condition, which is: the number of columns must be the same.
+
+Case: create BKG and EFF data frames in 2025
+``` 
+A_2025_bkg_org <- readr::read_csv(list_files_bkg_2025, id = "origin_file")
+ 
+A_2025_eff_org <- readr::read_csv(list_files_eff_2025, id = "origin_file")
+```
+
 # Step One: Make a list of files
 
 ## case #1
@@ -22,7 +32,7 @@ toc: true
 list_files <- list.files(filepath, pattern='*.xlsm$|*.xlsx$|*.xls$', full.names = T,  recursive = T, ignore.case = T)
 ```
 Note of wild card:  
-`$` means 'to end with` to ensure xls is the file extension, because some file may have xls in the file name.   
+`$` means 'to end with' to ensure xls is the file extension, because some file may have xls in the file name.   
 `*` means everything.
 
 
@@ -42,7 +52,7 @@ Note of wild card:
 to search csv files beginning with `edms_res` and ending with `_25.06.04`. Two sections were connected with a wildcard `.*`.
 
 
-Note:
+Note:  
 (1) `full.name = T`: file name will include file directory  
 (2) `recursive = T`: will drill down to subfolders
 

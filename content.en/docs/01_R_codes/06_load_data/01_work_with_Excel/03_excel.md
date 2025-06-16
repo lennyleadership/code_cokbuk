@@ -15,21 +15,34 @@ toc: true
 
 <!--more-->
 
-Explore the spreadsheet names in one excel file
+Case #1: Explore the spreadsheet names in one excel file
 ```
 readxl::excel_sheets(AEM_list_files_names[[1]])
 ```
  
 
-Explore the spreadsheet names in multiple excel files
-
-Option #1
+Case #2: Explore the spreadsheet names in multiple excel files
 
 ```
 z_sheetnames <- lapply(AEM_list_files_names, readxl::excel_sheets)
 ```
 
-Option #2
+Case #3: Explore the spreadsheet names in multiple excel files
+```
+z_list_sheets <- list()
+ 
+for (i in 1:length(file_names) ){
+  file_name <- file_names_short[[i]]
+  sheets <-readxl::excel_sheets(file_names[[i]])
+  z_list_sheets[[i]] <- data.frame(sheets, file_name)
+}
+ 
+A_sheets <- do.call(rbind, z_list_sheets)
+
+```
+
+
+Case #4: Explore the spreadsheet names in multiple excel files
 
 ```
 for (i in 1: length(list)){
@@ -40,4 +53,4 @@ for (i in 1: length(list)){
 
 ```
 
-I create a list of data.frame with this command 
+Note: I create a list of data.frame with this command 
