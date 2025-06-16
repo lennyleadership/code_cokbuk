@@ -16,7 +16,7 @@ toc: true
 <!--more-->
 
 # Tip
-readr::read_csv can take a list with one condition, which is: the number of columns must be the same.
+`readr::read_csv` can take a list with one condition, which is: the number of columns must be the same.
 
 Case: create BKG and EFF data frames in 2025
 ``` 
