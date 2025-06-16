@@ -1,6 +1,6 @@
 ---
 weight: 02
-title: display: inline-block
+title: "display: inline-block"
 authors: Lenny
 categories: null
 tags: 
